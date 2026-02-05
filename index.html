@@ -12,27 +12,34 @@
 
     <header class="hero">
       <div class="hero-content">
-        <p class="eyebrow">热门 AI Skills · 目录与下载</p>
-        <h1>把好用的技能集中到一个清晰、可下载的目录。</h1>
-        <p class="hero-sub">
-          这里聚合了 AwesomeSkill.ai 与 BestSkills 的热门/官方技能，并提供快速检索与下载入口。
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow" id="eyebrow">Popular AI Skills · Catalog & Links</p>
+            <span class="brand-name">AI Skills Hub</span>
+          </div>
+        </div>
+        <h1 id="hero-title">A clean, searchable catalog of skills you can actually use.</h1>
+        <p class="hero-sub" id="hero-sub">
+          Curated from public skill directories with fast search and clear detail links.
         </p>
         <div class="hero-actions">
-          <button class="primary" data-action="jump">立即浏览</button>
-          <button class="ghost" data-action="about">数据来源说明</button>
+          <button class="primary" data-action="jump" id="btn-browse">Browse Now</button>
+          <button class="ghost" data-action="about" id="btn-about">About Sources</button>
+          <button class="ghost" id="btn-lang">EN / 中文</button>
         </div>
       </div>
       <div class="hero-card">
         <div class="stat">
-          <span class="stat-label">技能总数</span>
+          <span class="stat-label" id="stat-skills-label">Total Skills</span>
           <span class="stat-value" id="skill-count">--</span>
         </div>
         <div class="stat">
-          <span class="stat-label">来源</span>
+          <span class="stat-label" id="stat-sources-label">Sources</span>
           <span class="stat-value" id="source-count">--</span>
         </div>
         <div class="stat">
-          <span class="stat-label">更新日期</span>
+          <span class="stat-label" id="stat-updated-label">Last Updated</span>
           <span class="stat-value" id="last-updated">--</span>
         </div>
       </div>
@@ -41,19 +48,19 @@
     <main>
       <section class="controls" id="controls">
         <div class="control">
-          <label for="search">搜索技能</label>
-          <input id="search" type="search" placeholder="输入技能名称、标签或描述" />
+          <label for="search" id="label-search">Search</label>
+          <input id="search" type="search" placeholder="Search by name, tag, or description" />
         </div>
         <div class="control">
-          <label for="category">分类</label>
+          <label for="category" id="label-category">Category</label>
           <select id="category"></select>
         </div>
         <div class="control">
-          <label for="source">来源</label>
+          <label for="source" id="label-source">Source</label>
           <select id="source"></select>
         </div>
         <div class="control">
-          <label for="platform">平台</label>
+          <label for="platform" id="label-platform">Platform</label>
           <select id="platform"></select>
         </div>
       </section>
@@ -61,17 +68,16 @@
       <section class="grid" id="skill-grid"></section>
 
       <section class="about" id="about">
-        <h2>数据来源与说明</h2>
-        <p>
-          热门指标来自 AwesomeSkill.ai 的公开列表，官方/精选技能来自 BestSkills 的目录。你可以按需求继续
-          扩充数据源或添加 GitHub 自动同步。
+        <h2 id="about-title">Sources & Notes</h2>
+        <p id="about-text">
+          Popularity is sourced from AwesomeSkill.ai. Official/community entries come from curated directories. You can expand sources or add GitHub sync.
         </p>
         <div class="source-list" id="source-list"></div>
       </section>
     </main>
 
     <footer>
-      <p>Made for your AI skill workflow · 2026</p>
+      <p id="footer-text">Made for your AI skill workflow · 2026</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>

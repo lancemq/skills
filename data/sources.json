@@ -4,19 +4,19 @@
     {
       "name": "AwesomeSkill.ai",
       "type": "marketplace",
-      "description": "提供热门 skills 与热度指数。",
+      "description": "Popular skills list with trend metrics.",
       "url": "https://awesomeskill.ai"
     },
     {
       "name": "awesomeskills.dev",
       "type": "curated",
-      "description": "官方与社区 skills 目录。",
+      "description": "Official and community skills directory.",
       "url": "https://www.awesomeskills.dev"
     },
     {
       "name": "Awesome Skills App",
       "type": "directory",
-      "description": "另一份技能目录与聚合入口。",
+      "description": "An additional skills directory and aggregator.",
       "url": "https://awesome-skills.app"
     }
   ]

@@ -18,8 +18,11 @@ cur.execute(
 CREATE TABLE skills (
   id TEXT PRIMARY KEY,
   name TEXT,
+  name_zh TEXT,
   short_description TEXT,
+  short_description_zh TEXT,
   long_description TEXT,
+  long_description_zh TEXT,
   category TEXT,
   platforms TEXT,
   tags TEXT,
@@ -36,15 +39,18 @@ for s in skills:
     cur.execute(
         """
         INSERT INTO skills (
-          id, name, short_description, long_description, category, platforms, tags,
+          id, name, name_zh, short_description, short_description_zh, long_description, long_description_zh, category, platforms, tags,
           popularity, popularity_label, source_name, source_url, detail_url
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             s["id"],
             s["name"],
+            s.get("name_zh", ""),
             s.get("short_description", ""),
+            s.get("short_description_zh", ""),
             s.get("long_description", ""),
+            s.get("long_description_zh", ""),
             s.get("category", ""),
             json.dumps(s.get("platforms", []), ensure_ascii=False),
             json.dumps(s.get("tags", []), ensure_ascii=False),
