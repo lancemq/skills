@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Skills 热门榜与下载</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">热门 AI Skills · 目录与下载</p>
+        <h1>把好用的技能集中到一个清晰、可下载的目录。</h1>
+        <p class="hero-sub">
+          这里聚合了 AwesomeSkill.ai 与 BestSkills 的热门/官方技能，并提供快速检索与下载入口。
+        </p>
+        <div class="hero-actions">
+          <button class="primary" data-action="jump">立即浏览</button>
+          <button class="ghost" data-action="about">数据来源说明</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="stat">
+          <span class="stat-label">技能总数</span>
+          <span class="stat-value" id="skill-count">--</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">来源</span>
+          <span class="stat-value" id="source-count">--</span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">更新日期</span>
+          <span class="stat-value" id="last-updated">--</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" id="controls">
+        <div class="control">
+          <label for="search">搜索技能</label>
+          <input id="search" type="search" placeholder="输入技能名称、标签或描述" />
+        </div>
+        <div class="control">
+          <label for="category">分类</label>
+          <select id="category"></select>
+        </div>
+        <div class="control">
+          <label for="source">来源</label>
+          <select id="source"></select>
+        </div>
+        <div class="control">
+          <label for="platform">平台</label>
+          <select id="platform"></select>
+        </div>
+      </section>
+
+      <section class="grid" id="skill-grid"></section>
+
+      <section class="about" id="about">
+        <h2>数据来源与说明</h2>
+        <p>
+          热门指标来自 AwesomeSkill.ai 的公开列表，官方/精选技能来自 BestSkills 的目录。你可以按需求继续
+          扩充数据源或添加 GitHub 自动同步。
+        </p>
+        <div class="source-list" id="source-list"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made for your AI skill workflow · 2026</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

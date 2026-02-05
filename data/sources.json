@@ -1,0 +1,23 @@
+{
+  "last_updated": "2026-02-05",
+  "sources": [
+    {
+      "name": "AwesomeSkill.ai",
+      "type": "marketplace",
+      "description": "提供热门 skills 与热度指数。",
+      "url": "https://awesomeskill.ai"
+    },
+    {
+      "name": "awesomeskills.dev",
+      "type": "curated",
+      "description": "官方与社区 skills 目录。",
+      "url": "https://www.awesomeskills.dev"
+    },
+    {
+      "name": "Awesome Skills App",
+      "type": "directory",
+      "description": "另一份技能目录与聚合入口。",
+      "url": "https://awesome-skills.app"
+    }
+  ]
+}
