@@ -18,6 +18,12 @@
       "type": "directory",
       "description": "An additional skills directory and aggregator.",
       "url": "https://awesome-skills.app"
+    },
+    {
+      "name": "VoltAgent/awesome-openclaw-skills",
+      "type": "directory",
+      "description": "OpenClaw community skills list.",
+      "url": "https://github.com/VoltAgent/awesome-openclaw-skills"
     }
   ]
 }
