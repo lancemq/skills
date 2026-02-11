@@ -20486,9 +20486,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/atakanermis/atlassian-mcp/SKILL.md"
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/platform/atlassian-mcp/"
   },
   {
     "id": "audiopod",
@@ -38492,5 +38492,1506 @@
     "source_name": "VoltAgent/awesome-openclaw-skills",
     "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
     "detail_url": "https://github.com/openclaw/skills/tree/main/skills/odrobnik/sudoku/SKILL.md"
+  },
+  {
+    "id": "python-pro",
+    "name": "Python Pro",
+    "name_zh": "Python Pro",
+    "short_description": "Python development, type hints, async patterns, performance optimization",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Python development, type hints, async patterns, performance optimization",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "python",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/python-pro/"
+  },
+  {
+    "id": "typescript-pro",
+    "name": "TypeScript Pro",
+    "name_zh": "TypeScript Pro",
+    "short_description": "TypeScript advanced types, type guards, generics, utility types",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "TypeScript advanced types, type guards, generics, utility types",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "typescript",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/typescript-pro/"
+  },
+  {
+    "id": "javascript-pro",
+    "name": "JavaScript Pro",
+    "name_zh": "JavaScript Pro",
+    "short_description": "Modern JavaScript, async patterns, ES2024+ features",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Modern JavaScript, async patterns, ES2024+ features",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "javascript",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/javascript-pro/"
+  },
+  {
+    "id": "go-pro",
+    "name": "Go Pro",
+    "name_zh": "Go Pro",
+    "short_description": "Go concurrency, interfaces, goroutines, channels",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Go concurrency, interfaces, goroutines, channels",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "go",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/golang-pro/"
+  },
+  {
+    "id": "rust-engineer",
+    "name": "Rust Engineer",
+    "name_zh": "Rust Engineer",
+    "short_description": "Rust systems programming, ownership, lifetimes, async Rust",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Rust systems programming, ownership, lifetimes, async Rust",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "rust",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/rust-engineer/"
+  },
+  {
+    "id": "sql-pro",
+    "name": "SQL Pro",
+    "name_zh": "SQL Pro",
+    "short_description": "Advanced SQL, query optimization, window functions, CTEs",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Advanced SQL, query optimization, window functions, CTEs",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "sql",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/sql-pro/"
+  },
+  {
+    "id": "c-pro",
+    "name": "C++ Pro",
+    "name_zh": "C++ Pro",
+    "short_description": "Modern C++, RAII, templates, performance optimization",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Modern C++, RAII, templates, performance optimization",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "c",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/cpp-pro/"
+  },
+  {
+    "id": "swift-expert",
+    "name": "Swift Expert",
+    "name_zh": "Swift Expert",
+    "short_description": "Swift for iOS/macOS, SwiftUI, Combine, Concurrency",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Swift for iOS/macOS, SwiftUI, Combine, Concurrency",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "swift",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/swift-expert/"
+  },
+  {
+    "id": "kotlin-specialist",
+    "name": "Kotlin Specialist",
+    "name_zh": "Kotlin Specialist",
+    "short_description": "Kotlin for Android, coroutines, Flow, Jetpack Compose",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Kotlin for Android, coroutines, Flow, Jetpack Compose",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "kotlin",
+      "specialist",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/kotlin-specialist/"
+  },
+  {
+    "id": "c-developer",
+    "name": "C# Developer",
+    "name_zh": "C# Developer",
+    "short_description": "C# .NET development, LINQ, async/await, modern features",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "C# .NET development, LINQ, async/await, modern features",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "c",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/csharp-developer/"
+  },
+  {
+    "id": "php-pro",
+    "name": "PHP Pro",
+    "name_zh": "PHP Pro",
+    "short_description": "Modern PHP, Laravel patterns, performance optimization",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Modern PHP, Laravel patterns, performance optimization",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "php",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/php-pro/"
+  },
+  {
+    "id": "java-architect",
+    "name": "Java Architect",
+    "name_zh": "Java Architect",
+    "short_description": "Java enterprise, Spring ecosystem, design patterns",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Java enterprise, Spring ecosystem, design patterns",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "java",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/language/java-architect/"
+  },
+  {
+    "id": "nestjs-expert",
+    "name": "NestJS Expert",
+    "name_zh": "NestJS Expert",
+    "short_description": "Building TypeScript backend APIs with NestJS",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Building TypeScript backend APIs with NestJS",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "nestjs",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/nestjs-expert/"
+  },
+  {
+    "id": "django-expert",
+    "name": "Django Expert",
+    "name_zh": "Django Expert",
+    "short_description": "Building Python web apps with Django/DRF",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Building Python web apps with Django/DRF",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "django",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/django-expert/"
+  },
+  {
+    "id": "fastapi-expert",
+    "name": "FastAPI Expert",
+    "name_zh": "FastAPI Expert",
+    "short_description": "Building async Python APIs with FastAPI",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Building async Python APIs with FastAPI",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "fastapi",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/fastapi-expert/"
+  },
+  {
+    "id": "spring-boot-engineer",
+    "name": "Spring Boot Engineer",
+    "name_zh": "Spring Boot Engineer",
+    "short_description": "Java enterprise applications with Spring Boot",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Java enterprise applications with Spring Boot",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "spring",
+      "boot",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/spring-boot-engineer/"
+  },
+  {
+    "id": "laravel-specialist",
+    "name": "Laravel Specialist",
+    "name_zh": "Laravel Specialist",
+    "short_description": "PHP web applications with Laravel",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "PHP web applications with Laravel",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "laravel",
+      "specialist",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/laravel-specialist/"
+  },
+  {
+    "id": "rails-expert",
+    "name": "Rails Expert",
+    "name_zh": "Rails Expert",
+    "short_description": "Ruby on Rails web applications",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Ruby on Rails web applications",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "rails",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/rails-expert/"
+  },
+  {
+    "id": "dotnet-core-expert",
+    "name": ".NET Core Expert",
+    "name_zh": ".NET Core Expert",
+    "short_description": ".NET Core APIs and applications",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": ".NET Core APIs and applications",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "dotnet",
+      "core",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/backend/dotnet-core-expert/"
+  },
+  {
+    "id": "react-expert",
+    "name": "React Expert",
+    "name_zh": "React Expert",
+    "short_description": "Building React web applications",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Building React web applications",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "react",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/react-expert/"
+  },
+  {
+    "id": "nextjs-developer",
+    "name": "Next.js Developer",
+    "name_zh": "Next.js Developer",
+    "short_description": "Next.js App Router, Server Components, Server Actions",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Next.js App Router, Server Components, Server Actions",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "nextjs",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/nextjs-developer/"
+  },
+  {
+    "id": "vue-expert",
+    "name": "Vue Expert",
+    "name_zh": "Vue Expert",
+    "short_description": "Vue 3 applications with Composition API and Pinia (TypeScript)",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Vue 3 applications with Composition API and Pinia (TypeScript)",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "vue",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/vue-expert/"
+  },
+  {
+    "id": "vue-expert-js",
+    "name": "Vue Expert (JS)",
+    "name_zh": "Vue Expert (JS)",
+    "short_description": "Vue 3 applications with JavaScript only (JSDoc typing)",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Vue 3 applications with JavaScript only (JSDoc typing)",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "vue",
+      "expert",
+      "js",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/vue-expert-js/"
+  },
+  {
+    "id": "angular-architect",
+    "name": "Angular Architect",
+    "name_zh": "Angular Architect",
+    "short_description": "Angular applications with standalone components",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Angular applications with standalone components",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "angular",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/angular-architect/"
+  },
+  {
+    "id": "react-native-expert",
+    "name": "React Native Expert",
+    "name_zh": "React Native Expert",
+    "short_description": "Building cross-platform mobile apps (React Native)",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Building cross-platform mobile apps (React Native)",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "react",
+      "native",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/react-native-expert/"
+  },
+  {
+    "id": "flutter-expert",
+    "name": "Flutter Expert",
+    "name_zh": "Flutter Expert",
+    "short_description": "Building cross-platform apps with Flutter",
+    "short_description_zh": "用于设计场景的技能。",
+    "long_description": "Building cross-platform apps with Flutter",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "设计",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "flutter",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/frontend/flutter-expert/"
+  },
+  {
+    "id": "kubernetes-specialist",
+    "name": "Kubernetes Specialist",
+    "name_zh": "Kubernetes Specialist",
+    "short_description": "K8s deployments, Helm charts, cluster management",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "K8s deployments, Helm charts, cluster management",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "kubernetes",
+      "specialist",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/infrastructure/kubernetes-specialist/"
+  },
+  {
+    "id": "terraform-engineer",
+    "name": "Terraform Engineer",
+    "name_zh": "Terraform Engineer",
+    "short_description": "Infrastructure as Code, multi-cloud provisioning",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Infrastructure as Code, multi-cloud provisioning",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "terraform",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/infrastructure/terraform-engineer/"
+  },
+  {
+    "id": "postgres-pro",
+    "name": "Postgres Pro",
+    "name_zh": "Postgres Pro",
+    "short_description": "PostgreSQL optimization, replication, advanced features",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "PostgreSQL optimization, replication, advanced features",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "postgres",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/infrastructure/postgres-pro/"
+  },
+  {
+    "id": "cloud-architect",
+    "name": "Cloud Architect",
+    "name_zh": "Cloud Architect",
+    "short_description": "AWS/Azure/GCP architecture, multi-cloud strategies",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "AWS/Azure/GCP architecture, multi-cloud strategies",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "cloud",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/infrastructure/cloud-architect/"
+  },
+  {
+    "id": "database-optimizer",
+    "name": "Database Optimizer",
+    "name_zh": "Database Optimizer",
+    "short_description": "Database performance tuning, indexing strategies",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Database performance tuning, indexing strategies",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "database",
+      "optimizer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/infrastructure/database-optimizer/"
+  },
+  {
+    "id": "graphql-architect",
+    "name": "GraphQL Architect",
+    "name_zh": "GraphQL Architect",
+    "short_description": "GraphQL schema design, resolvers, federation",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "GraphQL schema design, resolvers, federation",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "graphql",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/graphql-architect/"
+  },
+  {
+    "id": "api-designer",
+    "name": "API Designer",
+    "name_zh": "API Designer",
+    "short_description": "RESTful API design, OpenAPI, API versioning",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "RESTful API design, OpenAPI, API versioning",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "api",
+      "designer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/api-designer/"
+  },
+  {
+    "id": "websocket-engineer",
+    "name": "WebSocket Engineer",
+    "name_zh": "WebSocket Engineer",
+    "short_description": "Real-time communication, WebSockets, Socket.IO",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Real-time communication, WebSockets, Socket.IO",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "websocket",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/websocket-engineer/"
+  },
+  {
+    "id": "microservices-architect",
+    "name": "Microservices Architect",
+    "name_zh": "Microservices Architect",
+    "short_description": "Microservices patterns, service mesh, distributed systems",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Microservices patterns, service mesh, distributed systems",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "microservices",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/microservices-architect/"
+  },
+  {
+    "id": "mcp-developer",
+    "name": "MCP Developer",
+    "name_zh": "MCP Developer",
+    "short_description": "Model Context Protocol development and integration",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Model Context Protocol development and integration",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "mcp",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/mcp-developer/"
+  },
+  {
+    "id": "architecture-designer",
+    "name": "Architecture Designer",
+    "name_zh": "Architecture Designer",
+    "short_description": "System design, choosing architectures, ADRs",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "System design, choosing architectures, ADRs",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "architecture",
+      "designer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/api-architecture/architecture-designer/"
+  },
+  {
+    "id": "feature-forge",
+    "name": "Feature Forge",
+    "name_zh": "Feature Forge",
+    "short_description": "Creating new features, gathering requirements, writing specs",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Creating new features, gathering requirements, writing specs",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "feature",
+      "forge",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/workflow/feature-forge/"
+  },
+  {
+    "id": "spec-miner",
+    "name": "Spec Miner",
+    "name_zh": "Spec Miner",
+    "short_description": "Analyzing existing code, reverse-engineering specifications",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Analyzing existing code, reverse-engineering specifications",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "spec",
+      "miner",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/workflow/spec-miner/"
+  },
+  {
+    "id": "test-master",
+    "name": "Test Master",
+    "name_zh": "Test Master",
+    "short_description": "Overall testing strategy (unit, integration, E2E, performance, security)",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Overall testing strategy (unit, integration, E2E, performance, security)",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "test",
+      "master",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/quality/test-master/"
+  },
+  {
+    "id": "playwright-expert",
+    "name": "Playwright Expert",
+    "name_zh": "Playwright Expert",
+    "short_description": "Browser automation and E2E testing",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Browser automation and E2E testing",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "playwright",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/quality/playwright-expert/"
+  },
+  {
+    "id": "code-reviewer",
+    "name": "Code Reviewer",
+    "name_zh": "Code Reviewer",
+    "short_description": "Conducting thorough code reviews",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Conducting thorough code reviews",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "code",
+      "reviewer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/quality/code-reviewer/"
+  },
+  {
+    "id": "code-documenter",
+    "name": "Code Documenter",
+    "name_zh": "Code Documenter",
+    "short_description": "Adding inline documentation and API docs",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Adding inline documentation and API docs",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "code",
+      "documenter",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/quality/code-documenter/"
+  },
+  {
+    "id": "devops-engineer",
+    "name": "DevOps Engineer",
+    "name_zh": "DevOps Engineer",
+    "short_description": "CI/CD, deployment, infrastructure, platform engineering",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "CI/CD, deployment, infrastructure, platform engineering",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "devops",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/devops/devops-engineer/"
+  },
+  {
+    "id": "monitoring-expert",
+    "name": "Monitoring Expert",
+    "name_zh": "Monitoring Expert",
+    "short_description": "Logging, metrics, tracing, alerting, performance testing",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Logging, metrics, tracing, alerting, performance testing",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "monitoring",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/devops/monitoring-expert/"
+  },
+  {
+    "id": "sre-engineer",
+    "name": "SRE Engineer",
+    "name_zh": "SRE Engineer",
+    "short_description": "Site reliability, incident response, SLO/SLA management",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Site reliability, incident response, SLO/SLA management",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "sre",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/devops/sre-engineer/"
+  },
+  {
+    "id": "chaos-engineer",
+    "name": "Chaos Engineer",
+    "name_zh": "Chaos Engineer",
+    "short_description": "Chaos testing, resilience engineering, fault injection",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Chaos testing, resilience engineering, fault injection",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "chaos",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/devops/chaos-engineer/"
+  },
+  {
+    "id": "cli-developer",
+    "name": "CLI Developer",
+    "name_zh": "CLI Developer",
+    "short_description": "Command-line tools, CLI frameworks, shell integration",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Command-line tools, CLI frameworks, shell integration",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "cli",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/devops/cli-developer/"
+  },
+  {
+    "id": "secure-code-guardian",
+    "name": "Secure Code Guardian",
+    "name_zh": "Secure Code Guardian",
+    "short_description": "Writing secure code, preventing vulnerabilities",
+    "short_description_zh": "用于安全场景的技能。",
+    "long_description": "Writing secure code, preventing vulnerabilities",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "安全",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "secure",
+      "code",
+      "guardian",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/security/secure-code-guardian/"
+  },
+  {
+    "id": "security-reviewer",
+    "name": "Security Reviewer",
+    "name_zh": "Security Reviewer",
+    "short_description": "Security code review, SAST analysis, penetration testing",
+    "short_description_zh": "用于安全场景的技能。",
+    "long_description": "Security code review, SAST analysis, penetration testing",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "安全",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "security",
+      "reviewer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/security/security-reviewer/"
+  },
+  {
+    "id": "pandas-pro",
+    "name": "Pandas Pro",
+    "name_zh": "Pandas Pro",
+    "short_description": "DataFrame manipulation, data cleaning, aggregation, time series",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "DataFrame manipulation, data cleaning, aggregation, time series",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "pandas",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/pandas-pro/"
+  },
+  {
+    "id": "spark-engineer",
+    "name": "Spark Engineer",
+    "name_zh": "Spark Engineer",
+    "short_description": "Apache Spark, PySpark, distributed data processing, Spark SQL",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "Apache Spark, PySpark, distributed data processing, Spark SQL",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "spark",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/spark-engineer/"
+  },
+  {
+    "id": "ml-pipeline",
+    "name": "ML Pipeline",
+    "name_zh": "ML Pipeline",
+    "short_description": "ML pipelines, MLflow, Kubeflow, feature stores, experiment tracking",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "ML pipelines, MLflow, Kubeflow, feature stores, experiment tracking",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ml",
+      "pipeline",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/ml-pipeline/"
+  },
+  {
+    "id": "prompt-engineer",
+    "name": "Prompt Engineer",
+    "name_zh": "Prompt Engineer",
+    "short_description": "LLM prompt design, chain-of-thought, few-shot learning, evaluation",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "LLM prompt design, chain-of-thought, few-shot learning, evaluation",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "prompt",
+      "engineer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/prompt-engineer/"
+  },
+  {
+    "id": "rag-architect",
+    "name": "RAG Architect",
+    "name_zh": "RAG Architect",
+    "short_description": "RAG systems, vector databases, embeddings, semantic search",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "RAG systems, vector databases, embeddings, semantic search",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "rag",
+      "architect",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/rag-architect/"
+  },
+  {
+    "id": "fine-tuning-expert",
+    "name": "Fine-Tuning Expert",
+    "name_zh": "Fine-Tuning Expert",
+    "short_description": "LLM fine-tuning, LoRA, QLoRA, PEFT, model optimization",
+    "short_description_zh": "用于研究场景的技能。",
+    "long_description": "LLM fine-tuning, LoRA, QLoRA, PEFT, model optimization",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "研究",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "fine",
+      "tuning",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/data-ml/fine-tuning-expert/"
+  },
+  {
+    "id": "salesforce-developer",
+    "name": "Salesforce Developer",
+    "name_zh": "Salesforce Developer",
+    "short_description": "Apex, Lightning Web Components, SOQL, governor limits",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Apex, Lightning Web Components, SOQL, governor limits",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "salesforce",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/platform/salesforce-developer/"
+  },
+  {
+    "id": "shopify-expert",
+    "name": "Shopify Expert",
+    "name_zh": "Shopify Expert",
+    "short_description": "Liquid templating, Storefront API, Shopify apps, checkout extensions",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Liquid templating, Storefront API, Shopify apps, checkout extensions",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "shopify",
+      "expert",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/platform/shopify-expert/"
+  },
+  {
+    "id": "wordpress-pro",
+    "name": "WordPress Pro",
+    "name_zh": "WordPress Pro",
+    "short_description": "WordPress themes, plugins, Gutenberg blocks, WooCommerce",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "WordPress themes, plugins, Gutenberg blocks, WooCommerce",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "wordpress",
+      "pro",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/platform/wordpress-pro/"
+  },
+  {
+    "id": "legacy-modernizer",
+    "name": "Legacy Modernizer",
+    "name_zh": "Legacy Modernizer",
+    "short_description": "Legacy code modernization, migration strategies",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Legacy code modernization, migration strategies",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "legacy",
+      "modernizer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/specialized/legacy-modernizer/"
+  },
+  {
+    "id": "embedded-systems",
+    "name": "Embedded Systems",
+    "name_zh": "Embedded Systems",
+    "short_description": "Embedded development, IoT, firmware, real-time systems",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Embedded development, IoT, firmware, real-time systems",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "embedded",
+      "systems",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/specialized/embedded-systems/"
+  },
+  {
+    "id": "game-developer",
+    "name": "Game Developer",
+    "name_zh": "Game Developer",
+    "short_description": "Game development, game engines, graphics, physics",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Game development, game engines, graphics, physics",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "game",
+      "developer",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/specialized/game-developer/"
+  },
+  {
+    "id": "debugging-wizard",
+    "name": "Debugging Wizard",
+    "name_zh": "Debugging Wizard",
+    "short_description": "Systematic debugging across all languages",
+    "short_description_zh": "用于工作流场景的技能。",
+    "long_description": "Systematic debugging across all languages",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "工作流",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "debugging",
+      "wizard",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/quality/debugging-wizard/"
+  },
+  {
+    "id": "fullstack-guardian",
+    "name": "Fullstack Guardian",
+    "name_zh": "Fullstack Guardian",
+    "short_description": "Implementing features across full stack",
+    "short_description_zh": "用于工作流场景的技能。",
+    "long_description": "Implementing features across full stack",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "工作流",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "fullstack",
+      "guardian",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/security/fullstack-guardian/"
+  },
+  {
+    "id": "the-fool",
+    "name": "The Fool",
+    "name_zh": "The Fool",
+    "short_description": "Challenge ideas and decisions with 5 structured reasoning modes",
+    "short_description_zh": "用于工作流场景的技能。",
+    "long_description": "Challenge ideas and decisions with 5 structured reasoning modes",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "工作流",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "the",
+      "fool",
+      "claude-skills"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "Jeffallan/claude-skills",
+    "source_url": "https://github.com/Jeffallan/claude-skills",
+    "detail_url": "https://jeffallan.github.io/claude-skills/skills/workflow/the-fool/"
   }
 ]

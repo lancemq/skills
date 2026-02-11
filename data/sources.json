@@ -24,6 +24,12 @@
       "type": "directory",
       "description": "OpenClaw community skills list.",
       "url": "https://github.com/VoltAgent/awesome-openclaw-skills"
+    },
+    {
+      "name": "Jeffallan/claude-skills",
+      "type": "directory",
+      "description": "Curated Claude skills and workflows.",
+      "url": "https://github.com/Jeffallan/claude-skills"
     }
   ]
 }
