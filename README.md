@@ -27,14 +27,33 @@ For real skills sync persistence, use one of:
 1. Dispatch a GitHub Actions workflow from `/api/cron/sync-skills` and commit updates back to the repo.
 2. Write synced data to external storage (DB/Blob), then render from that source.
 
+### Current Cron Sync Behavior
+
+`/api/cron/sync-skills` now does:
+
+1. Pull skills from configured sources (README/API-based).
+2. Merge with existing skills dataset.
+3. Add new skills and update changed detail links.
+4. Persist merged dataset to Vercel Blob:
+   - `skills-data/skills-<timestamp>.json`
+   - `skills-data/latest.json`
+
+This means daily updates are persisted outside ephemeral runtime.
+
 ## Vercel Blob Storage For `skills.db`
 
 The site now loads database in this order:
 
+1. `/api/skills` (Vercel Blob-backed JSON skills)
 1. `/api/skills-db` (Vercel Blob-backed)
-2. `data/skills.db` (local fallback)
+1. `data/skills.db` (local fallback)
 
 ### Blob Route
+
+- Path: `/api/skills`
+- Behavior:
+  - If `SKILLS_JSON_BLOB_URL` is set, redirect to this URL.
+  - Else if `BLOB_READ_WRITE_TOKEN` is set, auto-discover latest blob under `skills-data/`.
 
 - Path: `/api/skills-db`
 - Behavior:

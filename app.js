@@ -474,6 +474,18 @@ const loadSkillsFromDb = async () => {
 
 const loadSkills = async () => {
   try {
+    const remote = await fetch("/api/skills", { cache: "no-store" });
+    if (remote.ok) {
+      const data = await remote.json();
+      if (Array.isArray(data) && data.length > 0) {
+        return data;
+      }
+    }
+  } catch (_error) {
+    // Fall through to DB and then local JSON.
+  }
+
+  try {
     return await loadSkillsFromDb();
   } catch (error) {
     const res = await fetch("data/skills.json");
