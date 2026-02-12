@@ -2,6 +2,18 @@ const state = {
   skills: [],
   filtered: [],
   sources: [],
+  rendered: {
+    categories: [],
+    currentIndex: 0,
+    batchSize: 50,
+    isLoading: false,
+  },
+  observer: null,
+  performance: {
+    renderStart: 0,
+    renderEnd: 0,
+    cardsRendered: 0,
+  },
 };
 
 const elements = {
@@ -226,29 +238,148 @@ const applyFilters = () => {
     return matchesSearch && matchesCategory && matchesSource && matchesPlatform;
   });
 
+  // Reset virtual scroll state
+  state.rendered.currentIndex = 0;
+  state.rendered.categories = [];
+  
   renderCards();
 };
 
-const renderCards = () => {
-  elements.grid.innerHTML = "";
+const createSkillCard = (skill) => {
+  const card = document.createElement("article");
+  card.className = "card";
 
-  const grouped = state.filtered.reduce((acc, skill) => {
-    const key = skill.category || t("uncategorized");
-    if (!acc[key]) {
-      acc[key] = [];
+  const title = document.createElement("h3");
+  title.textContent = skillName(skill);
+
+  const desc = document.createElement("p");
+  desc.textContent = skillShort(skill);
+
+  const longDesc = document.createElement("p");
+  longDesc.className = "card-long";
+  longDesc.textContent = skillLong(skill) || "";
+
+  const badges = document.createElement("div");
+  badges.className = "badges";
+
+  skill.tags.forEach((tag) => {
+    const badge = document.createElement("span");
+    badge.className = "badge";
+    badge.textContent = `#${tag}`;
+    badges.appendChild(badge);
+  });
+
+  const meta = document.createElement("div");
+  meta.className = "meta";
+  const popularity = skill.popularity
+    ? `${popularityLabel()}: ${skill.popularity.toLocaleString("en-US")}`
+    : t("popularityFallback");
+  meta.textContent = `${skill.source_name} · ${popularity}`;
+
+  const footer = document.createElement("div");
+  footer.className = "card-footer";
+
+  const platform = document.createElement("div");
+  platform.className = "meta";
+  platform.textContent = skill.platforms.join(" / ");
+
+  const action = document.createElement("a");
+  action.href = skill.detail_url || skill.source_url;
+  action.target = "_blank";
+  action.rel = "noreferrer";
+  action.textContent = t("view");
+
+  footer.appendChild(platform);
+  footer.appendChild(action);
+
+  card.appendChild(title);
+  card.appendChild(desc);
+  if (skill.long_description) {
+    card.appendChild(longDesc);
+  }
+  card.appendChild(badges);
+  card.appendChild(meta);
+  card.appendChild(footer);
+
+  return card;
+};
+
+const createLoadingIndicator = () => {
+  const loading = document.createElement("div");
+  loading.className = "loading-indicator";
+  loading.id = "loading-indicator";
+  loading.style.cssText = `
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  `;
+  loading.textContent = currentLang === "zh" ? "加载中..." : "Loading...";
+  return loading;
+};
+
+const setupIntersectionObserver = () => {
+  if (state.observer) {
+    state.observer.disconnect();
+  }
+
+  state.observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && !state.rendered.isLoading) {
+          renderNextBatch();
+        }
+      });
+    },
+    {
+      rootMargin: "200px",
+      threshold: 0.1,
     }
-    acc[key].push(skill);
-    return acc;
-  }, {});
+  );
 
-  Object.entries(grouped)
-    .sort(([a], [b]) =>
-      translateCategory(a).localeCompare(
-        translateCategory(b),
-        currentLang === "zh" ? "zh-Hans-CN" : "en"
-      )
-    )
-    .forEach(([category, skills]) => {
+  const indicator = document.getElementById("loading-indicator");
+  if (indicator) {
+    state.observer.observe(indicator);
+  }
+};
+
+const renderNextBatch = () => {
+  if (state.rendered.isLoading) return;
+  
+  const categories = state.rendered.categories;
+  if (state.rendered.currentIndex >= categories.length) {
+    const indicator = document.getElementById("loading-indicator");
+    if (indicator) {
+      const totalTime = state.performance.renderEnd - state.performance.renderStart;
+      indicator.innerHTML = `
+        ${currentLang === "zh" ? "已加载全部" : "All loaded"} 
+        <span style="font-size: 12px; opacity: 0.7; margin-left: 8px;">
+          (${state.performance.cardsRendered} ${currentLang === "zh" ? "张卡片" : "cards"}, 
+          ${totalTime}ms)
+        </span>
+      `;
+      indicator.style.color = "var(--muted)";
+    }
+    return;
+  }
+
+  state.rendered.isLoading = true;
+  
+  // Use requestAnimationFrame for smooth rendering
+  requestAnimationFrame(() => {
+    const batchStart = performance.now();
+    
+    const batchEnd = Math.min(
+      state.rendered.currentIndex + state.rendered.batchSize,
+      categories.length
+    );
+
+    const fragment = document.createDocumentFragment();
+    let cardsInBatch = 0;
+    
+    for (let i = state.rendered.currentIndex; i < batchEnd; i++) {
+      const [category, skills] = categories[i];
+      
       const section = document.createElement("section");
       section.className = "category-section";
 
@@ -269,68 +400,69 @@ const renderCards = () => {
       list.className = "category-grid";
 
       skills.forEach((skill) => {
-        const card = document.createElement("article");
-        card.className = "card";
-
-    const title = document.createElement("h3");
-    title.textContent = skillName(skill);
-
-    const desc = document.createElement("p");
-    desc.textContent = skillShort(skill);
-
-    const longDesc = document.createElement("p");
-    longDesc.className = "card-long";
-    longDesc.textContent = skillLong(skill) || "";
-
-        const badges = document.createElement("div");
-        badges.className = "badges";
-
-        skill.tags.forEach((tag) => {
-          const badge = document.createElement("span");
-          badge.className = "badge";
-          badge.textContent = `#${tag}`;
-          badges.appendChild(badge);
-        });
-
-        const meta = document.createElement("div");
-        meta.className = "meta";
-    const popularity = skill.popularity
-          ? `${popularityLabel()}: ${skill.popularity.toLocaleString("en-US")}`
-          : t("popularityFallback");
-        meta.textContent = `${skill.source_name} · ${popularity}`;
-
-        const footer = document.createElement("div");
-        footer.className = "card-footer";
-
-        const platform = document.createElement("div");
-        platform.className = "meta";
-        platform.textContent = skill.platforms.join(" / ");
-
-        const action = document.createElement("a");
-        action.href = skill.detail_url || skill.source_url;
-        action.target = "_blank";
-        action.rel = "noreferrer";
-        action.textContent = t("view");
-
-        footer.appendChild(platform);
-        footer.appendChild(action);
-
-        card.appendChild(title);
-        card.appendChild(desc);
-        if (skill.long_description) {
-          card.appendChild(longDesc);
-        }
-        card.appendChild(badges);
-        card.appendChild(meta);
-        card.appendChild(footer);
-
-        list.appendChild(card);
+        list.appendChild(createSkillCard(skill));
+        cardsInBatch++;
       });
 
       section.appendChild(header);
       section.appendChild(list);
-      elements.grid.appendChild(section);
-    });
+      fragment.appendChild(section);
+    }
+
+    const indicator = document.getElementById("loading-indicator");
+    if (indicator && indicator.parentNode) {
+      indicator.parentNode.insertBefore(fragment, indicator);
+    }
+
+    state.rendered.currentIndex = batchEnd;
+    state.rendered.isLoading = false;
+    state.performance.cardsRendered += cardsInBatch;
+    state.performance.renderEnd = performance.now();
+    
+    const batchTime = performance.now() - batchStart;
+    console.log(`🎨 Rendered batch: ${cardsInBatch} cards in ${batchTime.toFixed(2)}ms`);
+
+    // Continue observing if there are more items
+    if (state.rendered.currentIndex < categories.length) {
+      setupIntersectionObserver();
+    }
+  });
+};
+
+const renderCards = () => {
+  elements.grid.innerHTML = "";
+  
+  // Reset performance tracking
+  state.performance.renderStart = performance.now();
+  state.performance.cardsRendered = 0;
+
+  const grouped = state.filtered.reduce((acc, skill) => {
+    const key = skill.category || t("uncategorized");
+    if (!acc[key]) {
+      acc[key] = [];
+    }
+    acc[key].push(skill);
+    return acc;
+  }, {});
+
+  const sortedCategories = Object.entries(grouped).sort(([a], [b]) =>
+    translateCategory(a).localeCompare(
+      translateCategory(b),
+      currentLang === "zh" ? "zh-Hans-CN" : "en"
+    )
+  );
+
+  state.rendered.categories = sortedCategories;
+  state.rendered.currentIndex = 0;
+  state.rendered.isLoading = false;
+  
+  console.log(`📊 Total skills to render: ${state.filtered.length} across ${sortedCategories.length} categories`);
+
+  // Add loading indicator
+  elements.grid.appendChild(createLoadingIndicator());
+
+  // Render first batch
+  renderNextBatch();
 };
 
 const renderSources = () => {
@@ -396,6 +528,11 @@ const applyLanguage = () => {
 
   buildFilters();
   renderSources();
+  
+  // Reset virtual scroll for language change
+  state.rendered.currentIndex = 0;
+  state.rendered.categories = [];
+  
   renderCards();
 };
 
