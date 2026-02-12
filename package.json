@@ -1,0 +1,11 @@
+{
+  "name": "ai-skills-hub",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "blob:upload-db": "node scripts/upload_db_to_blob.mjs"
+  },
+  "dependencies": {
+    "@vercel/blob": "^1.1.1"
+  }
+}

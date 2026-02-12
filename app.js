@@ -429,8 +429,29 @@ const loadSkillsFromDb = async () => {
     locateFile: (file) =>
       `https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/${file}`,
   });
-  const response = await fetch("data/skills.db");
-  const buffer = await response.arrayBuffer();
+
+  const dbCandidates = ["/api/skills-db", "data/skills.db"];
+  let buffer = null;
+
+  for (const url of dbCandidates) {
+    try {
+      const response = await fetch(url, { cache: "no-store" });
+      if (!response.ok) {
+        continue;
+      }
+      buffer = await response.arrayBuffer();
+      if (buffer && buffer.byteLength > 0) {
+        break;
+      }
+    } catch (_error) {
+      // Try the next candidate.
+    }
+  }
+
+  if (!buffer || buffer.byteLength === 0) {
+    throw new Error("db fetch failed");
+  }
+
   const db = new SQL.Database(new Uint8Array(buffer));
   const result = db.exec(
     "SELECT id, name, name_zh, short_description, short_description_zh, long_description, long_description_zh, category, platforms, tags, popularity, popularity_label, source_name, source_url, detail_url FROM skills"
