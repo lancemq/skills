@@ -42,7 +42,7 @@ const i18n = {
       "Curated from public skill directories with fast search and clear detail links.",
     browse: "Browse Now",
     about: "About Sources",
-    lang: "EN / 中文",
+    lang: "EN / ZH",
     statSkills: "Total Skills",
     statSources: "Sources",
     statUpdated: "Last Updated",
