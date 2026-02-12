@@ -58,6 +58,20 @@
     <div class="orb orb-a"></div>
     <div class="orb orb-b"></div>
 
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="#controls" id="nav-browse">Browse</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="#about" id="nav-sources">Sources</a>
+        </div>
+      </div>
+    </nav>
+
     <header class="hero">
       <div class="hero-content">
         <div class="brand">
@@ -74,6 +88,7 @@
         <div class="hero-actions">
           <button class="primary" data-action="jump" id="btn-browse">Browse Now</button>
           <button class="ghost" data-action="about" id="btn-about">About Sources</button>
+          <a class="ghost link-btn" id="btn-mechanism" href="skills-mechanism.html">How Skills Work</a>
           <button class="ghost" id="btn-lang">EN / ZH</button>
         </div>
       </div>
@@ -99,6 +114,13 @@
     </header>
 
     <main>
+      <section class="quick-links">
+        <a class="quick-link" href="skills-mechanism.html" id="quick-mechanism-title">How Skills Work</a>
+        <p class="quick-link-sub" id="quick-mechanism-sub">
+          Understand the mechanism, core principles, and practical value of AI skills.
+        </p>
+      </section>
+
       <section class="controls" id="controls">
         <div class="control">
           <label for="search" id="label-search">Search</label>
@@ -131,6 +153,7 @@
 
     <footer>
       <p id="footer-text">Made for your AI skill workflow · 2026</p>
+      <p><a href="skills-mechanism.html" id="footer-mechanism-link">How Skills Work</a></p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>

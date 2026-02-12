@@ -19,7 +19,14 @@ const elements = {
   heroSub: document.getElementById("hero-sub"),
   btnBrowse: document.getElementById("btn-browse"),
   btnAbout: document.getElementById("btn-about"),
+  btnMechanism: document.getElementById("btn-mechanism"),
   btnLang: document.getElementById("btn-lang"),
+  navBrowse: document.getElementById("nav-browse"),
+  navMechanism: document.getElementById("nav-mechanism"),
+  navSources: document.getElementById("nav-sources"),
+  quickMechanismTitle: document.getElementById("quick-mechanism-title"),
+  quickMechanismSub: document.getElementById("quick-mechanism-sub"),
+  footerMechanismLink: document.getElementById("footer-mechanism-link"),
   statSkillsLabel: document.getElementById("stat-skills-label"),
   statSourcesLabel: document.getElementById("stat-sources-label"),
   statUpdatedLabel: document.getElementById("stat-updated-label"),
@@ -42,6 +49,13 @@ const i18n = {
       "Curated from public skill directories with fast search and clear detail links.",
     browse: "Browse Now",
     about: "About Sources",
+    mechanism: "How Skills Work",
+    navBrowse: "Browse",
+    navSources: "Sources",
+    quickMechanismTitle: "How Skills Work",
+    quickMechanismSub:
+      "Understand the mechanism, core principles, and practical value of AI skills.",
+    footerMechanismLink: "How Skills Work",
     lang: "EN / ZH",
     statSkills: "Total Skills",
     statSources: "Sources",
@@ -70,6 +84,12 @@ const i18n = {
       "这里聚合了热门/官方技能目录，并提供快速检索与查看入口。",
     browse: "立即浏览",
     about: "数据来源说明",
+    mechanism: "Skills 原理与作用",
+    navBrowse: "浏览",
+    navSources: "来源",
+    quickMechanismTitle: "Skills 原理与作用",
+    quickMechanismSub: "了解 AI skills 的机制原理、核心作用与实践价值。",
+    footerMechanismLink: "Skills 原理与作用",
     lang: "EN / 中文",
     statSkills: "技能总数",
     statSources: "来源",
@@ -354,7 +374,14 @@ const applyLanguage = () => {
   elements.heroSub.textContent = t("heroSub");
   elements.btnBrowse.textContent = t("browse");
   elements.btnAbout.textContent = t("about");
+  elements.btnMechanism.textContent = t("mechanism");
   elements.btnLang.textContent = t("lang");
+  elements.navBrowse.textContent = t("navBrowse");
+  elements.navMechanism.textContent = t("mechanism");
+  elements.navSources.textContent = t("navSources");
+  elements.quickMechanismTitle.textContent = t("quickMechanismTitle");
+  elements.quickMechanismSub.textContent = t("quickMechanismSub");
+  elements.footerMechanismLink.textContent = t("footerMechanismLink");
   elements.statSkillsLabel.textContent = t("statSkills");
   elements.statSourcesLabel.textContent = t("statSources");
   elements.statUpdatedLabel.textContent = t("statUpdated");

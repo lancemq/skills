@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>How AI Skills Work | AI Skills Hub</title>
+    <meta
+      name="description"
+      content="Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows."
+    />
+    <link rel="canonical" href="https://www.ai-skills.xyz/skills-mechanism.html" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .doc-wrap {
+        width: min(1000px, 94vw);
+        margin: 36px auto 72px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        background: var(--surface);
+        box-shadow: var(--shadow-sm);
+        padding: 28px;
+      }
+      .doc-actions {
+        display: flex;
+        gap: 10px;
+        margin: 16px 0 24px;
+      }
+      .doc-actions a {
+        text-decoration: none;
+      }
+      .doc-title {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      .doc-sub {
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      .doc-section {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-section h2 {
+        margin-bottom: 8px;
+      }
+      .doc-section ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+      .lang-zh {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-en {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-zh {
+        display: block;
+      }
+      @media (max-width: 720px) {
+        .doc-card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#controls">Browse</a>
+          <a href="index.html#about">Sources</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="doc-wrap">
+      <div class="doc-card lang-en">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">Skills Mechanism Guide</span>
+          </div>
+        </div>
+        <h1 class="doc-title">What Is an AI Skill, and Why It Matters</h1>
+        <p class="doc-sub">
+          A skill is a reusable capability package for AI agents. It combines instruction,
+          context, and execution patterns, so the agent can reliably perform a class of tasks.
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">Back to Home</a>
+          <button class="ghost" id="btn-toggle-lang-en">EN / 中文</button>
+        </div>
+
+        <section class="doc-section">
+          <h2>How Skills Work (Mechanism)</h2>
+          <ul>
+            <li>Task trigger: a user request matches a known skill domain (for example, SEO, API design, test generation).</li>
+            <li>Instruction loading: the agent loads the skill instructions, rules, and templates.</li>
+            <li>Context binding: project files, user constraints, and current environment are injected into execution.</li>
+            <li>Structured execution: the agent follows the skill workflow in a deterministic order.</li>
+            <li>Output validation: results are checked against quality rules before delivery.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>What Skills Actually Do</h2>
+          <ul>
+            <li>Reduce repeated prompting and setup work.</li>
+            <li>Improve output consistency across similar tasks.</li>
+            <li>Encode best practices so teams can scale quality.</li>
+            <li>Lower onboarding cost for new contributors.</li>
+            <li>Enable faster iteration with reusable task modules.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Typical Skill Components</h2>
+          <ul>
+            <li>Role definition: what the skill is responsible for.</li>
+            <li>Execution checklist: ordered steps and decision gates.</li>
+            <li>Constraints: safety, style, or policy requirements.</li>
+            <li>Output format: expected structure for final results.</li>
+            <li>References: related data sources, tools, or templates.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="doc-card lang-zh">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">Skills 原理说明</span>
+          </div>
+        </div>
+        <h1 class="doc-title">什么是 AI Skill，它解决什么问题</h1>
+        <p class="doc-sub">
+          Skill 是给 AI 智能体复用的一组能力包，通常包含指令、上下文约束和执行流程，
+          让智能体在同类任务中更稳定地输出结果。
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">返回首页</a>
+          <button class="ghost" id="btn-toggle-lang-zh">EN / 中文</button>
+        </div>
+
+        <section class="doc-section">
+          <h2>Skills 的机制原理</h2>
+          <ul>
+            <li>任务触发：当用户请求命中某个能力域（如 SEO、API 设计、测试生成）时触发。</li>
+            <li>规则加载：智能体读取该 Skill 的规则、步骤和模板。</li>
+            <li>上下文绑定：把项目文件、用户约束、运行环境信息绑定到执行过程。</li>
+            <li>流程化执行：按预定义顺序完成分析、生成、检查等步骤。</li>
+            <li>结果校验：按质量标准验证输出，再返回给用户。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Skills 的作用</h2>
+          <ul>
+            <li>减少重复提示词编写和初始化成本。</li>
+            <li>提升同类任务输出的一致性和可控性。</li>
+            <li>沉淀最佳实践，便于团队规模化复用。</li>
+            <li>降低新人上手门槛，缩短协作磨合周期。</li>
+            <li>把复杂任务模块化，加快迭代速度。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>一个 Skill 通常包含</h2>
+          <ul>
+            <li>角色定义：这个 Skill 负责什么。</li>
+            <li>执行清单：按顺序执行的步骤和判断条件。</li>
+            <li>约束条件：安全、风格、规范等限制。</li>
+            <li>输出格式：结果应采用的结构和字段。</li>
+            <li>参考资源：可调用的数据源、工具或模板。</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+      }
+      document.getElementById("btn-toggle-lang-en").addEventListener("click", () => setLang("zh"));
+      document.getElementById("btn-toggle-lang-zh").addEventListener("click", () => setLang("en"));
+    </script>
+  </body>
+</html>
