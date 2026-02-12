@@ -37,6 +37,9 @@ For real skills sync persistence, use one of:
 4. Persist merged dataset to Vercel Blob:
    - `skills-data/skills-<timestamp>.json`
    - `skills-data/latest.json`
+5. Update homepage metadata in Blob:
+   - `sources-data/sources-<timestamp>.json`
+   - `sources-data/latest.json` (includes refreshed `last_updated`)
 
 This means daily updates are persisted outside ephemeral runtime.
 
@@ -54,6 +57,11 @@ The site now loads database in this order:
 - Behavior:
   - If `SKILLS_JSON_BLOB_URL` is set, redirect to this URL.
   - Else if `BLOB_READ_WRITE_TOKEN` is set, auto-discover latest blob under `skills-data/`.
+
+- Path: `/api/sources`
+- Behavior:
+  - If `SOURCES_META_BLOB_URL` is set, redirect to this URL.
+  - Else if `BLOB_READ_WRITE_TOKEN` is set, auto-discover latest blob under `sources-data/`.
 
 - Path: `/api/skills-db`
 - Behavior:

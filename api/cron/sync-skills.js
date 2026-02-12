@@ -3,6 +3,8 @@ import { list, put } from "@vercel/blob";
 const SOURCES = [
   {
     name: "VoltAgent/awesome-openclaw-skills",
+    type: "directory",
+    description: "OpenClaw community skills list.",
     source_url: "https://github.com/VoltAgent/awesome-openclaw-skills",
     readme_url:
       "https://raw.githubusercontent.com/VoltAgent/awesome-openclaw-skills/main/README.md",
@@ -10,6 +12,8 @@ const SOURCES = [
   },
   {
     name: "Jeffallan/claude-skills",
+    type: "directory",
+    description: "Curated Claude skills and workflows.",
     source_url: "https://github.com/Jeffallan/claude-skills",
     readme_url:
       "https://raw.githubusercontent.com/Jeffallan/claude-skills/main/README.md",
@@ -17,6 +21,8 @@ const SOURCES = [
   },
   {
     name: "ComposioHQ/awesome-claude-skills",
+    type: "directory",
+    description: "Large curated Claude skills list and ecosystem links.",
     source_url: "https://github.com/ComposioHQ/awesome-claude-skills",
     readme_url:
       "https://raw.githubusercontent.com/ComposioHQ/awesome-claude-skills/master/README.md",
@@ -24,6 +30,8 @@ const SOURCES = [
   },
   {
     name: "daymade/claude-code-skills",
+    type: "directory",
+    description: "Practical Claude Code skills repository.",
     source_url: "https://github.com/daymade/claude-code-skills",
     api_contents_url:
       "https://api.github.com/repos/daymade/claude-code-skills/contents",
@@ -213,6 +221,48 @@ async function loadExistingSkills() {
   return [];
 }
 
+async function loadExistingSourcesMeta() {
+  const direct = process.env.SOURCES_META_BLOB_URL;
+  if (direct) {
+    const resp = await fetch(direct, { cache: "no-store" });
+    if (resp.ok) {
+      const data = await resp.json();
+      return {
+        last_updated: data?.last_updated || "",
+        sources: Array.isArray(data?.sources) ? data.sources : [],
+      };
+    }
+  }
+
+  if (process.env.BLOB_READ_WRITE_TOKEN) {
+    const { blobs } = await list({ prefix: "sources-data/" });
+    const latest = (blobs || []).find((b) => b.pathname === "sources-data/latest.json");
+    if (latest?.url) {
+      const resp = await fetch(latest.url, { cache: "no-store" });
+      if (resp.ok) {
+        const data = await resp.json();
+        return {
+          last_updated: data?.last_updated || "",
+          sources: Array.isArray(data?.sources) ? data.sources : [],
+        };
+      }
+    }
+  }
+
+  const fallback = await fetch("https://www.ai-skills.xyz/data/sources.json", {
+    cache: "no-store",
+  });
+  if (fallback.ok) {
+    const data = await fallback.json();
+    return {
+      last_updated: data?.last_updated || "",
+      sources: Array.isArray(data?.sources) ? data.sources : [],
+    };
+  }
+
+  return { last_updated: "", sources: [] };
+}
+
 function mergeSkills(existing, collected) {
   const byKey = new Map();
   for (const skill of existing) {
@@ -285,6 +335,32 @@ async function persistSkillsJson(skills) {
   return { persisted: true, versioned: versioned.url, latest: latest.url };
 }
 
+async function persistSourcesMeta(meta) {
+  if (!process.env.BLOB_READ_WRITE_TOKEN) {
+    return { persisted: false, reason: "missing_blob_token" };
+  }
+
+  const buffer = Buffer.from(JSON.stringify(meta, null, 2) + "\n", "utf-8");
+  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+
+  const versioned = await put(`sources-data/sources-${stamp}.json`, buffer, {
+    access: "public",
+    addRandomSuffix: false,
+    token: process.env.BLOB_READ_WRITE_TOKEN,
+    contentType: "application/json; charset=utf-8",
+  });
+
+  const latest = await put("sources-data/latest.json", buffer, {
+    access: "public",
+    addRandomSuffix: false,
+    allowOverwrite: true,
+    token: process.env.BLOB_READ_WRITE_TOKEN,
+    contentType: "application/json; charset=utf-8",
+  });
+
+  return { persisted: true, versioned: versioned.url, latest: latest.url };
+}
+
 export default async function handler(req, res) {
   if (req.method !== "GET") {
     res.setHeader("Allow", "GET");
@@ -297,6 +373,7 @@ export default async function handler(req, res) {
 
   try {
     const existing = await loadExistingSkills();
+    const existingSourcesMeta = await loadExistingSourcesMeta();
     const collected = [];
     const sourceStats = [];
 
@@ -321,6 +398,25 @@ export default async function handler(req, res) {
 
     const { merged, created, updated } = mergeSkills(existing, collected);
     const persist = await persistSkillsJson(merged);
+    const today = new Date().toISOString().slice(0, 10);
+    const sourceMap = new Map(
+      (existingSourcesMeta.sources || []).map((s) => [s.name, { ...s }])
+    );
+    for (const s of SOURCES) {
+      if (!sourceMap.has(s.name)) {
+        sourceMap.set(s.name, {
+          name: s.name,
+          type: s.type || "directory",
+          description: s.description || "Curated skills source.",
+          url: s.source_url,
+        });
+      }
+    }
+    const sourcesMeta = {
+      last_updated: today,
+      sources: Array.from(sourceMap.values()),
+    };
+    const persistSources = await persistSourcesMeta(sourcesMeta);
 
     return res.status(200).json({
       ok: true,
@@ -331,6 +427,7 @@ export default async function handler(req, res) {
       created,
       updated,
       persist,
+      persist_sources: persistSources,
       sources: sourceStats,
     });
   } catch (error) {

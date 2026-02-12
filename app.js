@@ -493,14 +493,31 @@ const loadSkills = async () => {
   }
 };
 
+const loadSourcesData = async () => {
+  try {
+    const remote = await fetch("/api/sources", { cache: "no-store" });
+    if (remote.ok) {
+      const data = await remote.json();
+      if (data && Array.isArray(data.sources)) {
+        return data;
+      }
+    }
+  } catch (_error) {
+    // Fall back to local sources data.
+  }
+
+  const local = await fetch("data/sources.json");
+  return await local.json();
+};
+
 const init = async () => {
   const [skills, sourcesRes] = await Promise.all([
     loadSkills(),
-    fetch("data/sources.json"),
+    loadSourcesData(),
   ]);
 
   state.skills = skills;
-  const sourcesData = await sourcesRes.json();
+  const sourcesData = sourcesRes;
   state.sources = sourcesData.sources;
 
   state.skills.sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
