@@ -44,7 +44,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/react-best-practices",
+    "detail_url": "https://awesomeskill.ai/skill/agent-skills-react-best-practices",
     "name_zh": "React 最佳实践",
     "short_description_zh": "用于react、frontend相关的开发技能。",
     "long_description_zh": "支持react、frontend、performance场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -141,7 +141,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/seo-review",
+    "detail_url": "https://awesomeskill.ai/skill/33-js-concepts-seo-review",
     "name_zh": "SEO 审查",
     "short_description_zh": "用于seo、content相关的内容技能。",
     "long_description_zh": "支持seo、content场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -214,7 +214,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/generating-rest-apis",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-generating-rest-apis",
     "name_zh": "生成 REST API",
     "short_description_zh": "用于openapi、api-development相关的开发技能。",
     "long_description_zh": "支持openapi、api-development场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -238,7 +238,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/generating-grpc-services",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-generating-grpc-services",
     "name_zh": "生成 gRPC Services",
     "short_description_zh": "用于microservices、api-development相关的开发技能。",
     "long_description_zh": "支持microservices、api-development场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -262,7 +262,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/building-graphql-server",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-building-graphql-server",
     "name_zh": "构建 GraphQL Server",
     "short_description_zh": "用于api-development、backend相关的开发技能。",
     "long_description_zh": "支持api-development、backend场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -286,7 +286,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/versioning-apis",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-versioning-apis",
     "name_zh": "版本管理 API",
     "short_description_zh": "用于backend、documentation相关的开发技能。",
     "long_description_zh": "支持backend、documentation场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -310,7 +310,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/throttling-apis",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-throttling-apis",
     "name_zh": "限流 API",
     "short_description_zh": "用于backend、documentation相关的开发技能。",
     "long_description_zh": "支持backend、documentation场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -334,7 +334,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/scanning-api-security",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-scanning-api-security",
     "name_zh": "扫描 API 安全",
     "short_description_zh": "用于api-security、testing相关的安全技能。",
     "long_description_zh": "支持api-security、testing场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -358,7 +358,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/generating-api-sdks",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-generating-api-sdks",
     "name_zh": "生成 API SDKs",
     "short_description_zh": "用于openapi、client-library相关的开发技能。",
     "long_description_zh": "支持openapi、client-library场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -382,7 +382,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/validating-api-schemas",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-validating-api-schemas",
     "name_zh": "验证 API Schemas",
     "short_description_zh": "用于openapi、json-schema相关的开发技能。",
     "long_description_zh": "支持openapi、json-schema场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -406,7 +406,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/validating-api-responses",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-validating-api-responses",
     "name_zh": "验证 API Responses",
     "short_description_zh": "用于openapi、backend相关的开发技能。",
     "long_description_zh": "支持openapi、backend场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -430,7 +430,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/logging-api-requests",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-logging-api-requests",
     "name_zh": "日志 API Requests",
     "short_description_zh": "用于metrics、nodejs相关的开发技能。",
     "long_description_zh": "支持metrics、nodejs场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -454,7 +454,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/rate-limiting-apis",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-rate-limiting-apis",
     "name_zh": "限流 API",
     "short_description_zh": "用于golang、rate-limiting相关的开发技能。",
     "long_description_zh": "支持golang、rate-limiting场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -478,7 +478,7 @@
     "popularity_label": "热度指数（AwesomeSkill.ai）",
     "source_name": "AwesomeSkill.ai",
     "source_url": "https://awesomeskill.ai",
-    "detail_url": "https://awesomeskill.ai/skill/monitoring-apis",
+    "detail_url": "https://awesomeskill.ai/skill/claude-code-plugins-plus-skills-monitoring-apis",
     "name_zh": "监控 API",
     "short_description_zh": "用于openapi、backend相关的开发技能。",
     "long_description_zh": "支持openapi、backend场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
