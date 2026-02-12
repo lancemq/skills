@@ -188,9 +188,9 @@
     ],
     "popularity": 39779,
     "popularity_label": "热度指数（AwesomeSkill.ai）",
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/canvas-design/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/canvas-design",
     "name_zh": "画布 设计",
     "short_description_zh": "用于canvas、design相关的设计技能。",
     "long_description_zh": "支持canvas、design场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -498,9 +498,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/brand-guidelines/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/brand-guidelines",
     "name_zh": "品牌 Guidelines",
     "short_description_zh": "用于brand、design相关的品牌技能。",
     "long_description_zh": "支持brand、design场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -542,9 +542,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/official/art-design",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/theme-factory",
     "name_zh": "主题 Factory",
     "short_description_zh": "用于theme、design相关的设计技能。",
     "long_description_zh": "支持theme、design场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -564,9 +564,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/official/video-animation",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/slack-gif-creator",
     "name_zh": "Slack GIF 生成",
     "short_description_zh": "用于gif、slack相关的媒体技能。",
     "long_description_zh": "支持gif、slack场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -608,9 +608,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/official/writing-editing",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills/tree/main/skills/pptx",
     "name_zh": "PPTX",
     "short_description_zh": "用于pptx、file相关的文档技能。",
     "long_description_zh": "支持pptx、file场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -630,9 +630,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/internal-comms/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/internal-comms",
     "name_zh": "内部沟通",
     "short_description_zh": "用于comms、internal相关的协作技能。",
     "long_description_zh": "支持comms、internal场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -652,9 +652,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/docx/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills/tree/main/skills/docx",
     "name_zh": "Docx",
     "short_description_zh": "用于docx、file相关的文档技能。",
     "long_description_zh": "支持docx、file场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -674,9 +674,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/awspace/pdf/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills/tree/main/skills/pdf",
     "name_zh": "PDF",
     "short_description_zh": "用于pdf、file相关的文档技能。",
     "long_description_zh": "支持pdf、file场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -696,9 +696,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/xlsx/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills/tree/main/skills/xlsx",
     "name_zh": "XLSX",
     "short_description_zh": "用于xlsx、file相关的文档技能。",
     "long_description_zh": "支持xlsx、file场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -718,9 +718,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/mcp-builder/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/mcp-builder",
     "name_zh": "MCP 构建",
     "short_description_zh": "用于mcp、builder相关的开发技能。",
     "long_description_zh": "支持mcp、builder场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -762,9 +762,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/webapp-testing/SKILL.md",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/webapp-testing",
     "name_zh": "Webapp Testing",
     "short_description_zh": "用于testing、web相关的开发技能。",
     "long_description_zh": "支持testing、web场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -784,9 +784,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/chindden/skill-creator/SKILL.md",
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/skill-creator",
     "name_zh": "技能创建",
     "short_description_zh": "用于skills、guide相关的生产力技能。",
     "long_description_zh": "支持skills、guide场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -850,9 +850,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/productivity-collaboration",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/obra/superpowers/tree/main/skills/brainstorming",
     "name_zh": "头脑风暴",
     "short_description_zh": "用于ideation、workflow相关的创意技能。",
     "long_description_zh": "支持ideation、workflow场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -959,9 +959,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/file-organizer",
     "name_zh": "文件整理",
     "short_description_zh": "用于files、organization相关的生产力技能。",
     "long_description_zh": "支持files、organization场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -981,9 +981,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/invoice-organizer",
     "name_zh": "发票整理",
     "short_description_zh": "用于finance、organization相关的业务技能。",
     "long_description_zh": "支持finance、organization场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1003,9 +1003,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/meeting-insights-analyzer",
     "name_zh": "会议洞察分析",
     "short_description_zh": "用于meeting、insights相关的协作技能。",
     "long_description_zh": "支持meeting、insights场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1025,9 +1025,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/image-enhancer",
     "name_zh": "图像增强",
     "short_description_zh": "用于image、enhance相关的设计技能。",
     "long_description_zh": "支持image、enhance场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1047,9 +1047,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/lead-research-assistant",
     "name_zh": "线索研究助手",
     "short_description_zh": "用于sales、research相关的业务技能。",
     "long_description_zh": "支持sales、research场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1069,9 +1069,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/raffle-winner-picker",
     "name_zh": "抽奖工具",
     "short_description_zh": "用于random、events相关的运营技能。",
     "long_description_zh": "支持random、events场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1091,9 +1091,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/langsmith-fetch",
     "name_zh": "LangSmith Fetch",
     "short_description_zh": "用于debug、tracing相关的开发技能。",
     "long_description_zh": "支持debug、tracing场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1135,9 +1135,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "awesomeskills.dev",
-    "source_url": "https://www.awesomeskills.dev",
-    "detail_url": "https://www.awesomeskills.dev/en/collection/community/coding-development",
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/tailored-resume-generator",
     "name_zh": "Tailored Resume 生成器",
     "short_description_zh": "用于resume、writing相关的职业技能。",
     "long_description_zh": "支持resume、writing场景下的计划、执行与输出，提供清晰的流程与结构化指导。"
@@ -1205,9 +1205,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seanphan/artifacts-builder/SKILL.md"
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder"
   },
   {
     "id": "claw-shell",
@@ -11630,9 +11630,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/seyhunak/deep-research/SKILL.md"
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/deep-research"
   },
   {
     "id": "engram",
@@ -15914,9 +15914,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/thesethrose/skills-search/SKILL.md"
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/skills-search"
   },
   {
     "id": "snowflake-mcp",
@@ -27421,9 +27421,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/xthezealot/youtube-transcript/SKILL.md"
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/youtube-transcript"
   },
   {
     "id": "youtube-voice-summarizer-elevenlabs",
@@ -28988,9 +28988,9 @@
     ],
     "popularity": null,
     "popularity_label": null,
-    "source_name": "VoltAgent/awesome-openclaw-skills",
-    "source_url": "https://github.com/VoltAgent/awesome-openclaw-skills",
-    "detail_url": "https://github.com/openclaw/skills/tree/main/skills/tristanmanchester/ios-simulator/SKILL.md"
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/conorluddy/ios-simulator-skill"
   },
   {
     "id": "macos-spm-app-packaging",
@@ -39993,5 +39993,4060 @@
     "source_name": "Jeffallan/claude-skills",
     "source_url": "https://github.com/Jeffallan/claude-skills",
     "detail_url": "https://jeffallan.github.io/claude-skills/skills/workflow/the-fool/"
+  },
+  {
+    "id": "markdown-to-epub-converter",
+    "name": "Markdown to EPUB Converter",
+    "name_zh": "Markdown to EPUB Converter",
+    "short_description": "Converts markdown documents and chat summaries into professional EPUB ebook files. *By [@smerchek](https://github.com/smerchek)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Converts markdown documents and chat summaries into professional EPUB ebook files. *By [@smerchek](https://github.com/smerchek)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "markdown",
+      "to",
+      "epub",
+      "converter",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/smerchek/claude-epub-skill"
+  },
+  {
+    "id": "aws-skills",
+    "name": "aws-skills",
+    "name_zh": "aws-skills",
+    "short_description": "AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "AWS development with CDK best practices, cost optimization MCP servers, and serverless/event-driven architecture patterns.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "aws",
+      "skills",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/zxkane/aws-skills"
+  },
+  {
+    "id": "changelog-generator",
+    "name": "Changelog Generator",
+    "name_zh": "Changelog 生成器",
+    "short_description": "Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automatically creates user-facing changelogs from git commits by analyzing history and transforming technical commits into customer-friendly release notes.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "changelog",
+      "generator",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/changelog-generator"
+  },
+  {
+    "id": "claude-code-terminal-title",
+    "name": "Claude Code Terminal Title",
+    "name_zh": "Claude Code Terminal Title",
+    "short_description": "Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Gives each Claud-Code terminal window a dynamic title that describes the work being done so you don't lose track of what window is doing what.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "code",
+      "terminal",
+      "title",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/bluzername/claude-code-terminal-title"
+  },
+  {
+    "id": "d3js-visualization",
+    "name": "D3.js Visualization",
+    "name_zh": "D3.js Visualization",
+    "short_description": "Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Teaches Claude to produce D3 charts and interactive data visualizations. *By [@chrisvoncsefalvay](https://github.com/chrisvoncsefalvay)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "d3js",
+      "visualization",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/chrisvoncsefalvay/claude-d3js-skill"
+  },
+  {
+    "id": "ffuf-web-fuzzing",
+    "name": "FFUF Web Fuzzing",
+    "name_zh": "FFUF Web Fuzzing",
+    "short_description": "Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Integrates the ffuf web fuzzer so Claude can run fuzzing tasks and analyze results for vulnerabilities. *By [@jthack](https://github.com/jthack)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ffuf",
+      "web",
+      "fuzzing",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/jthack/ffuf_claude_skill"
+  },
+  {
+    "id": "finishing-a-development-branch",
+    "name": "finishing-a-development-branch",
+    "name_zh": "finishing-a-development-branch",
+    "short_description": "Guides completion of development work by presenting clear options and handling chosen workflow.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Guides completion of development work by presenting clear options and handling chosen workflow.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "finishing",
+      "a",
+      "development",
+      "branch",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/obra/superpowers/tree/main/skills/finishing-a-development-branch"
+  },
+  {
+    "id": "jules",
+    "name": "jules",
+    "name_zh": "jules",
+    "short_description": "Delegate coding tasks to Google Jules AI agent for async bug fixes, documentation, tests, and feature implementation on GitHub repos. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Delegate coding tasks to Google Jules AI agent for async bug fixes, documentation, tests, and feature implementation on GitHub repos. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "jules",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/jules"
+  },
+  {
+    "id": "move-code-quality-skill",
+    "name": "move-code-quality-skill",
+    "name_zh": "move-code-quality-技能",
+    "short_description": "Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Analyzes Move language packages against the official Move Book Code Quality Checklist for Move 2024 Edition compliance and best practices.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "move",
+      "code",
+      "quality",
+      "skill",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/1NickPappas/move-code-quality-skill"
+  },
+  {
+    "id": "playwright-browser-automation",
+    "name": "Playwright Browser Automation",
+    "name_zh": "Playwright Browser 自动化",
+    "short_description": "Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Model-invoked Playwright automation for testing and validating web applications. *By [@lackeyjb](https://github.com/lackeyjb)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "playwright",
+      "browser",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/lackeyjb/playwright-skill"
+  },
+  {
+    "id": "prompt-engineering",
+    "name": "prompt-engineering",
+    "name_zh": "prompt-engineering",
+    "short_description": "Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Teaches well-known prompt engineering techniques and patterns, including Anthropic best practices and agent persuasion principles.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "prompt",
+      "engineering",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/customaize-agent/skills/prompt-engineering"
+  },
+  {
+    "id": "pypict-claude-skill",
+    "name": "pypict-claude-skill",
+    "name_zh": "pypict-claude-技能",
+    "short_description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Design comprehensive test cases using PICT (Pairwise Independent Combinatorial Testing) for requirements or code, generating optimized test suites with pairwise coverage.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "pypict",
+      "claude",
+      "skill",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/omkamal/pypict-claude-skill"
+  },
+  {
+    "id": "reddit-fetch",
+    "name": "reddit-fetch",
+    "name_zh": "reddit-fetch",
+    "short_description": "Fetches Reddit content via Gemini CLI when WebFetch is blocked or returns 403 errors.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Fetches Reddit content via Gemini CLI when WebFetch is blocked or returns 403 errors.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "reddit",
+      "fetch",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ykdojo/claude-code-tips/tree/main/skills/reddit-fetch"
+  },
+  {
+    "id": "skill-seekers",
+    "name": "Skill Seekers",
+    "name_zh": "技能 Seekers",
+    "short_description": "Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automatically converts any documentation website into a Claude AI skill in minutes. *By [@yusufkaraaslan](https://github.com/yusufkaraaslan)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "skill",
+      "seekers",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/yusufkaraaslan/Skill_Seekers"
+  },
+  {
+    "id": "software-architecture",
+    "name": "software-architecture",
+    "name_zh": "software-architecture",
+    "short_description": "Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Implements design patterns including Clean Architecture, SOLID principles, and comprehensive software design best practices.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "software",
+      "architecture",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/ddd/skills/software-architecture"
+  },
+  {
+    "id": "subagent-driven-development",
+    "name": "subagent-driven-development",
+    "name_zh": "subagent-driven-development",
+    "short_description": "Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Dispatches independent subagents for individual tasks with code review checkpoints between iterations for rapid, controlled development.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "subagent",
+      "driven",
+      "development",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/sadd/skills/subagent-driven-development"
+  },
+  {
+    "id": "test-driven-development",
+    "name": "test-driven-development",
+    "name_zh": "test-driven-development",
+    "short_description": "Use when implementing any feature or bugfix, before writing implementation code.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Use when implementing any feature or bugfix, before writing implementation code.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "test",
+      "driven",
+      "development",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/obra/superpowers/tree/main/skills/test-driven-development"
+  },
+  {
+    "id": "using-git-worktrees",
+    "name": "using-git-worktrees",
+    "name_zh": "using-git-worktrees",
+    "short_description": "Creates isolated git worktrees with smart directory selection and safety verification.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Creates isolated git worktrees with smart directory selection and safety verification.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "using",
+      "git",
+      "worktrees",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/obra/superpowers/blob/main/skills/using-git-worktrees/"
+  },
+  {
+    "id": "connect",
+    "name": "Connect",
+    "name_zh": "Connect",
+    "short_description": "Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gmail, Slack, GitHub, Notion, and 1000+ services.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Connect Claude to any app. Send emails, create issues, post messages, update databases - take real actions across Gmail, Slack, GitHub, Notion, and 1000+ services.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "connect",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/connect"
+  },
+  {
+    "id": "csv-data-summarizer",
+    "name": "CSV Data Summarizer",
+    "name_zh": "CSV Data Summarizer",
+    "short_description": "Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automatically analyzes CSV files and generates comprehensive insights with visualizations without requiring user prompts. *By [@coffeefuelbump](https://github.com/coffeefuelbump)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "csv",
+      "data",
+      "summarizer",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/coffeefuelbump/csv-data-summarizer-claude-skill"
+  },
+  {
+    "id": "postgres",
+    "name": "postgres",
+    "name_zh": "postgres",
+    "short_description": "Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Execute safe read-only SQL queries against PostgreSQL databases with multi-connection support and defense-in-depth security. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "postgres",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/postgres"
+  },
+  {
+    "id": "root-cause-tracing",
+    "name": "root-cause-tracing",
+    "name_zh": "root-cause-tracing",
+    "short_description": "Use when errors occur deep in execution and you need to trace back to find the original trigger.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Use when errors occur deep in execution and you need to trace back to find the original trigger.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "root",
+      "cause",
+      "tracing",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/obra/superpowers/tree/main/skills/root-cause-tracing"
+  },
+  {
+    "id": "competitive-ads-extractor",
+    "name": "Competitive Ads Extractor",
+    "name_zh": "Competitive Ads Extractor",
+    "short_description": "Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Extracts and analyzes competitors' ads from ad libraries to understand messaging and creative approaches that resonate.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "competitive",
+      "ads",
+      "extractor",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/competitive-ads-extractor"
+  },
+  {
+    "id": "domain-name-brainstormer",
+    "name": "Domain Name Brainstormer",
+    "name_zh": "Domain Name Brainstormer",
+    "short_description": "Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Generates creative domain name ideas and checks availability across multiple TLDs including .com, .io, .dev, and .ai extensions.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "domain",
+      "name",
+      "brainstormer",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/domain-name-brainstormer"
+  },
+  {
+    "id": "article-extractor",
+    "name": "article-extractor",
+    "name_zh": "article-extractor",
+    "short_description": "Extract full article text and metadata from web pages.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Extract full article text and metadata from web pages.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "article",
+      "extractor",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/article-extractor"
+  },
+  {
+    "id": "content-research-writer",
+    "name": "Content Research Writer",
+    "name_zh": "Content 研究 Writer",
+    "short_description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Assists in writing high-quality content by conducting research, adding citations, improving hooks, and providing section-by-section feedback.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "content",
+      "research",
+      "writer",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/content-research-writer"
+  },
+  {
+    "id": "family-history-research",
+    "name": "family-history-research",
+    "name_zh": "family-history-研究",
+    "short_description": "Provides assistance with planning family history and genealogy research projects.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Provides assistance with planning family history and genealogy research projects.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "family",
+      "history",
+      "research",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/emaynard/claude-family-history-research-skill"
+  },
+  {
+    "id": "notebooklm-integration",
+    "name": "NotebookLM Integration",
+    "name_zh": "NotebookLM Integration",
+    "short_description": "Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Lets Claude Code chat directly with NotebookLM for source-grounded answers based exclusively on uploaded documents. *By [@PleasePrompto](https://github.com/PleasePrompto)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "notebooklm",
+      "integration",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/PleasePrompto/notebooklm-skill"
+  },
+  {
+    "id": "twitter-algorithm-optimizer",
+    "name": "Twitter Algorithm Optimizer",
+    "name_zh": "Twitter Algorithm 优化",
+    "short_description": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Analyze and optimize tweets for maximum reach using Twitter's open-source algorithm insights. Rewrite and edit tweets to improve engagement and visibility.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "twitter",
+      "algorithm",
+      "optimizer",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/twitter-algorithm-optimizer"
+  },
+  {
+    "id": "imagen",
+    "name": "imagen",
+    "name_zh": "imagen",
+    "short_description": "Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Generate images using Google Gemini's image generation API for UI mockups, icons, illustrations, and visual assets. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "imagen",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/imagen"
+  },
+  {
+    "id": "video-downloader",
+    "name": "Video Downloader",
+    "name_zh": "Video Downloader",
+    "short_description": "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival with support for various formats and quality options.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Downloads videos from YouTube and other platforms for offline viewing, editing, or archival with support for various formats and quality options.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "video",
+      "downloader",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/video-downloader"
+  },
+  {
+    "id": "kaizen",
+    "name": "kaizen",
+    "name_zh": "kaizen",
+    "short_description": "Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Applies continuous improvement methodology with multiple analytical approaches, based on Japanese Kaizen philosophy and Lean methodology.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "kaizen",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/NeoLabHQ/context-engineering-kit/tree/master/plugins/kaizen/skills/kaizen"
+  },
+  {
+    "id": "n8n-skills",
+    "name": "n8n-skills",
+    "name_zh": "n8n-skills",
+    "short_description": "Enables AI assistants to directly understand and operate n8n workflows.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Enables AI assistants to directly understand and operate n8n workflows.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "n8n",
+      "skills",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/haunchen/n8n-skills"
+  },
+  {
+    "id": "ship-learn-next",
+    "name": "ship-learn-next",
+    "name_zh": "ship-learn-next",
+    "short_description": "Skill to help iterate on what to build or learn next, based on feedback loops.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill to help iterate on what to build or learn next, based on feedback loops.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ship",
+      "learn",
+      "next",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/ship-learn-next"
+  },
+  {
+    "id": "tapestry",
+    "name": "tapestry",
+    "name_zh": "tapestry",
+    "short_description": "Interlink and summarize related documents into knowledge networks.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Interlink and summarize related documents into knowledge networks.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "tapestry",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/michalparkola/tapestry-skills-for-claude-code/tree/main/tapestry"
+  },
+  {
+    "id": "git-pushing",
+    "name": "git-pushing",
+    "name_zh": "git-pushing",
+    "short_description": "Automate git operations and repository interactions.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate git operations and repository interactions.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "git",
+      "pushing",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/git-pushing"
+  },
+  {
+    "id": "google-workspace-skills",
+    "name": "google-workspace-skills",
+    "name_zh": "google-workspace-skills",
+    "short_description": "Suite of Google Workspace integrations: Gmail, Calendar, Chat, Docs, Sheets, Slides, and Drive with cross-platform OAuth. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Suite of Google Workspace integrations: Gmail, Calendar, Chat, Docs, Sheets, Slides, and Drive with cross-platform OAuth. *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "google",
+      "workspace",
+      "skills",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/sanjay3290/ai-skills/tree/main/skills"
+  },
+  {
+    "id": "outline",
+    "name": "outline",
+    "name_zh": "outline",
+    "short_description": "Search, read, create, and manage documents in Outline wiki instances (cloud or self-hosted). *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Search, read, create, and manage documents in Outline wiki instances (cloud or self-hosted). *By [@sanjay3290](https://github.com/sanjay3290)*",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "outline",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/sanjay3290/ai-skills/tree/main/skills/outline"
+  },
+  {
+    "id": "review-implementing",
+    "name": "review-implementing",
+    "name_zh": "review-implementing",
+    "short_description": "Evaluate code implementation plans and align with specs.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Evaluate code implementation plans and align with specs.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "review",
+      "implementing",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/review-implementing"
+  },
+  {
+    "id": "test-fixing",
+    "name": "test-fixing",
+    "name_zh": "test-fixing",
+    "short_description": "Detect failing tests and propose patches or fixes.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Detect failing tests and propose patches or fixes.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "test",
+      "fixing",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/engineering-workflow-plugin/skills/test-fixing"
+  },
+  {
+    "id": "computer-forensics",
+    "name": "computer-forensics",
+    "name_zh": "computer-forensics",
+    "short_description": "Digital forensics analysis and investigation techniques.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Digital forensics analysis and investigation techniques.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "computer",
+      "forensics",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/computer-forensics"
+  },
+  {
+    "id": "file-deletion",
+    "name": "file-deletion",
+    "name_zh": "file-deletion",
+    "short_description": "Secure file deletion and data sanitization methods.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Secure file deletion and data sanitization methods.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "file",
+      "deletion",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/file-deletion"
+  },
+  {
+    "id": "metadata-extraction",
+    "name": "metadata-extraction",
+    "name_zh": "metadata-extraction",
+    "short_description": "Extract and analyze file metadata for forensic purposes.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Extract and analyze file metadata for forensic purposes.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "metadata",
+      "extraction",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/mhattingpete/claude-skills-marketplace/tree/main/computer-forensics-skills/skills/metadata-extraction"
+  },
+  {
+    "id": "threat-hunting-with-sigma-rules",
+    "name": "threat-hunting-with-sigma-rules",
+    "name_zh": "threat-hunting-with-sigma-rules",
+    "short_description": "Use Sigma detection rules to hunt for threats and analyze security events.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Use Sigma detection rules to hunt for threats and analyze security events.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "threat",
+      "hunting",
+      "with",
+      "sigma",
+      "rules",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/jthack/threat-hunting-with-sigma-rules-skill"
+  },
+  {
+    "id": "close-automation",
+    "name": "Close Automation",
+    "name_zh": "Close 自动化",
+    "short_description": "Automate Close CRM: leads, contacts, opportunities, activities, and pipelines.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Close CRM: leads, contacts, opportunities, activities, and pipelines.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "close",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/close-automation"
+  },
+  {
+    "id": "hubspot-automation",
+    "name": "HubSpot Automation",
+    "name_zh": "HubSpot 自动化",
+    "short_description": "Automate HubSpot CRM: contacts, deals, companies, tickets, and email engagement.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate HubSpot CRM: contacts, deals, companies, tickets, and email engagement.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "hubspot",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/hubspot-automation"
+  },
+  {
+    "id": "pipedrive-automation",
+    "name": "Pipedrive Automation",
+    "name_zh": "Pipedrive 自动化",
+    "short_description": "Automate Pipedrive: deals, contacts, organizations, activities, and pipelines.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Pipedrive: deals, contacts, organizations, activities, and pipelines.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "pipedrive",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/pipedrive-automation"
+  },
+  {
+    "id": "salesforce-automation",
+    "name": "Salesforce Automation",
+    "name_zh": "Salesforce 自动化",
+    "short_description": "Automate Salesforce: objects, records, SOQL queries, and bulk operations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Salesforce: objects, records, SOQL queries, and bulk operations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "salesforce",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/salesforce-automation"
+  },
+  {
+    "id": "zoho-crm-automation",
+    "name": "Zoho CRM Automation",
+    "name_zh": "Zoho CRM 自动化",
+    "short_description": "Automate Zoho CRM: leads, contacts, deals, accounts, and modules.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Zoho CRM: leads, contacts, deals, accounts, and modules.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "zoho",
+      "crm",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/zoho-crm-automation"
+  },
+  {
+    "id": "asana-automation",
+    "name": "Asana Automation",
+    "name_zh": "Asana 自动化",
+    "short_description": "Automate Asana: tasks, projects, sections, assignments, and workspaces.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Asana: tasks, projects, sections, assignments, and workspaces.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "asana",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/asana-automation"
+  },
+  {
+    "id": "basecamp-automation",
+    "name": "Basecamp Automation",
+    "name_zh": "Basecamp 自动化",
+    "short_description": "Automate Basecamp: to-do lists, messages, people, groups, and projects.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Basecamp: to-do lists, messages, people, groups, and projects.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "basecamp",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/basecamp-automation"
+  },
+  {
+    "id": "clickup-automation",
+    "name": "ClickUp Automation",
+    "name_zh": "ClickUp 自动化",
+    "short_description": "Automate ClickUp: tasks, lists, spaces, goals, and time tracking.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate ClickUp: tasks, lists, spaces, goals, and time tracking.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "clickup",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/clickup-automation"
+  },
+  {
+    "id": "jira-automation",
+    "name": "Jira Automation",
+    "name_zh": "Jira 自动化",
+    "short_description": "Automate Jira: issues, projects, boards, sprints, and JQL queries.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Jira: issues, projects, boards, sprints, and JQL queries.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "jira",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/jira-automation"
+  },
+  {
+    "id": "linear-automation",
+    "name": "Linear Automation",
+    "name_zh": "Linear 自动化",
+    "short_description": "Automate Linear: issues, projects, cycles, teams, and workflows.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Linear: issues, projects, cycles, teams, and workflows.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "linear",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/linear-automation"
+  },
+  {
+    "id": "monday-automation",
+    "name": "Monday Automation",
+    "name_zh": "Monday 自动化",
+    "short_description": "Automate Monday.com: boards, items, columns, groups, and workspaces.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Monday.com: boards, items, columns, groups, and workspaces.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "monday",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/monday-automation"
+  },
+  {
+    "id": "notion-automation",
+    "name": "Notion Automation",
+    "name_zh": "Notion 自动化",
+    "short_description": "Automate Notion: pages, databases, blocks, comments, and search.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Notion: pages, databases, blocks, comments, and search.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "notion",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/notion-automation"
+  },
+  {
+    "id": "todoist-automation",
+    "name": "Todoist Automation",
+    "name_zh": "Todoist 自动化",
+    "short_description": "Automate Todoist: tasks, projects, sections, labels, and filters.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Todoist: tasks, projects, sections, labels, and filters.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "todoist",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/todoist-automation"
+  },
+  {
+    "id": "trello-automation",
+    "name": "Trello Automation",
+    "name_zh": "Trello 自动化",
+    "short_description": "Automate Trello: boards, cards, lists, members, and checklists.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Trello: boards, cards, lists, members, and checklists.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "trello",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/trello-automation"
+  },
+  {
+    "id": "wrike-automation",
+    "name": "Wrike Automation",
+    "name_zh": "Wrike 自动化",
+    "short_description": "Automate Wrike: tasks, folders, projects, comments, and workflows.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Wrike: tasks, folders, projects, comments, and workflows.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "wrike",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/wrike-automation"
+  },
+  {
+    "id": "discord-automation",
+    "name": "Discord Automation",
+    "name_zh": "Discord 自动化",
+    "short_description": "Automate Discord: messages, channels, servers, roles, and reactions.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Discord: messages, channels, servers, roles, and reactions.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "discord",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/discord-automation"
+  },
+  {
+    "id": "intercom-automation",
+    "name": "Intercom Automation",
+    "name_zh": "Intercom 自动化",
+    "short_description": "Automate Intercom: conversations, contacts, companies, tickets, and articles.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Intercom: conversations, contacts, companies, tickets, and articles.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "intercom",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/intercom-automation"
+  },
+  {
+    "id": "microsoft-teams-automation",
+    "name": "Microsoft Teams Automation",
+    "name_zh": "Microsoft Teams 自动化",
+    "short_description": "Automate Teams: messages, channels, teams, chats, and meetings.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Teams: messages, channels, teams, chats, and meetings.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "microsoft",
+      "teams",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/microsoft-teams-automation"
+  },
+  {
+    "id": "slack-automation",
+    "name": "Slack Automation",
+    "name_zh": "Slack 自动化",
+    "short_description": "Automate Slack: messages, channels, search, reactions, threads, and scheduling.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Slack: messages, channels, search, reactions, threads, and scheduling.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "slack",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/slack-automation"
+  },
+  {
+    "id": "telegram-automation",
+    "name": "Telegram Automation",
+    "name_zh": "Telegram 自动化",
+    "short_description": "Automate Telegram: messages, chats, media, groups, and bots.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Telegram: messages, chats, media, groups, and bots.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "telegram",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/telegram-automation"
+  },
+  {
+    "id": "whatsapp-automation",
+    "name": "WhatsApp Automation",
+    "name_zh": "WhatsApp 自动化",
+    "short_description": "Automate WhatsApp: messages, media, templates, groups, and business profiles.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate WhatsApp: messages, media, templates, groups, and business profiles.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "whatsapp",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/whatsapp-automation"
+  },
+  {
+    "id": "gmail-automation",
+    "name": "Gmail Automation",
+    "name_zh": "Gmail 自动化",
+    "short_description": "Automate Gmail: send/reply, search, labels, drafts, and attachments.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Gmail: send/reply, search, labels, drafts, and attachments.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "gmail",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/gmail-automation"
+  },
+  {
+    "id": "outlook-automation",
+    "name": "Outlook Automation",
+    "name_zh": "Outlook 自动化",
+    "short_description": "Automate Outlook: emails, folders, contacts, and calendar integration.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Outlook: emails, folders, contacts, and calendar integration.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "outlook",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/outlook-automation"
+  },
+  {
+    "id": "postmark-automation",
+    "name": "Postmark Automation",
+    "name_zh": "Postmark 自动化",
+    "short_description": "Automate Postmark: transactional emails, templates, servers, and delivery stats.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Postmark: transactional emails, templates, servers, and delivery stats.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "postmark",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/postmark-automation"
+  },
+  {
+    "id": "sendgrid-automation",
+    "name": "SendGrid Automation",
+    "name_zh": "SendGrid 自动化",
+    "short_description": "Automate SendGrid: emails, templates, contacts, lists, and campaign stats.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate SendGrid: emails, templates, contacts, lists, and campaign stats.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "sendgrid",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/sendgrid-automation"
+  },
+  {
+    "id": "bitbucket-automation",
+    "name": "Bitbucket Automation",
+    "name_zh": "Bitbucket 自动化",
+    "short_description": "Automate Bitbucket: repos, PRs, branches, issues, and workspaces.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Bitbucket: repos, PRs, branches, issues, and workspaces.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "bitbucket",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/bitbucket-automation"
+  },
+  {
+    "id": "circleci-automation",
+    "name": "CircleCI Automation",
+    "name_zh": "CircleCI 自动化",
+    "short_description": "Automate CircleCI: pipelines, workflows, jobs, and project configuration.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate CircleCI: pipelines, workflows, jobs, and project configuration.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "circleci",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/circleci-automation"
+  },
+  {
+    "id": "datadog-automation",
+    "name": "Datadog Automation",
+    "name_zh": "Datadog 自动化",
+    "short_description": "Automate Datadog: monitors, dashboards, metrics, incidents, and alerts.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Datadog: monitors, dashboards, metrics, incidents, and alerts.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "datadog",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/datadog-automation"
+  },
+  {
+    "id": "github-automation",
+    "name": "GitHub Automation",
+    "name_zh": "GitHub 自动化",
+    "short_description": "Automate GitHub: issues, PRs, repos, branches, actions, and code search.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate GitHub: issues, PRs, repos, branches, actions, and code search.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "github",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/github-automation"
+  },
+  {
+    "id": "gitlab-automation",
+    "name": "GitLab Automation",
+    "name_zh": "GitLab 自动化",
+    "short_description": "Automate GitLab: issues, MRs, projects, pipelines, and branches.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate GitLab: issues, MRs, projects, pipelines, and branches.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "gitlab",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/gitlab-automation"
+  },
+  {
+    "id": "pagerduty-automation",
+    "name": "PagerDuty Automation",
+    "name_zh": "PagerDuty 自动化",
+    "short_description": "Automate PagerDuty: incidents, services, schedules, escalation policies, and on-call.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate PagerDuty: incidents, services, schedules, escalation policies, and on-call.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "pagerduty",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/pagerduty-automation"
+  },
+  {
+    "id": "render-automation",
+    "name": "Render Automation",
+    "name_zh": "Render 自动化",
+    "short_description": "Automate Render: services, deploys, and project management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Render: services, deploys, and project management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "render",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/render-automation"
+  },
+  {
+    "id": "sentry-automation",
+    "name": "Sentry Automation",
+    "name_zh": "Sentry 自动化",
+    "short_description": "Automate Sentry: issues, events, projects, releases, and alerts.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Sentry: issues, events, projects, releases, and alerts.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "sentry",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/sentry-automation"
+  },
+  {
+    "id": "supabase-automation",
+    "name": "Supabase Automation",
+    "name_zh": "Supabase 自动化",
+    "short_description": "Automate Supabase: SQL queries, table schemas, edge functions, and storage.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Supabase: SQL queries, table schemas, edge functions, and storage.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "supabase",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/supabase-automation"
+  },
+  {
+    "id": "vercel-automation",
+    "name": "Vercel Automation",
+    "name_zh": "Vercel 自动化",
+    "short_description": "Automate Vercel: deployments, projects, domains, environment variables, and logs.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Vercel: deployments, projects, domains, environment variables, and logs.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "vercel",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/vercel-automation"
+  },
+  {
+    "id": "box-automation",
+    "name": "Box Automation",
+    "name_zh": "Box 自动化",
+    "short_description": "Automate Box: files, folders, search, sharing, collaborations, and sign requests.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Box: files, folders, search, sharing, collaborations, and sign requests.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "box",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/box-automation"
+  },
+  {
+    "id": "dropbox-automation",
+    "name": "Dropbox Automation",
+    "name_zh": "Dropbox 自动化",
+    "short_description": "Automate Dropbox: files, folders, search, sharing, and batch operations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Dropbox: files, folders, search, sharing, and batch operations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "dropbox",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/dropbox-automation"
+  },
+  {
+    "id": "google-drive-automation",
+    "name": "Google Drive Automation",
+    "name_zh": "Google Drive 自动化",
+    "short_description": "Automate Google Drive: upload, download, search, share, and organize files.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Google Drive: upload, download, search, share, and organize files.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "google",
+      "drive",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/google-drive-automation"
+  },
+  {
+    "id": "onedrive-automation",
+    "name": "OneDrive Automation",
+    "name_zh": "OneDrive 自动化",
+    "short_description": "Automate OneDrive: files, folders, search, sharing, permissions, and versioning.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate OneDrive: files, folders, search, sharing, permissions, and versioning.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "onedrive",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/one-drive-automation"
+  },
+  {
+    "id": "airtable-automation",
+    "name": "Airtable Automation",
+    "name_zh": "Airtable 自动化",
+    "short_description": "Automate Airtable: records, tables, bases, views, and field management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Airtable: records, tables, bases, views, and field management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "airtable",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/airtable-automation"
+  },
+  {
+    "id": "coda-automation",
+    "name": "Coda Automation",
+    "name_zh": "Coda 自动化",
+    "short_description": "Automate Coda: docs, tables, rows, formulas, and automations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Coda: docs, tables, rows, formulas, and automations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "coda",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/coda-automation"
+  },
+  {
+    "id": "google-sheets-automation",
+    "name": "Google Sheets Automation",
+    "name_zh": "Google Sheets 自动化",
+    "short_description": "Automate Google Sheets: read/write cells, formatting, formulas, and batch operations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Google Sheets: read/write cells, formatting, formulas, and batch operations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "google",
+      "sheets",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/googlesheets-automation"
+  },
+  {
+    "id": "calcom-automation",
+    "name": "Cal.com Automation",
+    "name_zh": "Cal.com 自动化",
+    "short_description": "Automate Cal.com: event types, bookings, availability, and scheduling.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Cal.com: event types, bookings, availability, and scheduling.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "calcom",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/cal-com-automation"
+  },
+  {
+    "id": "calendly-automation",
+    "name": "Calendly Automation",
+    "name_zh": "Calendly 自动化",
+    "short_description": "Automate Calendly: events, invitees, event types, scheduling links, and availability.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Calendly: events, invitees, event types, scheduling links, and availability.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "calendly",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/calendly-automation"
+  },
+  {
+    "id": "google-calendar-automation",
+    "name": "Google Calendar Automation",
+    "name_zh": "Google Calendar 自动化",
+    "short_description": "Automate Google Calendar: events, attendees, free/busy, and recurring schedules.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Google Calendar: events, attendees, free/busy, and recurring schedules.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "google",
+      "calendar",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/google-calendar-automation"
+  },
+  {
+    "id": "outlook-calendar-automation",
+    "name": "Outlook Calendar Automation",
+    "name_zh": "Outlook Calendar 自动化",
+    "short_description": "Automate Outlook Calendar: events, attendees, reminders, and recurring schedules.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Outlook Calendar: events, attendees, reminders, and recurring schedules.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "outlook",
+      "calendar",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/outlook-calendar-automation"
+  },
+  {
+    "id": "instagram-automation",
+    "name": "Instagram Automation",
+    "name_zh": "Instagram 自动化",
+    "short_description": "Automate Instagram: posts, stories, comments, media, and business insights.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Instagram: posts, stories, comments, media, and business insights.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "instagram",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/instagram-automation"
+  },
+  {
+    "id": "linkedin-automation",
+    "name": "LinkedIn Automation",
+    "name_zh": "LinkedIn 自动化",
+    "short_description": "Automate LinkedIn: posts, profiles, companies, images, and comments.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate LinkedIn: posts, profiles, companies, images, and comments.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "linkedin",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/linkedin-automation"
+  },
+  {
+    "id": "reddit-automation",
+    "name": "Reddit Automation",
+    "name_zh": "Reddit 自动化",
+    "short_description": "Automate Reddit: posts, comments, subreddits, voting, and moderation.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Reddit: posts, comments, subreddits, voting, and moderation.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "reddit",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/reddit-automation"
+  },
+  {
+    "id": "tiktok-automation",
+    "name": "TikTok Automation",
+    "name_zh": "TikTok 自动化",
+    "short_description": "Automate TikTok: video uploads, queries, and creator management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate TikTok: video uploads, queries, and creator management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "tiktok",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/tiktok-automation"
+  },
+  {
+    "id": "twitter-automation",
+    "name": "Twitter Automation",
+    "name_zh": "Twitter 自动化",
+    "short_description": "Automate Twitter/X: tweets, search, users, lists, and engagement.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Twitter/X: tweets, search, users, lists, and engagement.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "twitter",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/twitter-automation"
+  },
+  {
+    "id": "youtube-automation",
+    "name": "YouTube Automation",
+    "name_zh": "YouTube 自动化",
+    "short_description": "Automate YouTube: videos, channels, playlists, comments, and subscriptions.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate YouTube: videos, channels, playlists, comments, and subscriptions.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "youtube",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/youtube-automation"
+  },
+  {
+    "id": "activecampaign-automation",
+    "name": "ActiveCampaign Automation",
+    "name_zh": "ActiveCampaign 自动化",
+    "short_description": "Automate ActiveCampaign: contacts, deals, campaigns, lists, and automations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate ActiveCampaign: contacts, deals, campaigns, lists, and automations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "activecampaign",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/activecampaign-automation"
+  },
+  {
+    "id": "brevo-automation",
+    "name": "Brevo Automation",
+    "name_zh": "Brevo 自动化",
+    "short_description": "Automate Brevo: contacts, email campaigns, transactional emails, and lists.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Brevo: contacts, email campaigns, transactional emails, and lists.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "brevo",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/brevo-automation"
+  },
+  {
+    "id": "convertkit-automation",
+    "name": "ConvertKit Automation",
+    "name_zh": "ConvertKit 自动化",
+    "short_description": "Automate ConvertKit (Kit): subscribers, tags, sequences, broadcasts, and forms.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate ConvertKit (Kit): subscribers, tags, sequences, broadcasts, and forms.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "convertkit",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/convertkit-automation"
+  },
+  {
+    "id": "klaviyo-automation",
+    "name": "Klaviyo Automation",
+    "name_zh": "Klaviyo 自动化",
+    "short_description": "Automate Klaviyo: profiles, lists, segments, campaigns, and events.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Klaviyo: profiles, lists, segments, campaigns, and events.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "klaviyo",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/klaviyo-automation"
+  },
+  {
+    "id": "mailchimp-automation",
+    "name": "Mailchimp Automation",
+    "name_zh": "Mailchimp 自动化",
+    "short_description": "Automate Mailchimp: audiences, campaigns, templates, segments, and reports.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Mailchimp: audiences, campaigns, templates, segments, and reports.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "mailchimp",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/mailchimp-automation"
+  },
+  {
+    "id": "freshdesk-automation",
+    "name": "Freshdesk Automation",
+    "name_zh": "Freshdesk 自动化",
+    "short_description": "Automate Freshdesk: tickets, contacts, agents, groups, and canned responses.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Freshdesk: tickets, contacts, agents, groups, and canned responses.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "freshdesk",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/freshdesk-automation"
+  },
+  {
+    "id": "freshservice-automation",
+    "name": "Freshservice Automation",
+    "name_zh": "Freshservice 自动化",
+    "short_description": "Automate Freshservice: tickets, assets, changes, problems, and service catalog.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Freshservice: tickets, assets, changes, problems, and service catalog.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "freshservice",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/freshservice-automation"
+  },
+  {
+    "id": "help-scout-automation",
+    "name": "Help Scout Automation",
+    "name_zh": "Help Scout 自动化",
+    "short_description": "Automate Help Scout: conversations, customers, mailboxes, and tags.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Help Scout: conversations, customers, mailboxes, and tags.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "help",
+      "scout",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/helpdesk-automation"
+  },
+  {
+    "id": "zendesk-automation",
+    "name": "Zendesk Automation",
+    "name_zh": "Zendesk 自动化",
+    "short_description": "Automate Zendesk: tickets, users, organizations, search, and macros.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Zendesk: tickets, users, organizations, search, and macros.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "zendesk",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/zendesk-automation"
+  },
+  {
+    "id": "shopify-automation",
+    "name": "Shopify Automation",
+    "name_zh": "Shopify 自动化",
+    "short_description": "Automate Shopify: products, orders, customers, inventory, and GraphQL queries.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Shopify: products, orders, customers, inventory, and GraphQL queries.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "shopify",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/shopify-automation"
+  },
+  {
+    "id": "square-automation",
+    "name": "Square Automation",
+    "name_zh": "Square 自动化",
+    "short_description": "Automate Square: payments, customers, catalog, orders, and locations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Square: payments, customers, catalog, orders, and locations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "square",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/square-automation"
+  },
+  {
+    "id": "stripe-automation",
+    "name": "Stripe Automation",
+    "name_zh": "Stripe 自动化",
+    "short_description": "Automate Stripe: charges, customers, products, subscriptions, and refunds.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Stripe: charges, customers, products, subscriptions, and refunds.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "stripe",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/stripe-automation"
+  },
+  {
+    "id": "canva-automation",
+    "name": "Canva Automation",
+    "name_zh": "Canva 自动化",
+    "short_description": "Automate Canva: designs, templates, assets, folders, and brand kits.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Canva: designs, templates, assets, folders, and brand kits.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "canva",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/canva-automation"
+  },
+  {
+    "id": "confluence-automation",
+    "name": "Confluence Automation",
+    "name_zh": "Confluence 自动化",
+    "short_description": "Automate Confluence: pages, spaces, search, CQL, labels, and versions.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Confluence: pages, spaces, search, CQL, labels, and versions.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "confluence",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/confluence-automation"
+  },
+  {
+    "id": "docusign-automation",
+    "name": "DocuSign Automation",
+    "name_zh": "DocuSign 自动化",
+    "short_description": "Automate DocuSign: envelopes, templates, signing, and document management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate DocuSign: envelopes, templates, signing, and document management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "docusign",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/docusign-automation"
+  },
+  {
+    "id": "figma-automation",
+    "name": "Figma Automation",
+    "name_zh": "Figma 自动化",
+    "short_description": "Automate Figma: files, components, comments, projects, and team management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Figma: files, components, comments, projects, and team management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "figma",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/figma-automation"
+  },
+  {
+    "id": "miro-automation",
+    "name": "Miro Automation",
+    "name_zh": "Miro 自动化",
+    "short_description": "Automate Miro: boards, sticky notes, shapes, connectors, and items.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Miro: boards, sticky notes, shapes, connectors, and items.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "miro",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/miro-automation"
+  },
+  {
+    "id": "webflow-automation",
+    "name": "Webflow Automation",
+    "name_zh": "Webflow 自动化",
+    "short_description": "Automate Webflow: CMS collections, items, sites, publishing, and assets.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Webflow: CMS collections, items, sites, publishing, and assets.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "webflow",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/webflow-automation"
+  },
+  {
+    "id": "amplitude-automation",
+    "name": "Amplitude Automation",
+    "name_zh": "Amplitude 自动化",
+    "short_description": "Automate Amplitude: events, cohorts, user properties, and analytics queries.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Amplitude: events, cohorts, user properties, and analytics queries.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "amplitude",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/amplitude-automation"
+  },
+  {
+    "id": "google-analytics-automation",
+    "name": "Google Analytics Automation",
+    "name_zh": "Google Analytics 自动化",
+    "short_description": "Automate Google Analytics: reports, dimensions, metrics, and property management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Google Analytics: reports, dimensions, metrics, and property management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "google",
+      "analytics",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/google-analytics-automation"
+  },
+  {
+    "id": "mixpanel-automation",
+    "name": "Mixpanel Automation",
+    "name_zh": "Mixpanel 自动化",
+    "short_description": "Automate Mixpanel: events, funnels, cohorts, annotations, and JQL queries.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Mixpanel: events, funnels, cohorts, annotations, and JQL queries.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "mixpanel",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/mixpanel-automation"
+  },
+  {
+    "id": "posthog-automation",
+    "name": "PostHog Automation",
+    "name_zh": "PostHog 自动化",
+    "short_description": "Automate PostHog: events, persons, feature flags, insights, and annotations.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate PostHog: events, persons, feature flags, insights, and annotations.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "posthog",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/posthog-automation"
+  },
+  {
+    "id": "segment-automation",
+    "name": "Segment Automation",
+    "name_zh": "Segment 自动化",
+    "short_description": "Automate Segment: sources, destinations, tracking, and warehouse connections.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Segment: sources, destinations, tracking, and warehouse connections.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "segment",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/segment-automation"
+  },
+  {
+    "id": "bamboohr-automation",
+    "name": "BambooHR Automation",
+    "name_zh": "BambooHR 自动化",
+    "short_description": "Automate BambooHR: employees, time off, reports, and directory management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate BambooHR: employees, time off, reports, and directory management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "bamboohr",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/bamboohr-automation"
+  },
+  {
+    "id": "make-automation",
+    "name": "Make Automation",
+    "name_zh": "Make 自动化",
+    "short_description": "Automate Make (Integromat): scenarios, connections, and execution management.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Make (Integromat): scenarios, connections, and execution management.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "make",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/make-automation"
+  },
+  {
+    "id": "zoom-automation",
+    "name": "Zoom Automation",
+    "name_zh": "Zoom 自动化",
+    "short_description": "Automate Zoom: meetings, recordings, participants, webinars, and reports.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Automate Zoom: meetings, recordings, participants, webinars, and reports.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "zoom",
+      "automation",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/ComposioHQ/awesome-claude-skills/tree/master/zoom-automation"
+  },
+  {
+    "id": "claude-skills-overview",
+    "name": "Claude Skills Overview",
+    "name_zh": "Claude Skills Overview",
+    "short_description": "Official announcement and features",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Official announcement and features",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "skills",
+      "overview",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://www.anthropic.com/news/skills"
+  },
+  {
+    "id": "skills-user-guide",
+    "name": "Skills User Guide",
+    "name_zh": "Skills User Guide",
+    "short_description": "How to use skills in Claude",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "How to use skills in Claude",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "skills",
+      "user",
+      "guide",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://support.claude.com/en/articles/12512180-using-skills-in-claude"
+  },
+  {
+    "id": "creating-custom-skills",
+    "name": "Creating Custom Skills",
+    "name_zh": "Creating Custom Skills",
+    "short_description": "Skill development guide",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill development guide",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "creating",
+      "custom",
+      "skills",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://support.claude.com/en/articles/12512198-creating-custom-skills"
+  },
+  {
+    "id": "agent-skills-blog-post",
+    "name": "Agent Skills Blog Post",
+    "name_zh": "Agent Skills Blog Post",
+    "short_description": "Engineering deep dive",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Engineering deep dive",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "agent",
+      "skills",
+      "blog",
+      "post",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://anthropic.com/engineering/equipping-agents-for-the-real-world-with-agent-skills"
+  },
+  {
+    "id": "anthropic-skills-repository",
+    "name": "Anthropic Skills Repository",
+    "name_zh": "Anthropic Skills Repository",
+    "short_description": "Official example skills",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Official example skills",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "anthropic",
+      "skills",
+      "repository",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://github.com/anthropics/skills"
+  },
+  {
+    "id": "claude-community",
+    "name": "Claude Community",
+    "name_zh": "Claude Community",
+    "short_description": "Discuss skills with other users",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Discuss skills with other users",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "community",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://community.anthropic.com"
+  },
+  {
+    "id": "skills-marketplace",
+    "name": "Skills Marketplace",
+    "name_zh": "Skills Marketplace",
+    "short_description": "Discover and share skills",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Discover and share skills",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "skills",
+      "marketplace",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://claude.ai/marketplace"
+  },
+  {
+    "id": "lennys-newsletter",
+    "name": "Lenny's Newsletter",
+    "name_zh": "Lenny's Newsletter",
+    "short_description": "50 ways people use Claude Code",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "50 ways people use Claude Code",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "lennys",
+      "newsletter",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://www.lennysnewsletter.com/p/everyone-should-be-using-claude-code"
+  },
+  {
+    "id": "notion-skills",
+    "name": "Notion Skills",
+    "name_zh": "Notion Skills",
+    "short_description": "Notion integration skills",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Notion integration skills",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "notion",
+      "skills",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://www.notion.so/notiondevs/Notion-Skills-for-Claude-28da4445d27180c7af1df7d8615723d0"
+  },
+  {
+    "id": "join-our-discord",
+    "name": "Join our Discord",
+    "name_zh": "Join our Discord",
+    "short_description": "Chat with other developers building Claude Skills",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Chat with other developers building Claude Skills",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "join",
+      "our",
+      "discord",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://discord.com/invite/composio"
+  },
+  {
+    "id": "follow-on-twitterx",
+    "name": "Follow on Twitter/X",
+    "name_zh": "Follow on Twitter/X",
+    "short_description": "Stay updated on new skills and features",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Stay updated on new skills and features",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "follow",
+      "on",
+      "twitterx",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://x.com/composio"
+  },
+  {
+    "id": "agentskb",
+    "name": "AgentsKB",
+    "name_zh": "AgentsKB",
+    "short_description": "Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Upgrade your AI with researched answers. We did the research so your AI gets it right the first time.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "agentskb",
+      "claude-skills",
+      "composio"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "ComposioHQ/awesome-claude-skills",
+    "source_url": "https://github.com/ComposioHQ/awesome-claude-skills",
+    "detail_url": "https://agentskb.com"
+  },
+  {
+    "id": "claude-code-history-files-finder",
+    "name": "claude-code-history-files-finder",
+    "name_zh": "claude-code-history-files-finder",
+    "short_description": "Skill from daymade/claude-code-skills: claude code history files finder.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: claude code history files finder.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "code",
+      "history",
+      "files",
+      "finder",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/claude-code-history-files-finder"
+  },
+  {
+    "id": "claude-md-progressive-disclosurer",
+    "name": "claude-md-progressive-disclosurer",
+    "name_zh": "claude-md-progressive-disclosurer",
+    "short_description": "Skill from daymade/claude-code-skills: claude md progressive disclosurer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: claude md progressive disclosurer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "md",
+      "progressive",
+      "disclosurer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/claude-md-progressive-disclosurer"
+  },
+  {
+    "id": "claude-skills-troubleshooting",
+    "name": "claude-skills-troubleshooting",
+    "name_zh": "claude-skills-troubleshooting",
+    "short_description": "Skill from daymade/claude-code-skills: claude skills troubleshooting.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: claude skills troubleshooting.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "claude",
+      "skills",
+      "troubleshooting",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/claude-skills-troubleshooting"
+  },
+  {
+    "id": "cli-demo-generator",
+    "name": "cli-demo-generator",
+    "name_zh": "cli-demo-生成器",
+    "short_description": "Skill from daymade/claude-code-skills: cli demo generator.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: cli demo generator.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "cli",
+      "demo",
+      "generator",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/cli-demo-generator"
+  },
+  {
+    "id": "cloudflare-troubleshooting",
+    "name": "cloudflare-troubleshooting",
+    "name_zh": "cloudflare-troubleshooting",
+    "short_description": "Skill from daymade/claude-code-skills: cloudflare troubleshooting.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: cloudflare troubleshooting.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "cloudflare",
+      "troubleshooting",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/cloudflare-troubleshooting"
+  },
+  {
+    "id": "competitors-analysis",
+    "name": "competitors-analysis",
+    "name_zh": "competitors-analysis",
+    "short_description": "Skill from daymade/claude-code-skills: competitors analysis.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: competitors analysis.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "competitors",
+      "analysis",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/competitors-analysis"
+  },
+  {
+    "id": "docs-cleaner",
+    "name": "docs-cleaner",
+    "name_zh": "docs-cleaner",
+    "short_description": "Skill from daymade/claude-code-skills: docs cleaner.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: docs cleaner.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "docs",
+      "cleaner",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/docs-cleaner"
+  },
+  {
+    "id": "fact-checker",
+    "name": "fact-checker",
+    "name_zh": "fact-checker",
+    "short_description": "Skill from daymade/claude-code-skills: fact checker.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: fact checker.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "fact",
+      "checker",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/fact-checker"
+  },
+  {
+    "id": "github-contributor",
+    "name": "github-contributor",
+    "name_zh": "github-contributor",
+    "short_description": "Skill from daymade/claude-code-skills: github contributor.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: github contributor.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "github",
+      "contributor",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/github-contributor"
+  },
+  {
+    "id": "github-ops",
+    "name": "github-ops",
+    "name_zh": "github-ops",
+    "short_description": "Skill from daymade/claude-code-skills: github ops.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: github ops.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "github",
+      "ops",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/github-ops"
+  },
+  {
+    "id": "i18n-expert",
+    "name": "i18n-expert",
+    "name_zh": "i18n-专家",
+    "short_description": "Skill from daymade/claude-code-skills: i18n expert.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: i18n expert.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "i18n",
+      "expert",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/i18n-expert"
+  },
+  {
+    "id": "ios-app-developer",
+    "name": "iOS-APP-developer",
+    "name_zh": "iOS-APP-开发",
+    "short_description": "Skill from daymade/claude-code-skills: iOS APP developer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: iOS APP developer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ios",
+      "app",
+      "developer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/iOS-APP-developer"
+  },
+  {
+    "id": "llm-icon-finder",
+    "name": "llm-icon-finder",
+    "name_zh": "llm-icon-finder",
+    "short_description": "Skill from daymade/claude-code-skills: llm icon finder.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: llm icon finder.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "llm",
+      "icon",
+      "finder",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/llm-icon-finder"
+  },
+  {
+    "id": "macos-cleaner",
+    "name": "macos-cleaner",
+    "name_zh": "macos-cleaner",
+    "short_description": "Skill from daymade/claude-code-skills: macos cleaner.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: macos cleaner.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "macos",
+      "cleaner",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/macos-cleaner"
+  },
+  {
+    "id": "markdown-tools",
+    "name": "markdown-tools",
+    "name_zh": "markdown-工具",
+    "short_description": "Skill from daymade/claude-code-skills: markdown tools.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: markdown tools.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "markdown",
+      "tools",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/markdown-tools"
+  },
+  {
+    "id": "meeting-minutes-taker",
+    "name": "meeting-minutes-taker",
+    "name_zh": "meeting-minutes-taker",
+    "short_description": "Skill from daymade/claude-code-skills: meeting minutes taker.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: meeting minutes taker.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "meeting",
+      "minutes",
+      "taker",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/meeting-minutes-taker"
+  },
+  {
+    "id": "mermaid-tools",
+    "name": "mermaid-tools",
+    "name_zh": "mermaid-工具",
+    "short_description": "Skill from daymade/claude-code-skills: mermaid tools.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: mermaid tools.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "mermaid",
+      "tools",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/mermaid-tools"
+  },
+  {
+    "id": "pdf-creator",
+    "name": "pdf-creator",
+    "name_zh": "pdf-创建",
+    "short_description": "Skill from daymade/claude-code-skills: pdf creator.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: pdf creator.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "pdf",
+      "creator",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/pdf-creator"
+  },
+  {
+    "id": "ppt-creator",
+    "name": "ppt-creator",
+    "name_zh": "ppt-创建",
+    "short_description": "Skill from daymade/claude-code-skills: ppt creator.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: ppt creator.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ppt",
+      "creator",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/ppt-creator"
+  },
+  {
+    "id": "prompt-optimizer",
+    "name": "prompt-optimizer",
+    "name_zh": "prompt-优化",
+    "short_description": "Skill from daymade/claude-code-skills: prompt optimizer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: prompt optimizer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "prompt",
+      "optimizer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/prompt-optimizer"
+  },
+  {
+    "id": "promptfoo-evaluation",
+    "name": "promptfoo-evaluation",
+    "name_zh": "promptfoo-evaluation",
+    "short_description": "Skill from daymade/claude-code-skills: promptfoo evaluation.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: promptfoo evaluation.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "promptfoo",
+      "evaluation",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/promptfoo-evaluation"
+  },
+  {
+    "id": "qa-expert",
+    "name": "qa-expert",
+    "name_zh": "qa-专家",
+    "short_description": "Skill from daymade/claude-code-skills: qa expert.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: qa expert.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "qa",
+      "expert",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/qa-expert"
+  },
+  {
+    "id": "repomix-safe-mixer",
+    "name": "repomix-safe-mixer",
+    "name_zh": "repomix-safe-mixer",
+    "short_description": "Skill from daymade/claude-code-skills: repomix safe mixer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: repomix safe mixer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "repomix",
+      "safe",
+      "mixer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/repomix-safe-mixer"
+  },
+  {
+    "id": "repomix-unmixer",
+    "name": "repomix-unmixer",
+    "name_zh": "repomix-unmixer",
+    "short_description": "Skill from daymade/claude-code-skills: repomix unmixer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: repomix unmixer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "repomix",
+      "unmixer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/repomix-unmixer"
+  },
+  {
+    "id": "skill-reviewer",
+    "name": "skill-reviewer",
+    "name_zh": "技能-审查",
+    "short_description": "Skill from daymade/claude-code-skills: skill reviewer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: skill reviewer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "skill",
+      "reviewer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/skill-reviewer"
+  },
+  {
+    "id": "statusline-generator",
+    "name": "statusline-generator",
+    "name_zh": "statusline-生成器",
+    "short_description": "Skill from daymade/claude-code-skills: statusline generator.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: statusline generator.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "statusline",
+      "generator",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/statusline-generator"
+  },
+  {
+    "id": "teams-channel-post-writer",
+    "name": "teams-channel-post-writer",
+    "name_zh": "teams-channel-post-writer",
+    "short_description": "Skill from daymade/claude-code-skills: teams channel post writer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: teams channel post writer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "teams",
+      "channel",
+      "post",
+      "writer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/teams-channel-post-writer"
+  },
+  {
+    "id": "transcript-fixer",
+    "name": "transcript-fixer",
+    "name_zh": "transcript-fixer",
+    "short_description": "Skill from daymade/claude-code-skills: transcript fixer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: transcript fixer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "transcript",
+      "fixer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/transcript-fixer"
+  },
+  {
+    "id": "tunnel-doctor",
+    "name": "tunnel-doctor",
+    "name_zh": "tunnel-doctor",
+    "short_description": "Skill from daymade/claude-code-skills: tunnel doctor.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: tunnel doctor.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "tunnel",
+      "doctor",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/tunnel-doctor"
+  },
+  {
+    "id": "twitter-reader",
+    "name": "twitter-reader",
+    "name_zh": "twitter-reader",
+    "short_description": "Skill from daymade/claude-code-skills: twitter reader.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: twitter reader.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "twitter",
+      "reader",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/twitter-reader"
+  },
+  {
+    "id": "ui-designer",
+    "name": "ui-designer",
+    "name_zh": "ui-设计",
+    "short_description": "Skill from daymade/claude-code-skills: ui designer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: ui designer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "ui",
+      "designer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/ui-designer"
+  },
+  {
+    "id": "video-comparer",
+    "name": "video-comparer",
+    "name_zh": "video-comparer",
+    "short_description": "Skill from daymade/claude-code-skills: video comparer.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: video comparer.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "video",
+      "comparer",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/video-comparer"
+  },
+  {
+    "id": "youtube-downloader",
+    "name": "youtube-downloader",
+    "name_zh": "youtube-downloader",
+    "short_description": "Skill from daymade/claude-code-skills: youtube downloader.",
+    "short_description_zh": "用于开发场景的技能。",
+    "long_description": "Skill from daymade/claude-code-skills: youtube downloader.",
+    "long_description_zh": "支持计划、执行与输出，提供清晰的流程与结构化指导。",
+    "category": "开发",
+    "platforms": [
+      "Claude"
+    ],
+    "tags": [
+      "youtube",
+      "downloader",
+      "claude-skills",
+      "daymade"
+    ],
+    "popularity": null,
+    "popularity_label": null,
+    "source_name": "daymade/claude-code-skills",
+    "source_url": "https://github.com/daymade/claude-code-skills",
+    "detail_url": "https://github.com/daymade/claude-code-skills/tree/main/youtube-downloader"
   }
 ]

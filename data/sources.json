@@ -30,6 +30,36 @@
       "type": "directory",
       "description": "Curated Claude skills and workflows.",
       "url": "https://github.com/Jeffallan/claude-skills"
+    },
+    {
+      "name": "ComposioHQ/awesome-claude-skills",
+      "type": "directory",
+      "description": "Large curated Claude skills list and ecosystem links.",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    },
+    {
+      "name": "daymade/claude-code-skills",
+      "type": "directory",
+      "description": "Practical Claude Code skills repository.",
+      "url": "https://github.com/daymade/claude-code-skills"
+    },
+    {
+      "name": "Claude Code Skill Directory",
+      "type": "directory",
+      "description": "Community skill discovery site for Claude Code.",
+      "url": "https://claudecodeskill.directory"
+    },
+    {
+      "name": "skillsdir.dev",
+      "type": "directory",
+      "description": "Community listing for Claude Code skills.",
+      "url": "https://www.skillsdir.dev"
+    },
+    {
+      "name": "Skillsmith",
+      "type": "directory",
+      "description": "Marketplace and toolkit for Claude skills.",
+      "url": "https://www.skillsmith.ai"
     }
   ]
 }
