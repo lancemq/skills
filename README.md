@@ -40,8 +40,21 @@ For real skills sync persistence, use one of:
 5. Update homepage metadata in Blob:
    - `sources-data/sources-<timestamp>.json`
    - `sources-data/latest.json` (includes refreshed `last_updated`)
+6. Run link health checks for discovered skills and store:
+   - `link_status`: `ok` / `bad` / `unknown`
+   - `verified_at`
+7. Track skill timeline fields for UI modules:
+   - `created_at`
+   - `updated_at`
 
 This means daily updates are persisted outside ephemeral runtime.
+
+## UI Additions
+
+- `skill-detail.html`: dedicated skill detail page (capability, install, usage example, source link).
+- Homepage weekly modules:
+  - `This Week -> New Skills`
+  - `This Week -> Updated Skills`
 
 ## Vercel Blob Storage For `skills.db`
 

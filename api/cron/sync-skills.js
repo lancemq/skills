@@ -41,9 +41,7 @@ const SOURCES = [
 
 function isAuthorized(req) {
   const secret = process.env.CRON_SECRET;
-  if (!secret) {
-    return true;
-  }
+  if (!secret) return true;
   const auth = req.headers.authorization || "";
   return auth === `Bearer ${secret}`;
 }
@@ -73,7 +71,11 @@ function titleFromUrl(url) {
   }
 }
 
-function toSkillRecord({ id, name, source, url, platform }) {
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function toSkillRecord({ id, name, source, url, platform }, ts) {
   const short = `${name} skill from ${source.name}.`;
   const long = `Guides execution for ${name} workflows with reusable, structured instructions.`;
   return {
@@ -92,6 +94,10 @@ function toSkillRecord({ id, name, source, url, platform }) {
     source_name: source.name,
     source_url: source.source_url,
     detail_url: url,
+    link_status: "unknown",
+    verified_at: "",
+    created_at: ts,
+    updated_at: ts,
   };
 }
 
@@ -102,23 +108,17 @@ function parseMarkdownLinks(markdown) {
   while ((m = regex.exec(markdown)) !== null) {
     const label = (m[1] || "").trim();
     const url = (m[2] || "").trim();
-    if (!url) {
-      continue;
-    }
-    results.push({ label, url });
+    if (url) results.push({ label, url });
   }
   return results;
 }
 
 function looksLikeSkillUrl(url) {
   const lower = String(url).toLowerCase();
-  if (lower.includes("github.com") && lower.includes("/skill")) {
-    return true;
-  }
-  if (lower.includes("awesomeskill.ai/skill/")) {
-    return true;
-  }
-  return false;
+  return (
+    (lower.includes("github.com") && lower.includes("/skill")) ||
+    lower.includes("awesomeskill.ai/skill/")
+  );
 }
 
 async function fetchText(url) {
@@ -126,9 +126,7 @@ async function fetchText(url) {
     headers: { "User-Agent": "skills-cron-sync/1.0" },
     cache: "no-store",
   });
-  if (!response.ok) {
-    throw new Error(`fetch_failed:${response.status}:${url}`);
-  }
+  if (!response.ok) throw new Error(`fetch_failed:${response.status}:${url}`);
   return await response.text();
 }
 
@@ -140,9 +138,7 @@ async function fetchJson(url) {
     },
     cache: "no-store",
   });
-  if (!response.ok) {
-    throw new Error(`fetch_failed:${response.status}:${url}`);
-  }
+  if (!response.ok) throw new Error(`fetch_failed:${response.status}:${url}`);
   return await response.json();
 }
 
@@ -152,9 +148,7 @@ async function collectFromReadme(source) {
   const unique = new Map();
   for (const item of rawLinks) {
     const url = item.url.replace(/\/+$/, "");
-    if (unique.has(url)) {
-      continue;
-    }
+    if (unique.has(url)) continue;
     const rawName = item.label && item.label.length > 1 ? item.label : titleFromUrl(url);
     const id = slugify(rawName) || slugify(titleFromUrl(url));
     unique.set(url, {
@@ -172,48 +166,37 @@ async function collectFromGitHubContents(source) {
   const rows = await fetchJson(source.api_contents_url);
   const skills = [];
   for (const row of rows || []) {
-    if (!row || row.type !== "dir") {
-      continue;
-    }
+    if (!row || row.type !== "dir") continue;
     const name = row.name || "";
-    if (!name || name.startsWith(".") || name === "assets") {
-      continue;
-    }
+    if (!name || name.startsWith(".") || name === "assets") continue;
     const id = slugify(name);
-    if (!id) {
-      continue;
-    }
+    if (!id) continue;
     const url = `${source.source_url}/tree/main/${name}`;
     skills.push({ id, name: titleFromUrl(url), source, url, platform: source.platform });
   }
   return skills;
 }
 
-async function loadExistingSkills() {
-  const direct = process.env.SKILLS_JSON_BLOB_URL;
-  if (direct) {
-    const resp = await fetch(direct, { cache: "no-store" });
-    if (resp.ok) {
-      const data = await resp.json();
-      return Array.isArray(data) ? data : [];
-    }
+async function resolveBlobJson(prefix, latestPath, envUrlKey) {
+  if (process.env[envUrlKey]) {
+    const resp = await fetch(process.env[envUrlKey], { cache: "no-store" });
+    if (resp.ok) return await resp.json();
   }
-
   if (process.env.BLOB_READ_WRITE_TOKEN) {
-    const { blobs } = await list({ prefix: "skills-data/" });
-    const latest = (blobs || []).find((b) => b.pathname === "skills-data/latest.json");
+    const { blobs } = await list({ prefix });
+    const latest = (blobs || []).find((b) => b.pathname === latestPath);
     if (latest?.url) {
       const resp = await fetch(latest.url, { cache: "no-store" });
-      if (resp.ok) {
-        const data = await resp.json();
-        return Array.isArray(data) ? data : [];
-      }
+      if (resp.ok) return await resp.json();
     }
   }
+  return null;
+}
 
-  const fallback = await fetch("https://www.ai-skills.xyz/data/skills.json", {
-    cache: "no-store",
-  });
+async function loadExistingSkills() {
+  const blobData = await resolveBlobJson("skills-data/", "skills-data/latest.json", "SKILLS_JSON_BLOB_URL");
+  if (Array.isArray(blobData)) return blobData;
+  const fallback = await fetch("https://www.ai-skills.xyz/data/skills.json", { cache: "no-store" });
   if (fallback.ok) {
     const data = await fallback.json();
     return Array.isArray(data) ? data : [];
@@ -222,36 +205,9 @@ async function loadExistingSkills() {
 }
 
 async function loadExistingSourcesMeta() {
-  const direct = process.env.SOURCES_META_BLOB_URL;
-  if (direct) {
-    const resp = await fetch(direct, { cache: "no-store" });
-    if (resp.ok) {
-      const data = await resp.json();
-      return {
-        last_updated: data?.last_updated || "",
-        sources: Array.isArray(data?.sources) ? data.sources : [],
-      };
-    }
-  }
-
-  if (process.env.BLOB_READ_WRITE_TOKEN) {
-    const { blobs } = await list({ prefix: "sources-data/" });
-    const latest = (blobs || []).find((b) => b.pathname === "sources-data/latest.json");
-    if (latest?.url) {
-      const resp = await fetch(latest.url, { cache: "no-store" });
-      if (resp.ok) {
-        const data = await resp.json();
-        return {
-          last_updated: data?.last_updated || "",
-          sources: Array.isArray(data?.sources) ? data.sources : [],
-        };
-      }
-    }
-  }
-
-  const fallback = await fetch("https://www.ai-skills.xyz/data/sources.json", {
-    cache: "no-store",
-  });
+  const blobData = await resolveBlobJson("sources-data/", "sources-data/latest.json", "SOURCES_META_BLOB_URL");
+  if (blobData && Array.isArray(blobData.sources)) return blobData;
+  const fallback = await fetch("https://www.ai-skills.xyz/data/sources.json", { cache: "no-store" });
   if (fallback.ok) {
     const data = await fallback.json();
     return {
@@ -259,15 +215,58 @@ async function loadExistingSourcesMeta() {
       sources: Array.isArray(data?.sources) ? data.sources : [],
     };
   }
-
   return { last_updated: "", sources: [] };
 }
 
-function mergeSkills(existing, collected) {
+async function checkLinkStatus(url) {
+  try {
+    const response = await fetch(url, {
+      method: "HEAD",
+      redirect: "follow",
+      cache: "no-store",
+    });
+    if (response.ok) return "ok";
+  } catch (_error) {}
+
+  try {
+    const response = await fetch(url, {
+      method: "GET",
+      redirect: "follow",
+      cache: "no-store",
+    });
+    return response.ok ? "ok" : "bad";
+  } catch (_error) {
+    return "bad";
+  }
+}
+
+async function verifyCollectedLinks(collected) {
+  const results = new Map();
+  const maxChecks = Number(process.env.CRON_LINK_CHECK_LIMIT || 250);
+  const concurrency = Number(process.env.CRON_LINK_CHECK_CONCURRENCY || 8);
+  const targets = collected.slice(0, maxChecks);
+
+  let index = 0;
+  async function worker() {
+    while (index < targets.length) {
+      const i = index;
+      index += 1;
+      const item = targets[i];
+      const status = await checkLinkStatus(item.url);
+      results.set(`${item.source.name}::${item.id}`, { status, verified_at: nowIso() });
+    }
+  }
+
+  const jobs = [];
+  for (let i = 0; i < Math.max(1, concurrency); i += 1) jobs.push(worker());
+  await Promise.all(jobs);
+  return { results, checked: targets.length };
+}
+
+function mergeSkills(existing, collected, linkChecks) {
   const byKey = new Map();
   for (const skill of existing) {
-    const key = `${skill.source_name}::${skill.id}`;
-    byKey.set(key, { ...skill });
+    byKey.set(`${skill.source_name}::${skill.id}`, { ...skill });
   }
 
   let created = 0;
@@ -276,29 +275,48 @@ function mergeSkills(existing, collected) {
   for (const item of collected) {
     const key = `${item.source.name}::${item.id}`;
     const prev = byKey.get(key);
-    const nextBase = toSkillRecord(item);
+    const check = linkChecks.get(key);
+
     if (!prev) {
-      byKey.set(key, nextBase);
+      const record = toSkillRecord(item, nowIso());
+      if (check) {
+        record.link_status = check.status;
+        record.verified_at = check.verified_at;
+      }
+      byKey.set(key, record);
       created += 1;
       continue;
     }
 
-    let changed = false;
     const next = { ...prev };
+    let changed = false;
 
     if (prev.detail_url !== item.url) {
       next.detail_url = item.url;
       changed = true;
     }
-    if (!prev.name && nextBase.name) {
-      next.name = nextBase.name;
+    if (!prev.name && item.name) {
+      next.name = item.name;
       changed = true;
     }
     if (!Array.isArray(prev.platforms) || prev.platforms.length === 0) {
-      next.platforms = nextBase.platforms;
+      next.platforms = [item.platform];
       changed = true;
     }
+    if (!next.created_at) {
+      next.created_at = nowIso();
+      changed = true;
+    }
+    if (check) {
+      if (next.link_status !== check.status) {
+        next.link_status = check.status;
+        changed = true;
+      }
+      next.verified_at = check.verified_at;
+    }
+
     if (changed) {
+      next.updated_at = nowIso();
       byKey.set(key, next);
       updated += 1;
     }
@@ -309,48 +327,21 @@ function mergeSkills(existing, collected) {
   return { merged, created, updated };
 }
 
-async function persistSkillsJson(skills) {
+async function persistJson(pathPrefix, stablePath, payload) {
   if (!process.env.BLOB_READ_WRITE_TOKEN) {
     return { persisted: false, reason: "missing_blob_token" };
   }
-
-  const buffer = Buffer.from(JSON.stringify(skills, null, 2) + "\n", "utf-8");
+  const buffer = Buffer.from(JSON.stringify(payload, null, 2) + "\n", "utf-8");
   const stamp = new Date().toISOString().replace(/[:.]/g, "-");
 
-  const versioned = await put(`skills-data/skills-${stamp}.json`, buffer, {
+  const versioned = await put(`${pathPrefix}-${stamp}.json`, buffer, {
     access: "public",
     addRandomSuffix: false,
     token: process.env.BLOB_READ_WRITE_TOKEN,
     contentType: "application/json; charset=utf-8",
   });
 
-  const latest = await put("skills-data/latest.json", buffer, {
-    access: "public",
-    addRandomSuffix: false,
-    allowOverwrite: true,
-    token: process.env.BLOB_READ_WRITE_TOKEN,
-    contentType: "application/json; charset=utf-8",
-  });
-
-  return { persisted: true, versioned: versioned.url, latest: latest.url };
-}
-
-async function persistSourcesMeta(meta) {
-  if (!process.env.BLOB_READ_WRITE_TOKEN) {
-    return { persisted: false, reason: "missing_blob_token" };
-  }
-
-  const buffer = Buffer.from(JSON.stringify(meta, null, 2) + "\n", "utf-8");
-  const stamp = new Date().toISOString().replace(/[:.]/g, "-");
-
-  const versioned = await put(`sources-data/sources-${stamp}.json`, buffer, {
-    access: "public",
-    addRandomSuffix: false,
-    token: process.env.BLOB_READ_WRITE_TOKEN,
-    contentType: "application/json; charset=utf-8",
-  });
-
-  const latest = await put("sources-data/latest.json", buffer, {
+  const latest = await put(stablePath, buffer, {
     access: "public",
     addRandomSuffix: false,
     allowOverwrite: true,
@@ -366,7 +357,6 @@ export default async function handler(req, res) {
     res.setHeader("Allow", "GET");
     return res.status(405).json({ ok: false, error: "method_not_allowed" });
   }
-
   if (!isAuthorized(req)) {
     return res.status(401).json({ ok: false, error: "unauthorized" });
   }
@@ -374,17 +364,14 @@ export default async function handler(req, res) {
   try {
     const existing = await loadExistingSkills();
     const existingSourcesMeta = await loadExistingSourcesMeta();
+
     const collected = [];
     const sourceStats = [];
-
     for (const source of SOURCES) {
       try {
-        let rows = [];
-        if (source.readme_url) {
-          rows = await collectFromReadme(source);
-        } else if (source.api_contents_url) {
-          rows = await collectFromGitHubContents(source);
-        }
+        const rows = source.readme_url
+          ? await collectFromReadme(source)
+          : await collectFromGitHubContents(source);
         collected.push(...rows);
         sourceStats.push({ source: source.name, ok: true, count: rows.length });
       } catch (error) {
@@ -396,12 +383,11 @@ export default async function handler(req, res) {
       }
     }
 
-    const { merged, created, updated } = mergeSkills(existing, collected);
-    const persist = await persistSkillsJson(merged);
+    const linkCheck = await verifyCollectedLinks(collected);
+    const { merged, created, updated } = mergeSkills(existing, collected, linkCheck.results);
+
     const today = new Date().toISOString().slice(0, 10);
-    const sourceMap = new Map(
-      (existingSourcesMeta.sources || []).map((s) => [s.name, { ...s }])
-    );
+    const sourceMap = new Map((existingSourcesMeta.sources || []).map((s) => [s.name, { ...s }]));
     for (const s of SOURCES) {
       if (!sourceMap.has(s.name)) {
         sourceMap.set(s.name, {
@@ -416,17 +402,24 @@ export default async function handler(req, res) {
       last_updated: today,
       sources: Array.from(sourceMap.values()),
     };
-    const persistSources = await persistSourcesMeta(sourcesMeta);
+
+    const persistSkills = await persistJson("skills-data/skills", "skills-data/latest.json", merged);
+    const persistSources = await persistJson(
+      "sources-data/sources",
+      "sources-data/latest.json",
+      sourcesMeta
+    );
 
     return res.status(200).json({
       ok: true,
-      now: new Date().toISOString(),
+      now: nowIso(),
       existing_count: existing.length,
       discovered_count: collected.length,
+      checked_links: linkCheck.checked,
       total_count: merged.length,
       created,
       updated,
-      persist,
+      persist_skills: persistSkills,
       persist_sources: persistSources,
       sources: sourceStats,
     });

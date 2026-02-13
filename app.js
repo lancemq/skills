@@ -39,6 +39,11 @@ const elements = {
   quickMechanismTitle: document.getElementById("quick-mechanism-title"),
   quickMechanismSub: document.getElementById("quick-mechanism-sub"),
   footerMechanismLink: document.getElementById("footer-mechanism-link"),
+  weeklySectionTitle: document.getElementById("weekly-section-title"),
+  weeklyNewTitle: document.getElementById("weekly-new-title"),
+  weeklyUpdatedTitle: document.getElementById("weekly-updated-title"),
+  weeklyNewList: document.getElementById("weekly-new-list"),
+  weeklyUpdatedList: document.getElementById("weekly-updated-list"),
   statSkillsLabel: document.getElementById("stat-skills-label"),
   statSourcesLabel: document.getElementById("stat-sources-label"),
   statUpdatedLabel: document.getElementById("stat-updated-label"),
@@ -88,6 +93,12 @@ const i18n = {
     uncategorized: "Uncategorized",
     popularityFallback: "Official/Curated",
     view: "View",
+    details: "Details",
+    source: "Source",
+    weeklySectionTitle: "This Week",
+    weeklyNewTitle: "New Skills",
+    weeklyUpdatedTitle: "Updated Skills",
+    noWeeklyItems: "No updates this week.",
   },
   zh: {
     eyebrow: "热门 AI Skills · 目录与下载",
@@ -122,6 +133,12 @@ const i18n = {
     uncategorized: "未分类",
     popularityFallback: "官方/精选技能",
     view: "查看",
+    details: "详情",
+    source: "来源",
+    weeklySectionTitle: "本周更新",
+    weeklyNewTitle: "本周新增",
+    weeklyUpdatedTitle: "本周更新",
+    noWeeklyItems: "本周暂无更新。",
   },
 };
 
@@ -197,6 +214,13 @@ const createOption = (value, label) => {
 };
 
 const uniqueSorted = (items) => Array.from(new Set(items)).sort();
+const parseDate = (value) => {
+  if (!value || typeof value !== "string") {
+    return null;
+  }
+  const d = new Date(value);
+  return Number.isNaN(d.getTime()) ? null : d;
+};
 
 const buildFilters = () => {
   const categories = uniqueSorted(state.skills.map((skill) => skill.category));
@@ -284,13 +308,25 @@ const createSkillCard = (skill) => {
   platform.textContent = skill.platforms.join(" / ");
 
   const action = document.createElement("a");
-  action.href = skill.detail_url || skill.source_url;
-  action.target = "_blank";
-  action.rel = "noreferrer";
-  action.textContent = t("view");
+  action.className = "card-link";
+  action.href = `skill-detail.html?id=${encodeURIComponent(skill.id)}&lang=${encodeURIComponent(currentLang)}`;
+  action.textContent = t("details");
+
+  const sourceLink = document.createElement("a");
+  sourceLink.className = "card-link";
+  sourceLink.href = skill.detail_url || skill.source_url;
+  sourceLink.target = "_blank";
+  sourceLink.rel = "noreferrer";
+  sourceLink.textContent = t("view");
+
+  const actions = document.createElement("div");
+  actions.className = "card-actions";
+
+  actions.appendChild(action);
+  actions.appendChild(sourceLink);
 
   footer.appendChild(platform);
-  footer.appendChild(action);
+  footer.appendChild(actions);
 
   card.appendChild(title);
   card.appendChild(desc);
@@ -492,6 +528,79 @@ const renderSources = () => {
   });
 };
 
+const renderWeeklySummary = () => {
+  if (!elements.weeklyNewList || !elements.weeklyUpdatedList) {
+    return;
+  }
+
+  const now = new Date();
+  const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+
+  const newSkills = state.skills
+    .filter((skill) => {
+      const createdAt = parseDate(skill.created_at);
+      return createdAt && createdAt >= weekAgo;
+    })
+    .sort((a, b) => {
+      const ad = parseDate(a.created_at)?.getTime() || 0;
+      const bd = parseDate(b.created_at)?.getTime() || 0;
+      return bd - ad;
+    })
+    .slice(0, 8);
+
+  const updatedSkills = state.skills
+    .filter((skill) => {
+      const updatedAt = parseDate(skill.updated_at);
+      const createdAt = parseDate(skill.created_at);
+      if (!updatedAt || updatedAt < weekAgo) {
+        return false;
+      }
+      if (createdAt && updatedAt.getTime() === createdAt.getTime()) {
+        return false;
+      }
+      return true;
+    })
+    .sort((a, b) => {
+      const ad = parseDate(a.updated_at)?.getTime() || 0;
+      const bd = parseDate(b.updated_at)?.getTime() || 0;
+      return bd - ad;
+    })
+    .slice(0, 8);
+
+  const createItem = (skill, dateField) => {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = `skill-detail.html?id=${encodeURIComponent(skill.id)}&lang=${encodeURIComponent(currentLang)}`;
+    link.textContent = skillName(skill);
+    li.appendChild(link);
+    const when = document.createElement("span");
+    when.className = "weekly-date";
+    const dt = parseDate(skill[dateField]);
+    when.textContent = dt ? dt.toISOString().slice(0, 10) : "";
+    li.appendChild(when);
+    return li;
+  };
+
+  elements.weeklyNewList.innerHTML = "";
+  elements.weeklyUpdatedList.innerHTML = "";
+
+  if (!newSkills.length) {
+    const li = document.createElement("li");
+    li.textContent = t("noWeeklyItems");
+    elements.weeklyNewList.appendChild(li);
+  } else {
+    newSkills.forEach((skill) => elements.weeklyNewList.appendChild(createItem(skill, "created_at")));
+  }
+
+  if (!updatedSkills.length) {
+    const li = document.createElement("li");
+    li.textContent = t("noWeeklyItems");
+    elements.weeklyUpdatedList.appendChild(li);
+  } else {
+    updatedSkills.forEach((skill) => elements.weeklyUpdatedList.appendChild(createItem(skill, "updated_at")));
+  }
+};
+
 const initStats = (lastUpdated) => {
   elements.skillCount.textContent = state.skills.length;
   elements.sourceCount.textContent = state.sources.length;
@@ -511,9 +620,24 @@ const applyLanguage = () => {
   elements.navBrowse.textContent = t("navBrowse");
   elements.navMechanism.textContent = t("mechanism");
   elements.navSources.textContent = t("navSources");
-  elements.quickMechanismTitle.textContent = t("quickMechanismTitle");
-  elements.quickMechanismSub.textContent = t("quickMechanismSub");
-  elements.footerMechanismLink.textContent = t("footerMechanismLink");
+  if (elements.quickMechanismTitle) {
+    elements.quickMechanismTitle.textContent = t("quickMechanismTitle");
+  }
+  if (elements.quickMechanismSub) {
+    elements.quickMechanismSub.textContent = t("quickMechanismSub");
+  }
+  if (elements.footerMechanismLink) {
+    elements.footerMechanismLink.textContent = t("footerMechanismLink");
+  }
+  if (elements.weeklySectionTitle) {
+    elements.weeklySectionTitle.textContent = t("weeklySectionTitle");
+  }
+  if (elements.weeklyNewTitle) {
+    elements.weeklyNewTitle.textContent = t("weeklyNewTitle");
+  }
+  if (elements.weeklyUpdatedTitle) {
+    elements.weeklyUpdatedTitle.textContent = t("weeklyUpdatedTitle");
+  }
   elements.statSkillsLabel.textContent = t("statSkills");
   elements.statSourcesLabel.textContent = t("statSources");
   elements.statUpdatedLabel.textContent = t("statUpdated");
@@ -528,6 +652,7 @@ const applyLanguage = () => {
 
   buildFilters();
   renderSources();
+  renderWeeklySummary();
   
   // Reset virtual scroll for language change
   state.rendered.currentIndex = 0;
