@@ -201,6 +201,10 @@ const sourceDescMap = {
 };
 
 const getInitialLang = () => {
+  const urlLang = new URLSearchParams(window.location.search).get("lang");
+  if (urlLang === "en" || urlLang === "zh") {
+    return urlLang;
+  }
   try {
     const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
     if (saved === "en" || saved === "zh") {
@@ -213,6 +217,35 @@ const getInitialLang = () => {
 };
 
 let currentLang = getInitialLang();
+
+const seoI18n = {
+  en: {
+    title: "AI Skills Hub | Discover and Compare AI Skills",
+    description:
+      "Discover, filter, and compare curated AI skills from multiple sources. Explore thousands of skills across development, design, productivity, and more.",
+    keywords:
+      "AI skills, Claude skills, Codex skills, skill marketplace, AI workflow, developer tools",
+    ogDescription:
+      "A searchable directory of curated AI skills with source links, categories, and platform filters.",
+    twitterDescription:
+      "Browse curated AI skills from multiple communities and marketplaces.",
+    canonical: "https://www.ai-skills.xyz/?lang=en",
+    ogLocale: "en_US",
+  },
+  zh: {
+    title: "AI Skills Hub | 热门 AI Skills 导航与对比",
+    description:
+      "收录并对比热门 AI Skills，支持按分类、来源与平台筛选，帮助你快速找到可用技能。",
+    keywords:
+      "AI技能, Claude技能, Codex技能, 智能体技能, 工作流技能, 开发工具",
+    ogDescription:
+      "一个可搜索的 AI Skills 目录，提供来源链接、分类筛选与平台对比。",
+    twitterDescription:
+      "浏览来自社区与目录站点的 AI Skills，快速筛选并查看详情。",
+    canonical: "https://www.ai-skills.xyz/?lang=zh",
+    ogLocale: "zh_CN",
+  },
+};
 
 const t = (key) => i18n[currentLang][key] || key;
 
@@ -280,6 +313,32 @@ const persistFavorites = () => {
 };
 
 const isFavorite = (skillId) => state.favorites.has(skillId);
+
+const applySeoMeta = () => {
+  const meta = seoI18n[currentLang] || seoI18n.en;
+  document.title = meta.title;
+  const set = (id, value) => {
+    const el = document.getElementById(id);
+    if (el && value) {
+      el.setAttribute("content", value);
+    }
+  };
+  set("seo-description", meta.description);
+  set("seo-keywords", meta.keywords);
+  set("seo-og-title", meta.title);
+  set("seo-og-description", meta.ogDescription);
+  set("seo-og-url", meta.canonical);
+  set("seo-og-locale", meta.ogLocale);
+  set("seo-twitter-title", meta.title);
+  set("seo-twitter-description", meta.twitterDescription);
+  const canonical = document.getElementById("seo-canonical");
+  if (canonical) {
+    canonical.setAttribute("href", meta.canonical);
+  }
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", currentLang);
+  history.replaceState({}, "", `${url.pathname}${url.search}`);
+};
 
 const buildFilters = () => {
   const categories = uniqueSorted(state.skills.map((skill) => skill.category));
@@ -484,6 +543,7 @@ const renderNextBatch = () => {
   if (state.rendered.currentIndex >= categories.length) {
     const indicator = document.getElementById("loading-indicator");
     if (indicator) {
+      indicator.classList.add("is-done");
       const totalTime = state.performance.renderEnd - state.performance.renderStart;
       indicator.innerHTML = `
         ${currentLang === "zh" ? "已加载全部" : "All loaded"} 
@@ -585,6 +645,14 @@ const renderCards = () => {
       currentLang === "zh" ? "zh-Hans-CN" : "en"
     )
   );
+
+  if (!sortedCategories.length) {
+    const empty = document.createElement("div");
+    empty.className = "loading-indicator is-done";
+    empty.textContent = currentLang === "zh" ? "没有匹配的技能" : "No matching skills";
+    elements.grid.appendChild(empty);
+    return;
+  }
 
   state.rendered.categories = sortedCategories;
   state.rendered.currentIndex = 0;
@@ -816,6 +884,7 @@ const applyLanguage = () => {
   renderSources();
   renderWeeklySummary();
   renderFavoritesPanel();
+  applySeoMeta();
   
   // Reset virtual scroll for language change
   state.rendered.currentIndex = 0;

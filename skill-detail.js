@@ -20,6 +20,20 @@ const getInitialLang = () => {
 
 let currentLang = getInitialLang();
 
+const seoText = {
+  en: {
+    title: "Skill Details | AI Skills Hub",
+    description:
+      "Detailed AI skill profile with use cases, setup, input/output examples, and source links.",
+    keywords: "AI skill detail, Claude skill, Codex skill, prompt workflow",
+  },
+  zh: {
+    title: "Skill 详情 | AI Skills Hub",
+    description: "查看技能详情，包括用途、安装方式、使用示例和来源链接。",
+    keywords: "AI技能详情, Claude技能, Codex技能, 工作流提示词",
+  },
+};
+
 const t = {
   en: {
     back: "Back",
@@ -127,6 +141,26 @@ function applyLabels() {
   elements.labelInstall.textContent = getText("install");
   elements.labelUsage.textContent = getText("usage");
   elements.view.textContent = getText("view");
+  const meta = seoText[currentLang] || seoText.en;
+  document.title = meta.title;
+  const set = (id, value) => {
+    const el = document.getElementById(id);
+    if (el && value) {
+      el.setAttribute("content", value);
+    }
+  };
+  set("seo-description", meta.description);
+  set("seo-keywords", meta.keywords);
+  const canonical = document.getElementById("seo-canonical");
+  if (canonical) {
+    canonical.setAttribute(
+      "href",
+      `https://www.ai-skills.xyz/skill-detail.html?lang=${currentLang}`
+    );
+  }
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", currentLang);
+  history.replaceState({}, "", `${url.pathname}${url.search}`);
 }
 
 async function loadSkills() {

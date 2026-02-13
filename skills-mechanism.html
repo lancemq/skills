@@ -3,12 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>How AI Skills Work | AI Skills Hub</title>
+    <title id="seo-title">How AI Skills Work | AI Skills Hub</title>
     <meta
+      id="seo-description"
       name="description"
       content="Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows."
     />
-    <link rel="canonical" href="https://www.ai-skills.xyz/skills-mechanism.html" />
+    <meta name="keywords" id="seo-keywords" content="AI skills mechanism, agent skills, workflow skills, Codex skills" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="baiduspider" content="index,follow" />
+    <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="stylesheet" href="styles.css" />
     <style>
@@ -289,12 +296,25 @@ Target: static websites and docs portals.</code></pre>
         en: { home: "Home", how: "How Skills Work", lang: "EN / ZH" },
         zh: { home: "首页", how: "Skills 原理与作用", lang: "EN / 中文" }
       };
+      const SEO_I18N = {
+        en: {
+          title: "How AI Skills Work | AI Skills Hub",
+          description: "Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows.",
+          keywords: "AI skills mechanism, agent skills, workflow skills, Codex skills"
+        },
+        zh: {
+          title: "Skills 原理与作用 | AI Skills Hub",
+          description: "了解 AI Skills 的机制原理、安装与使用方式，以及在实际工作流中的作用。",
+          keywords: "AI技能原理, 智能体技能, 工作流技能, Codex技能"
+        }
+      };
       function setLang(lang) {
         document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
         try {
           window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
         } catch (_error) {}
         const dict = lang === "zh" ? NAV_I18N.zh : NAV_I18N.en;
+        const seo = lang === "zh" ? SEO_I18N.zh : SEO_I18N.en;
         const navHome = document.getElementById("nav-home");
         const navMechanism = document.getElementById("nav-mechanism");
         const navBtn = document.getElementById("nav-lang");
@@ -307,8 +327,20 @@ Target: static websites and docs portals.</code></pre>
         if (navBtn) {
           navBtn.textContent = dict.lang;
         }
+        document.title = seo.title;
+        const desc = document.getElementById("seo-description");
+        const keywords = document.getElementById("seo-keywords");
+        const canonical = document.getElementById("seo-canonical");
+        if (desc) desc.setAttribute("content", seo.description);
+        if (keywords) keywords.setAttribute("content", seo.keywords);
+        if (canonical) canonical.setAttribute("href", `https://www.ai-skills.xyz/skills-mechanism.html?lang=${lang}`);
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState({}, "", `${url.pathname}${url.search}`);
       }
       const initial = (() => {
+        const queryLang = new URLSearchParams(window.location.search).get("lang");
+        if (queryLang === "en" || queryLang === "zh") return queryLang;
         try {
           const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
           if (saved === "en" || saved === "zh") return saved;
