@@ -536,24 +536,32 @@ const setupIntersectionObserver = () => {
   }
 };
 
+const finalizeLoadingIndicator = () => {
+  const indicator = document.getElementById("loading-indicator");
+  if (!indicator) {
+    return;
+  }
+  indicator.classList.add("is-done");
+  const totalTime = state.performance.renderEnd - state.performance.renderStart;
+  indicator.innerHTML = `
+    ${currentLang === "zh" ? "已加载全部" : "All loaded"} 
+    <span style="font-size: 12px; opacity: 0.7; margin-left: 8px;">
+      (${state.performance.cardsRendered} ${currentLang === "zh" ? "张卡片" : "cards"}, 
+      ${Math.max(0, Math.round(totalTime))}ms)
+    </span>
+  `;
+  indicator.style.color = "var(--muted)";
+  if (state.observer) {
+    state.observer.disconnect();
+  }
+};
+
 const renderNextBatch = () => {
   if (state.rendered.isLoading) return;
   
   const categories = state.rendered.categories;
   if (state.rendered.currentIndex >= categories.length) {
-    const indicator = document.getElementById("loading-indicator");
-    if (indicator) {
-      indicator.classList.add("is-done");
-      const totalTime = state.performance.renderEnd - state.performance.renderStart;
-      indicator.innerHTML = `
-        ${currentLang === "zh" ? "已加载全部" : "All loaded"} 
-        <span style="font-size: 12px; opacity: 0.7; margin-left: 8px;">
-          (${state.performance.cardsRendered} ${currentLang === "zh" ? "张卡片" : "cards"}, 
-          ${totalTime}ms)
-        </span>
-      `;
-      indicator.style.color = "var(--muted)";
-    }
+    finalizeLoadingIndicator();
     return;
   }
 
@@ -616,9 +624,10 @@ const renderNextBatch = () => {
     const batchTime = performance.now() - batchStart;
     console.log(`🎨 Rendered batch: ${cardsInBatch} cards in ${batchTime.toFixed(2)}ms`);
 
-    // Continue observing if there are more items
     if (state.rendered.currentIndex < categories.length) {
       setupIntersectionObserver();
+    } else {
+      finalizeLoadingIndicator();
     }
   });
 };
