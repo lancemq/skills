@@ -1,6 +1,24 @@
 const qs = new URLSearchParams(window.location.search);
 const skillId = qs.get("id") || "";
-let currentLang = qs.get("lang") === "zh" ? "zh" : "en";
+const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
+
+const getInitialLang = () => {
+  const fromQuery = qs.get("lang");
+  if (fromQuery === "en" || fromQuery === "zh") {
+    return fromQuery;
+  }
+  try {
+    const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (saved === "en" || saved === "zh") {
+      return saved;
+    }
+  } catch (_error) {
+    // ignore storage errors
+  }
+  return "en";
+};
+
+let currentLang = getInitialLang();
 
 const t = {
   en: {
@@ -143,6 +161,11 @@ async function init() {
   renderSkill(skill);
   elements.lang.addEventListener("click", () => {
     currentLang = currentLang === "en" ? "zh" : "en";
+    try {
+      window.localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLang);
+    } catch (_error) {
+      // ignore storage errors
+    }
     applyLabels();
     renderSkill(skill);
   });

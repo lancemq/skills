@@ -2,6 +2,7 @@ const state = {
   skills: [],
   filtered: [],
   sources: [],
+  favorites: new Set(),
   rendered: {
     categories: [],
     currentIndex: 0,
@@ -22,6 +23,7 @@ const elements = {
   category: document.getElementById("category"),
   source: document.getElementById("source"),
   platform: document.getElementById("platform"),
+  favorite: document.getElementById("favorite"),
   skillCount: document.getElementById("skill-count"),
   sourceCount: document.getElementById("source-count"),
   lastUpdated: document.getElementById("last-updated"),
@@ -44,6 +46,11 @@ const elements = {
   weeklyUpdatedTitle: document.getElementById("weekly-updated-title"),
   weeklyNewList: document.getElementById("weekly-new-list"),
   weeklyUpdatedList: document.getElementById("weekly-updated-list"),
+  favoritesPanel: document.getElementById("favorites-panel"),
+  favoritesTitle: document.getElementById("favorites-title"),
+  favoritesCount: document.getElementById("favorites-count"),
+  favoritesEmpty: document.getElementById("favorites-empty"),
+  favoritesGrid: document.getElementById("favorites-grid"),
   statSkillsLabel: document.getElementById("stat-skills-label"),
   statSourcesLabel: document.getElementById("stat-sources-label"),
   statUpdatedLabel: document.getElementById("stat-updated-label"),
@@ -51,10 +58,14 @@ const elements = {
   labelCategory: document.getElementById("label-category"),
   labelSource: document.getElementById("label-source"),
   labelPlatform: document.getElementById("label-platform"),
+  labelFavorite: document.getElementById("label-favorite"),
   aboutTitle: document.getElementById("about-title"),
   aboutText: document.getElementById("about-text"),
   footerText: document.getElementById("footer-text"),
 };
+
+const FAVORITES_STORAGE_KEY = "ai_skills_favorites_v1";
+const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
 
 const normalize = (value) => String(value || "").toLowerCase();
 
@@ -81,10 +92,13 @@ const i18n = {
     labelCategory: "Category",
     labelSource: "Source",
     labelPlatform: "Platform",
+    labelFavorite: "Favorites",
     placeholderSearch: "Search by name, tag, or description",
     allCategories: "All categories",
     allSources: "All sources",
     allPlatforms: "All platforms",
+    allFavoriteModes: "All skills",
+    favoritesOnly: "Favorites only",
     aboutTitle: "Sources & Notes",
     aboutText:
       "Popularity is sourced from AwesomeSkill.ai. Official/community entries come from curated directories. You can expand sources or add GitHub sync.",
@@ -94,11 +108,15 @@ const i18n = {
     popularityFallback: "Official/Curated",
     view: "View",
     details: "Details",
+    addFavorite: "Add favorite",
+    removeFavorite: "Remove favorite",
     source: "Source",
     weeklySectionTitle: "This Week",
     weeklyNewTitle: "New Skills",
     weeklyUpdatedTitle: "Updated Skills",
     noWeeklyItems: "No updates this week.",
+    favoritesTitle: "Favorite Skills",
+    favoritesEmpty: "No favorites yet.",
   },
   zh: {
     eyebrow: "热门 AI Skills · 目录与下载",
@@ -121,10 +139,13 @@ const i18n = {
     labelCategory: "分类",
     labelSource: "来源",
     labelPlatform: "平台",
+    labelFavorite: "收藏",
     placeholderSearch: "输入技能名称、标签或描述",
     allCategories: "全部分类",
     allSources: "全部来源",
     allPlatforms: "全部平台",
+    allFavoriteModes: "全部技能",
+    favoritesOnly: "仅看收藏",
     aboutTitle: "数据来源与说明",
     aboutText:
       "热门指标来自 AwesomeSkill.ai 的公开列表，官方/精选技能来自目录聚合站点。你可以按需求继续扩充数据源或添加 GitHub 自动同步。",
@@ -134,11 +155,15 @@ const i18n = {
     popularityFallback: "官方/精选技能",
     view: "查看",
     details: "详情",
+    addFavorite: "加入收藏",
+    removeFavorite: "取消收藏",
     source: "来源",
     weeklySectionTitle: "本周更新",
     weeklyNewTitle: "本周新增",
     weeklyUpdatedTitle: "本周更新",
     noWeeklyItems: "本周暂无更新。",
+    favoritesTitle: "收藏技能",
+    favoritesEmpty: "还没有收藏技能。",
   },
 };
 
@@ -176,7 +201,19 @@ const sourceDescMap = {
   },
 };
 
-let currentLang = "en";
+const getInitialLang = () => {
+  try {
+    const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    if (saved === "en" || saved === "zh") {
+      return saved;
+    }
+  } catch (_error) {
+    // ignore storage errors
+  }
+  return "en";
+};
+
+let currentLang = getInitialLang();
 
 const t = (key) => i18n[currentLang][key] || key;
 
@@ -222,6 +259,29 @@ const parseDate = (value) => {
   return Number.isNaN(d.getTime()) ? null : d;
 };
 
+const loadFavorites = () => {
+  try {
+    const raw = window.localStorage.getItem(FAVORITES_STORAGE_KEY);
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr.filter((id) => typeof id === "string") : []);
+  } catch (_error) {
+    return new Set();
+  }
+};
+
+const persistFavorites = () => {
+  try {
+    window.localStorage.setItem(
+      FAVORITES_STORAGE_KEY,
+      JSON.stringify(Array.from(state.favorites))
+    );
+  } catch (_error) {
+    // ignore localStorage errors
+  }
+};
+
+const isFavorite = (skillId) => state.favorites.has(skillId);
+
 const buildFilters = () => {
   const categories = uniqueSorted(state.skills.map((skill) => skill.category));
   const sources = uniqueSorted(state.skills.map((skill) => skill.source_name));
@@ -230,6 +290,7 @@ const buildFilters = () => {
   elements.category.innerHTML = "";
   elements.source.innerHTML = "";
   elements.platform.innerHTML = "";
+  elements.favorite.innerHTML = "";
 
   elements.category.appendChild(createOption("", t("allCategories")));
   categories.forEach((item) =>
@@ -241,6 +302,9 @@ const buildFilters = () => {
 
   elements.platform.appendChild(createOption("", t("allPlatforms")));
   platforms.forEach((item) => elements.platform.appendChild(createOption(item, item)));
+
+  elements.favorite.appendChild(createOption("", t("allFavoriteModes")));
+  elements.favorite.appendChild(createOption("favorites", t("favoritesOnly")));
 };
 
 const applyFilters = () => {
@@ -248,6 +312,7 @@ const applyFilters = () => {
   const category = elements.category.value;
   const source = elements.source.value;
   const platform = elements.platform.value;
+  const favoriteMode = elements.favorite.value;
 
   state.filtered = state.skills.filter((skill) => {
     const matchesSearch =
@@ -259,7 +324,9 @@ const applyFilters = () => {
     const matchesCategory = !category || skill.category === category;
     const matchesSource = !source || skill.source_name === source;
     const matchesPlatform = !platform || skill.platforms.includes(platform);
-    return matchesSearch && matchesCategory && matchesSource && matchesPlatform;
+    const matchesFavorite =
+      favoriteMode !== "favorites" || state.favorites.has(skill.id);
+    return matchesSearch && matchesCategory && matchesSource && matchesPlatform && matchesFavorite;
   });
 
   // Reset virtual scroll state
@@ -272,9 +339,36 @@ const applyFilters = () => {
 const createSkillCard = (skill) => {
   const card = document.createElement("article");
   card.className = "card";
+  if (isFavorite(skill.id)) {
+    card.classList.add("is-favorited");
+  }
+
+  const head = document.createElement("div");
+  head.className = "card-head";
 
   const title = document.createElement("h3");
   title.textContent = skillName(skill);
+
+  const favoriteBtn = document.createElement("button");
+  favoriteBtn.type = "button";
+  favoriteBtn.className = "favorite-btn";
+  favoriteBtn.textContent = isFavorite(skill.id) ? "★" : "☆";
+  favoriteBtn.title = isFavorite(skill.id) ? t("removeFavorite") : t("addFavorite");
+  favoriteBtn.setAttribute("aria-label", favoriteBtn.title);
+  favoriteBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    if (isFavorite(skill.id)) {
+      state.favorites.delete(skill.id);
+    } else {
+      state.favorites.add(skill.id);
+    }
+    persistFavorites();
+    applyFilters();
+  });
+
+  head.appendChild(title);
+  head.appendChild(favoriteBtn);
 
   const desc = document.createElement("p");
   desc.textContent = skillShort(skill);
@@ -328,7 +422,7 @@ const createSkillCard = (skill) => {
   footer.appendChild(platform);
   footer.appendChild(actions);
 
-  card.appendChild(title);
+  card.appendChild(head);
   card.appendChild(desc);
   if (skill.long_description) {
     card.appendChild(longDesc);
@@ -601,6 +695,58 @@ const renderWeeklySummary = () => {
   }
 };
 
+const renderFavoritesPanel = () => {
+  if (!elements.favoritesPanel || !elements.favoritesGrid) {
+    return;
+  }
+
+  const favorites = state.skills
+    .filter((skill) => state.favorites.has(skill.id))
+    .sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
+
+  elements.favoritesCount.textContent = `${favorites.length}`;
+  elements.favoritesGrid.innerHTML = "";
+
+  if (!favorites.length) {
+    elements.favoritesEmpty.style.display = "block";
+    return;
+  }
+
+  elements.favoritesEmpty.style.display = "none";
+
+  favorites.forEach((skill) => {
+    const item = document.createElement("article");
+    item.className = "favorite-item";
+
+    const name = document.createElement("h3");
+    name.textContent = skillName(skill);
+
+    const meta = document.createElement("p");
+    meta.textContent = `${skill.source_name} · ${(skill.platforms || []).join(" / ")}`;
+
+    const actions = document.createElement("div");
+    actions.className = "favorite-actions";
+
+    const details = document.createElement("a");
+    details.href = `skill-detail.html?id=${encodeURIComponent(skill.id)}&lang=${encodeURIComponent(currentLang)}`;
+    details.textContent = t("details");
+
+    const view = document.createElement("a");
+    view.href = skill.detail_url || skill.source_url;
+    view.target = "_blank";
+    view.rel = "noreferrer";
+    view.textContent = t("view");
+
+    actions.appendChild(details);
+    actions.appendChild(view);
+
+    item.appendChild(name);
+    item.appendChild(meta);
+    item.appendChild(actions);
+    elements.favoritesGrid.appendChild(item);
+  });
+};
+
 const initStats = (lastUpdated) => {
   elements.skillCount.textContent = state.skills.length;
   elements.sourceCount.textContent = state.sources.length;
@@ -638,6 +784,12 @@ const applyLanguage = () => {
   if (elements.weeklyUpdatedTitle) {
     elements.weeklyUpdatedTitle.textContent = t("weeklyUpdatedTitle");
   }
+  if (elements.favoritesTitle) {
+    elements.favoritesTitle.textContent = t("favoritesTitle");
+  }
+  if (elements.favoritesEmpty) {
+    elements.favoritesEmpty.textContent = t("favoritesEmpty");
+  }
   elements.statSkillsLabel.textContent = t("statSkills");
   elements.statSourcesLabel.textContent = t("statSources");
   elements.statUpdatedLabel.textContent = t("statUpdated");
@@ -645,6 +797,7 @@ const applyLanguage = () => {
   elements.labelCategory.textContent = t("labelCategory");
   elements.labelSource.textContent = t("labelSource");
   elements.labelPlatform.textContent = t("labelPlatform");
+  elements.labelFavorite.textContent = t("labelFavorite");
   elements.search.placeholder = t("placeholderSearch");
   elements.aboutTitle.textContent = t("aboutTitle");
   elements.aboutText.textContent = t("aboutText");
@@ -653,12 +806,14 @@ const applyLanguage = () => {
   buildFilters();
   renderSources();
   renderWeeklySummary();
+  renderFavoritesPanel();
   
   // Reset virtual scroll for language change
   state.rendered.currentIndex = 0;
   state.rendered.categories = [];
   
   renderCards();
+  renderFavoritesPanel();
 };
 
 const initButtons = () => {
@@ -677,6 +832,11 @@ const initButtons = () => {
   if (elements.btnLang) {
     elements.btnLang.addEventListener("click", () => {
       currentLang = currentLang === "en" ? "zh" : "en";
+      try {
+        window.localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLang);
+      } catch (_error) {
+        // ignore storage errors
+      }
       applyLanguage();
     });
   }
@@ -779,6 +939,7 @@ const init = async () => {
   ]);
 
   state.skills = skills;
+  state.favorites = loadFavorites();
   const sourcesData = sourcesRes;
   state.sources = sourcesData.sources;
 
@@ -789,7 +950,7 @@ const init = async () => {
   applyLanguage();
   initButtons();
 
-  [elements.search, elements.category, elements.source, elements.platform].forEach((el) => {
+  [elements.search, elements.category, elements.source, elements.platform, elements.favorite].forEach((el) => {
     el.addEventListener("input", applyFilters);
     el.addEventListener("change", applyFilters);
   });

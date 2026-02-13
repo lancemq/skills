@@ -163,6 +163,12 @@ body {
   position: relative;
 }
 
+.top-nav-lang {
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.2;
+}
+
 .top-nav-links a::after {
   content: "";
   position: absolute;
@@ -526,6 +532,82 @@ main {
   animation: slide-fade-up 0.52s cubic-bezier(0.25, 1, 0.3, 1) 0.1s both;
 }
 
+.favorites-panel {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.favorites-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.favorites-header h2 {
+  font-size: 22px;
+}
+
+.favorites-header span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.favorites-empty {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+}
+
+.favorite-item {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-soft);
+  padding: 10px;
+  display: grid;
+  gap: 6px;
+}
+
+.favorite-item h3 {
+  font-size: 15px;
+}
+
+.favorite-item p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.favorite-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.favorite-actions a {
+  text-decoration: none;
+  color: var(--text);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-md);
+  padding: 5px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.favorite-actions a:hover {
+  color: var(--primary-contrast);
+  border-color: var(--primary);
+  background: var(--primary);
+}
+
 .control label {
   display: block;
   margin-bottom: 6px;
@@ -618,6 +700,37 @@ main {
 .card h3 {
   font-size: 18px;
   font-weight: 700;
+}
+
+.card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.favorite-btn {
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 255, 255, 0.78);
+  color: #f29900;
+  font-size: 18px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite-btn:hover {
+  border-color: #f29900;
+  background: rgba(242, 153, 0, 0.08);
+}
+
+.card.is-favorited {
+  border-color: rgba(242, 153, 0, 0.45);
 }
 
 .card p {

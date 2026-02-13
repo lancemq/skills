@@ -78,6 +78,7 @@
           <a href="index.html">Home</a>
           <a href="index.html#controls">Browse</a>
           <a href="index.html#about">Sources</a>
+          <button class="ghost top-nav-lang" id="nav-lang">EN / ZH</button>
         </div>
       </div>
     </nav>
@@ -98,7 +99,6 @@
         </p>
         <div class="doc-actions">
           <a class="ghost link-btn" href="index.html">Back to Home</a>
-          <button class="ghost" id="btn-toggle-lang-en">EN / 中文</button>
         </div>
 
         <section class="doc-section">
@@ -198,7 +198,6 @@ Target: static websites and docs portals.</code></pre>
         </p>
         <div class="doc-actions">
           <a class="ghost link-btn" href="index.html">返回首页</a>
-          <button class="ghost" id="btn-toggle-lang-zh">EN / 中文</button>
         </div>
 
         <section class="doc-section">
@@ -285,11 +284,29 @@ Target: static websites and docs portals.</code></pre>
     </div>
 
     <script>
+      const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
       function setLang(lang) {
         document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        try {
+          window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+        } catch (_error) {}
+        const navBtn = document.getElementById("nav-lang");
+        if (navBtn) {
+          navBtn.textContent = lang === "zh" ? "EN / 中文" : "EN / ZH";
+        }
       }
-      document.getElementById("btn-toggle-lang-en").addEventListener("click", () => setLang("zh"));
-      document.getElementById("btn-toggle-lang-zh").addEventListener("click", () => setLang("en"));
+      const initial = (() => {
+        try {
+          const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+          if (saved === "en" || saved === "zh") return saved;
+        } catch (_error) {}
+        return "en";
+      })();
+      setLang(initial);
+      document.getElementById("nav-lang").addEventListener("click", () => {
+        const next = document.documentElement.lang === "zh-Hans" ? "en" : "zh";
+        setLang(next);
+      });
     </script>
   </body>
 </html>

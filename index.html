@@ -68,6 +68,7 @@
           <a href="#controls" id="nav-browse">Browse</a>
           <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
           <a href="#about" id="nav-sources">Sources</a>
+          <button class="ghost top-nav-lang" id="btn-lang">EN / ZH</button>
         </div>
       </div>
     </nav>
@@ -89,7 +90,6 @@
           <button class="primary" data-action="jump" id="btn-browse">Browse Now</button>
           <button class="ghost" data-action="about" id="btn-about">About Sources</button>
           <a class="ghost link-btn" id="btn-mechanism" href="skills-mechanism.html">How Skills Work</a>
-          <button class="ghost" id="btn-lang">EN / ZH</button>
         </div>
       </div>
       <div class="hero-card">
@@ -147,6 +147,19 @@
           <label for="platform" id="label-platform">Platform</label>
           <select id="platform"></select>
         </div>
+        <div class="control">
+          <label for="favorite" id="label-favorite">Favorites</label>
+          <select id="favorite"></select>
+        </div>
+      </section>
+
+      <section class="favorites-panel" id="favorites-panel">
+        <div class="favorites-header">
+          <h2 id="favorites-title">Favorite Skills</h2>
+          <span id="favorites-count">0</span>
+        </div>
+        <p class="favorites-empty" id="favorites-empty">No favorites yet.</p>
+        <div class="favorites-grid" id="favorites-grid"></div>
       </section>
 
       <section class="grid" id="skill-grid"></section>
