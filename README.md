@@ -2,11 +2,16 @@
 
 ## Vercel Cron
 
-This project includes a daily Vercel Cron trigger:
+This project includes two Vercel Cron triggers:
 
-- Path: `/api/cron/sync-skills`
-- Schedule: `0 3 * * *` (daily 03:00)
-- Config file: `/Users/maqi/code/skills/vercel.json`
+- Daily health check
+  - Path: `/api/cron/daily-skill-health`
+  - Schedule: `0 3 * * *` (daily 03:00)
+- Source discovery and full crawl
+  - Path: `/api/cron/discover-sources`
+  - Schedule: `0 3 */3 * *` (every 3 days at 03:00)
+
+Config file: `/Users/maqi/code/skills/vercel.json`
 
 ### Required Environment Variable
 
@@ -24,30 +29,34 @@ Vercel Functions are ephemeral and cannot persist changes to local repo files (`
 
 For real skills sync persistence, use one of:
 
-1. Dispatch a GitHub Actions workflow from `/api/cron/sync-skills` and commit updates back to the repo.
+1. Dispatch a GitHub Actions workflow from `/api/cron/discover-sources` and commit updates back to the repo.
 2. Write synced data to external storage (DB/Blob), then render from that source.
 
 ### Current Cron Sync Behavior
 
-`/api/cron/sync-skills` now does:
+Daily health (`/api/cron/daily-skill-health`) does:
 
-1. Pull skills from configured sources (README/API-based).
-2. Merge with existing skills dataset.
-3. Add new skills and update changed detail links.
-4. Persist merged dataset to Vercel Blob:
-   - `skills-data/skills-<timestamp>.json`
-   - `skills-data/latest.json`
-5. Update homepage metadata in Blob:
-   - `sources-data/sources-<timestamp>.json`
-   - `sources-data/latest.json` (includes refreshed `last_updated`)
-6. Run link health checks for discovered skills and store:
-   - `link_status`: `ok` / `bad` / `unknown`
-   - `verified_at`
-7. Track skill timeline fields for UI modules:
-   - `created_at`
-   - `updated_at`
+1. Check all skills links.
+2. Mark invalid skills:
+   - `is_active: false` when link is bad (404/410 or unavailable)
+3. Attempt to enrich missing detail fields from source pages.
+4. Update verification/timeline fields:
+   - `link_status`, `verified_at`, `updated_at`
+5. Persist updated skills and sources metadata to Blob.
+
+Discovery crawl (`/api/cron/discover-sources`) does:
+
+1. Discover new source candidates from GitHub search.
+2. Merge new sources into existing sources list.
+3. Crawl all sources and collect skill links.
+4. Add new skills and update changed links.
+5. Persist merged skills/sources to Blob.
 
 This means daily updates are persisted outside ephemeral runtime.
+
+### Frontend default behavior for invalid skills
+
+Skills with `is_active: false` are hidden by default in homepage lists and favorites.
 
 ## UI Additions
 

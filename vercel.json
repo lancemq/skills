@@ -1,8 +1,12 @@
 {
   "crons": [
     {
-      "path": "/api/cron/sync-skills",
+      "path": "/api/cron/daily-skill-health",
       "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/discover-sources",
+      "schedule": "0 3 */3 * *"
     }
   ]
 }

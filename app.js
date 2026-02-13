@@ -314,6 +314,10 @@ const applyFilters = () => {
   const favoriteMode = elements.favorite.value;
 
   state.filtered = state.skills.filter((skill) => {
+    const isVisible = skill.is_active !== false;
+    if (!isVisible) {
+      return false;
+    }
     const matchesSearch =
       !search ||
       normalize(skillName(skill)).includes(search) ||
@@ -632,6 +636,9 @@ const renderWeeklySummary = () => {
 
   const newSkills = state.skills
     .filter((skill) => {
+      if (skill.is_active === false) {
+        return false;
+      }
       const createdAt = parseDate(skill.created_at);
       return createdAt && createdAt >= weekAgo;
     })
@@ -644,6 +651,9 @@ const renderWeeklySummary = () => {
 
   const updatedSkills = state.skills
     .filter((skill) => {
+      if (skill.is_active === false) {
+        return false;
+      }
       const updatedAt = parseDate(skill.updated_at);
       const createdAt = parseDate(skill.created_at);
       if (!updatedAt || updatedAt < weekAgo) {
@@ -701,7 +711,7 @@ const renderFavoritesPanel = () => {
   }
 
   const favorites = state.skills
-    .filter((skill) => state.favorites.has(skill.id))
+    .filter((skill) => state.favorites.has(skill.id) && skill.is_active !== false)
     .sort((a, b) => (b.popularity || 0) - (a.popularity || 0));
 
   elements.favoritesCount.textContent = `${favorites.length}`;
