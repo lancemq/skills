@@ -75,9 +75,8 @@
           <span>AI Skills Hub</span>
         </a>
         <div class="top-nav-links">
-          <a href="index.html">Home</a>
-          <a href="index.html#controls">Browse</a>
-          <a href="index.html#about">Sources</a>
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
           <button class="ghost top-nav-lang" id="nav-lang">EN / ZH</button>
         </div>
       </div>
@@ -285,14 +284,27 @@ Target: static websites and docs portals.</code></pre>
 
     <script>
       const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
+      const NAV_I18N = {
+        en: { home: "Home", how: "How Skills Work", lang: "EN / ZH" },
+        zh: { home: "首页", how: "Skills 原理与作用", lang: "EN / 中文" }
+      };
       function setLang(lang) {
         document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
         try {
           window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
         } catch (_error) {}
+        const dict = lang === "zh" ? NAV_I18N.zh : NAV_I18N.en;
+        const navHome = document.getElementById("nav-home");
+        const navMechanism = document.getElementById("nav-mechanism");
         const navBtn = document.getElementById("nav-lang");
+        if (navHome) {
+          navHome.textContent = dict.home;
+        }
+        if (navMechanism) {
+          navMechanism.textContent = dict.how;
+        }
         if (navBtn) {
-          navBtn.textContent = lang === "zh" ? "EN / 中文" : "EN / ZH";
+          navBtn.textContent = dict.lang;
         }
       }
       const initial = (() => {

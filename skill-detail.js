@@ -23,6 +23,8 @@ let currentLang = getInitialLang();
 const t = {
   en: {
     back: "Back",
+    home: "Home",
+    how: "How Skills Work",
     source: "Source",
     category: "Category",
     platforms: "Platforms",
@@ -39,6 +41,8 @@ const t = {
   },
   zh: {
     back: "返回",
+    home: "首页",
+    how: "Skills 原理与作用",
     source: "来源",
     category: "分类",
     platforms: "平台",
@@ -69,6 +73,8 @@ const elements = {
   view: document.getElementById("detail-view"),
   back: document.getElementById("detail-back"),
   lang: document.getElementById("detail-lang"),
+  navHome: document.getElementById("nav-home"),
+  navMechanism: document.getElementById("nav-mechanism"),
   labelCategory: document.getElementById("label-category"),
   labelPlatforms: document.getElementById("label-platforms"),
   labelPopularity: document.getElementById("label-popularity"),
@@ -79,6 +85,28 @@ const elements = {
 };
 
 const getText = (key) => t[currentLang][key] || key;
+const categoryMapEn = {
+  开发: "Development",
+  设计: "Design",
+  生产力: "Productivity",
+  内容: "Content",
+  创意: "Creativity",
+  工作流: "Workflow",
+  文档: "Documents",
+  品牌: "Brand",
+  媒体: "Media",
+  协作: "Collaboration",
+  安全: "Security",
+  业务: "Business",
+  运营: "Operations",
+  职业: "Career",
+  研究: "Research",
+};
+const translateCategory = (value) => {
+  if (!value) return "-";
+  if (currentLang === "zh") return value;
+  return categoryMapEn[value] || value;
+};
 const parseDate = (value) => {
   if (!value) return "";
   const d = new Date(value);
@@ -89,6 +117,8 @@ function applyLabels() {
   document.documentElement.lang = currentLang === "zh" ? "zh-Hans" : "en";
   elements.back.textContent = getText("back");
   elements.lang.textContent = currentLang === "zh" ? "EN / 中文" : "EN / ZH";
+  elements.navHome.textContent = getText("home");
+  elements.navMechanism.textContent = getText("how");
   elements.labelCategory.textContent = getText("category");
   elements.labelPlatforms.textContent = getText("platforms");
   elements.labelPopularity.textContent = getText("popularity");
@@ -126,7 +156,7 @@ function renderSkill(skill) {
   elements.short.textContent = short || "";
   elements.long.textContent = long || "";
   elements.source.textContent = `${getText("source")}: ${skill.source_name || "-"}`;
-  elements.category.textContent = skill.category || "-";
+  elements.category.textContent = translateCategory(skill.category);
   elements.platforms.textContent = (skill.platforms || []).join(" / ") || "-";
   elements.popularity.textContent = skill.popularity
     ? `${skill.popularity}`

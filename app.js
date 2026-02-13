@@ -35,9 +35,8 @@ const elements = {
   btnAbout: document.getElementById("btn-about"),
   btnMechanism: document.getElementById("btn-mechanism"),
   btnLang: document.getElementById("btn-lang"),
-  navBrowse: document.getElementById("nav-browse"),
+  navHome: document.getElementById("nav-home"),
   navMechanism: document.getElementById("nav-mechanism"),
-  navSources: document.getElementById("nav-sources"),
   quickMechanismTitle: document.getElementById("quick-mechanism-title"),
   quickMechanismSub: document.getElementById("quick-mechanism-sub"),
   footerMechanismLink: document.getElementById("footer-mechanism-link"),
@@ -78,8 +77,8 @@ const i18n = {
     browse: "Browse Now",
     about: "About Sources",
     mechanism: "How Skills Work",
-    navBrowse: "Browse",
-    navSources: "Sources",
+    navHome: "Home",
+    navMechanism: "How Skills Work",
     quickMechanismTitle: "How Skills Work",
     quickMechanismSub:
       "Understand the mechanism, core principles, and practical value of AI skills.",
@@ -126,8 +125,8 @@ const i18n = {
     browse: "立即浏览",
     about: "数据来源说明",
     mechanism: "Skills 原理与作用",
-    navBrowse: "浏览",
-    navSources: "来源",
+    navHome: "首页",
+    navMechanism: "Skills 原理与作用",
     quickMechanismTitle: "Skills 原理与作用",
     quickMechanismSub: "了解 AI skills 的机制原理、核心作用与实践价值。",
     footerMechanismLink: "Skills 原理与作用",
@@ -334,6 +333,7 @@ const applyFilters = () => {
   state.rendered.categories = [];
   
   renderCards();
+  renderFavoritesPanel();
 };
 
 const createSkillCard = (skill) => {
@@ -763,9 +763,8 @@ const applyLanguage = () => {
   elements.btnAbout.textContent = t("about");
   elements.btnMechanism.textContent = t("mechanism");
   elements.btnLang.textContent = t("lang");
-  elements.navBrowse.textContent = t("navBrowse");
-  elements.navMechanism.textContent = t("mechanism");
-  elements.navSources.textContent = t("navSources");
+  elements.navHome.textContent = t("navHome");
+  elements.navMechanism.textContent = t("navMechanism");
   if (elements.quickMechanismTitle) {
     elements.quickMechanismTitle.textContent = t("quickMechanismTitle");
   }
