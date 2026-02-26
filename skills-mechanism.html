@@ -10,6 +10,24 @@
       content="Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows."
     />
     <meta name="keywords" id="seo-keywords" content="AI skills mechanism, agent skills, workflow skills, Codex skills" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="AI Skills Hub" />
+    <meta property="og:title" id="seo-og-title" content="How AI Skills Work | AI Skills Hub" />
+    <meta
+      id="seo-og-description"
+      property="og:description"
+      content="Understand how AI skills are designed, installed, and used in reliable production workflows."
+    />
+    <meta property="og:url" id="seo-og-url" content="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
+    <meta property="og:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" id="seo-twitter-title" content="How AI Skills Work | AI Skills Hub" />
+    <meta
+      id="seo-twitter-description"
+      name="twitter:description"
+      content="A practical guide to skill mechanism, installation patterns, and execution quality controls."
+    />
+    <meta name="twitter:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
     <meta name="googlebot" content="index,follow" />
     <meta name="baiduspider" content="index,follow" />
     <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
@@ -18,6 +36,23 @@
     <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/skills-mechanism.html?lang=en" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "How AI Skills Work",
+        "description": "Practical guide to AI skills mechanism, installation, usage, and quality controls.",
+        "url": "https://www.ai-skills.xyz/skills-mechanism.html?lang=en",
+        "author": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        }
+      }
+    </script>
     <style>
       .doc-wrap {
         width: min(1000px, 94vw);
@@ -85,6 +120,7 @@
         <div class="top-nav-links">
           <a href="index.html" id="nav-home">Home</a>
           <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="mcp-protocol.html" id="nav-mcp">MCP Guide</a>
           <a href="sources.html" id="nav-sources">Sources</a>
           <button class="ghost top-nav-lang" id="nav-lang">EN / ZH</button>
         </div>
@@ -189,6 +225,37 @@ Target: static websites and docs portals.</code></pre>
             <li>Clear output schema for reports.</li>
           </ul>
         </section>
+
+        <section class="doc-section">
+          <h2>Common Failure Modes (And Fixes)</h2>
+          <ul>
+            <li>Ambiguous objective: split one broad request into measurable sub-goals.</li>
+            <li>Missing constraints: always provide deadline, quality bar, and output format.</li>
+            <li>No validation step: add explicit pass/fail checks before final delivery.</li>
+            <li>Overly generic instructions: include domain context (stack, users, risk level).</li>
+            <li>No feedback loop: require second-pass refinement when confidence is low.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Execution Template You Can Reuse</h2>
+          <pre><code>Goal:
+- What outcome is needed?
+
+Context:
+- Repo/files:
+- Product/domain:
+
+Constraints:
+- Deadline:
+- Risk/compliance:
+- Format requirements:
+
+Validation:
+- What checks define "done"?
+- What evidence should be returned?</code></pre>
+          <p style="margin-top:8px;">Need protocol-level tool interoperability? See <a href="mcp-protocol.html?lang=en">MCP Guide</a>.</p>
+        </section>
       </div>
 
       <div class="doc-card lang-zh">
@@ -288,25 +355,60 @@ Target: static websites and docs portals.</code></pre>
             <li>结构化报告输出格式。</li>
           </ul>
         </section>
+
+        <section class="doc-section">
+          <h2>常见失败模式（及修复建议）</h2>
+          <ul>
+            <li>目标不清：把宽泛任务拆成可衡量的子目标。</li>
+            <li>约束缺失：明确时限、质量标准和输出格式。</li>
+            <li>缺少验收：在交付前先定义通过/失败规则。</li>
+            <li>指令过泛：补充技术栈、用户场景和风险等级。</li>
+            <li>没有反馈回路：低置信度结果必须二次迭代。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>可复用执行模板</h2>
+          <pre><code>目标：
+- 需要达成的结果是什么？
+
+上下文：
+- 仓库/文件：
+- 业务/产品背景：
+
+约束：
+- 截止时间：
+- 风险/合规：
+- 输出格式要求：
+
+验收：
+- 什么检查才算完成？
+- 需要返回哪些证据？</code></pre>
+          <p style="margin-top:8px;">如果你需要协议级工具互操作，可继续阅读 <a href="mcp-protocol.html?lang=zh">MCP 说明页</a>。</p>
+        </section>
       </div>
     </div>
 
     <script>
       const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
       const NAV_I18N = {
-        en: { home: "Home", how: "How Skills Work", sources: "Sources", lang: "EN / ZH" },
-        zh: { home: "首页", how: "Skills 原理与作用", sources: "数据来源", lang: "EN / 中文" }
+        en: { home: "Home", how: "How Skills Work", mcp: "MCP Guide", sources: "Sources", lang: "EN / ZH" },
+        zh: { home: "首页", how: "Skills 原理与作用", mcp: "MCP 说明", sources: "数据来源", lang: "EN / 中文" }
       };
       const SEO_I18N = {
         en: {
           title: "How AI Skills Work | AI Skills Hub",
           description: "Understand what AI skills are, how they work, and why they improve consistency, speed, and quality in real workflows.",
-          keywords: "AI skills mechanism, agent skills, workflow skills, Codex skills"
+          keywords: "AI skills mechanism, agent skills, workflow skills, Codex skills",
+          ogDescription: "Understand how AI skills are designed, installed, and used in reliable production workflows.",
+          twitterDescription: "A practical guide to skill mechanism, installation patterns, and execution quality controls."
         },
         zh: {
           title: "Skills 原理与作用 | AI Skills Hub",
           description: "了解 AI Skills 的机制原理、安装与使用方式，以及在实际工作流中的作用。",
-          keywords: "AI技能原理, 智能体技能, 工作流技能, Codex技能"
+          keywords: "AI技能原理, 智能体技能, 工作流技能, Codex技能",
+          ogDescription: "了解 AI Skills 的机制、安装、使用方法与质量控制要点。",
+          twitterDescription: "一份可落地的 Skills 使用与优化实践指南。"
         }
       };
       function setLang(lang) {
@@ -318,6 +420,7 @@ Target: static websites and docs portals.</code></pre>
         const seo = lang === "zh" ? SEO_I18N.zh : SEO_I18N.en;
         const navHome = document.getElementById("nav-home");
         const navMechanism = document.getElementById("nav-mechanism");
+        const navMcp = document.getElementById("nav-mcp");
         const navSources = document.getElementById("nav-sources");
         const navBtn = document.getElementById("nav-lang");
         if (navHome) {
@@ -327,6 +430,10 @@ Target: static websites and docs portals.</code></pre>
         if (navMechanism) {
           navMechanism.textContent = dict.how;
           navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navMcp) {
+          navMcp.textContent = dict.mcp;
+          navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(lang)}`;
         }
         if (navSources) {
           navSources.textContent = dict.sources;
@@ -338,9 +445,19 @@ Target: static websites and docs portals.</code></pre>
         document.title = seo.title;
         const desc = document.getElementById("seo-description");
         const keywords = document.getElementById("seo-keywords");
+        const ogTitle = document.getElementById("seo-og-title");
+        const ogDesc = document.getElementById("seo-og-description");
+        const ogUrl = document.getElementById("seo-og-url");
+        const twitterTitle = document.getElementById("seo-twitter-title");
+        const twitterDesc = document.getElementById("seo-twitter-description");
         const canonical = document.getElementById("seo-canonical");
         if (desc) desc.setAttribute("content", seo.description);
         if (keywords) keywords.setAttribute("content", seo.keywords);
+        if (ogTitle) ogTitle.setAttribute("content", seo.title);
+        if (ogDesc) ogDesc.setAttribute("content", seo.ogDescription);
+        if (ogUrl) ogUrl.setAttribute("content", `https://www.ai-skills.xyz/skills-mechanism.html?lang=${lang}`);
+        if (twitterTitle) twitterTitle.setAttribute("content", seo.title);
+        if (twitterDesc) twitterDesc.setAttribute("content", seo.twitterDescription);
         if (canonical) canonical.setAttribute("href", `https://www.ai-skills.xyz/skills-mechanism.html?lang=${lang}`);
         const url = new URL(window.location.href);
         url.searchParams.set("lang", lang);

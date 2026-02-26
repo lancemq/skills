@@ -14,6 +14,7 @@ const state = {
 const elements = {
   navHome: document.getElementById("nav-home"),
   navMechanism: document.getElementById("nav-mechanism"),
+  navMcp: document.getElementById("nav-mcp"),
   navSources: document.getElementById("nav-sources"),
   lang: document.getElementById("sources-lang"),
   eyebrow: document.getElementById("sources-eyebrow"),
@@ -35,6 +36,7 @@ const i18n = {
   en: {
     navHome: "Home",
     navMechanism: "How Skills Work",
+    navMcp: "MCP Guide",
     navSources: "Sources",
     lang: "EN / ZH",
     eyebrow: "Data Sources",
@@ -67,10 +69,13 @@ const i18n = {
     seoDescription:
       "Browse all data sources powering AI Skills Hub with quality metrics, active skill counts, and direct links.",
     seoKeywords: "AI skills sources, data sources, skill directories",
+    seoOgDescription: "Browse all data sources with quality metrics, active skill counts, and source links.",
+    seoTwitterDescription: "Compare source quality, status, and activity in one directory.",
   },
   zh: {
     navHome: "首页",
     navMechanism: "Skills 原理与作用",
+    navMcp: "MCP 说明",
     navSources: "数据来源",
     lang: "EN / 中文",
     eyebrow: "数据来源",
@@ -102,6 +107,8 @@ const i18n = {
     seoTitle: "数据来源 | AI Skills Hub",
     seoDescription: "查看 AI Skills Hub 的全部数据来源、质量分、活跃技能数与外部链接。",
     seoKeywords: "AI技能来源, 数据来源, skills目录",
+    seoOgDescription: "查看全部数据来源的质量、状态与活跃度。",
+    seoTwitterDescription: "在一个目录中对比来源质量分、状态和活跃技能数。",
   },
 };
 
@@ -157,21 +164,34 @@ const applySeo = () => {
   const seoTitle = document.getElementById("seo-title");
   const seoDescription = document.getElementById("seo-description");
   const seoKeywords = document.getElementById("seo-keywords");
+  const seoOgTitle = document.getElementById("seo-og-title");
+  const seoOgDescription = document.getElementById("seo-og-description");
+  const seoOgUrl = document.getElementById("seo-og-url");
+  const seoTwitterTitle = document.getElementById("seo-twitter-title");
+  const seoTwitterDescription = document.getElementById("seo-twitter-description");
   const canonical = document.getElementById("seo-canonical");
 
   document.title = t("seoTitle");
   if (seoTitle) seoTitle.textContent = t("seoTitle");
   if (seoDescription) seoDescription.setAttribute("content", t("seoDescription"));
   if (seoKeywords) seoKeywords.setAttribute("content", t("seoKeywords"));
+  if (seoOgTitle) seoOgTitle.setAttribute("content", t("seoTitle"));
+  if (seoOgDescription) seoOgDescription.setAttribute("content", t("seoOgDescription"));
+  if (seoOgUrl) seoOgUrl.setAttribute("content", `https://www.ai-skills.xyz/sources.html?lang=${state.currentLang}`);
+  if (seoTwitterTitle) seoTwitterTitle.setAttribute("content", t("seoTitle"));
+  if (seoTwitterDescription) seoTwitterDescription.setAttribute("content", t("seoTwitterDescription"));
   if (canonical) canonical.setAttribute("href", `https://www.ai-skills.xyz/sources.html?lang=${state.currentLang}`);
 };
 
 const applyLabels = () => {
   document.documentElement.lang = state.currentLang === "zh" ? "zh-Hans" : "en";
   elements.navHome.textContent = t("navHome");
+  elements.navHome.href = `index.html?lang=${encodeURIComponent(state.currentLang)}`;
   elements.navMechanism.textContent = t("navMechanism");
+  if (elements.navMcp) elements.navMcp.textContent = t("navMcp");
   elements.navSources.textContent = t("navSources");
   elements.navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(state.currentLang)}`;
+  if (elements.navMcp) elements.navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(state.currentLang)}`;
   elements.navSources.href = `sources.html?lang=${encodeURIComponent(state.currentLang)}`;
   elements.lang.textContent = t("lang");
   elements.eyebrow.textContent = t("eyebrow");

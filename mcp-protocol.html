@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="seo-title">MCP Protocol Guide | AI Skills Hub</title>
+    <meta
+      id="seo-description"
+      name="description"
+      content="Understand Model Context Protocol (MCP): architecture, benefits, security model, and practical integration patterns for AI applications."
+    />
+    <meta
+      id="seo-keywords"
+      name="keywords"
+      content="MCP, Model Context Protocol, AI tooling protocol, LLM integration"
+    />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="baiduspider" content="index,follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="AI Skills Hub" />
+    <meta property="og:title" content="MCP Protocol Guide | AI Skills Hub" />
+    <meta
+      property="og:description"
+      content="A practical introduction to MCP based on industry explainers and official protocol documentation."
+    />
+    <meta property="og:url" content="https://www.ai-skills.xyz/mcp-protocol.html?lang=en" />
+    <meta property="og:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MCP Protocol Guide | AI Skills Hub" />
+    <meta
+      name="twitter:description"
+      content="Learn what MCP solves, how it works, and how to adopt it in production systems."
+    />
+    <meta name="twitter:image" content="https://www.ai-skills.xyz/assets/logo.svg" />
+    <link rel="canonical" id="seo-canonical" href="https://www.ai-skills.xyz/mcp-protocol.html?lang=en" />
+    <link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/mcp-protocol.html?lang=en" />
+    <link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/mcp-protocol.html?lang=zh" />
+    <link rel="alternate" hreflang="x-default" href="https://www.ai-skills.xyz/mcp-protocol.html?lang=en" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "headline": "Model Context Protocol (MCP) Introduction",
+        "description": "What MCP is, why it matters, and how to integrate it in AI apps.",
+        "url": "https://www.ai-skills.xyz/mcp-protocol.html?lang=en",
+        "author": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Skills Hub"
+        }
+      }
+    </script>
+    <style>
+      .doc-wrap {
+        width: min(1000px, 94vw);
+        margin: 36px auto 72px;
+      }
+      .doc-card {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-xl);
+        background: var(--surface);
+        box-shadow: var(--shadow-sm);
+        padding: 28px;
+      }
+      .doc-actions {
+        display: flex;
+        gap: 10px;
+        margin: 16px 0 24px;
+        flex-wrap: wrap;
+      }
+      .doc-actions a {
+        text-decoration: none;
+      }
+      .doc-title {
+        font-size: clamp(28px, 4vw, 40px);
+        line-height: 1.2;
+        margin-bottom: 12px;
+      }
+      .doc-sub {
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      .doc-section {
+        margin-top: 20px;
+        padding-top: 16px;
+        border-top: 1px solid var(--line);
+      }
+      .doc-section h2 {
+        margin-bottom: 8px;
+      }
+      .doc-section ul,
+      .doc-section ol {
+        margin: 10px 0 0;
+        padding-left: 18px;
+      }
+      .note {
+        margin-top: 10px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-soft);
+        padding: 10px;
+        color: var(--muted);
+      }
+      .lang-zh {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-en {
+        display: none;
+      }
+      html[lang="zh-Hans"] .lang-zh {
+        display: block;
+      }
+      @media (max-width: 720px) {
+        .doc-card {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div class="top-nav-inner">
+        <a class="top-nav-brand" href="index.html">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="top-nav-logo" />
+          <span>AI Skills Hub</span>
+        </a>
+        <div class="top-nav-links">
+          <a href="index.html" id="nav-home">Home</a>
+          <a href="skills-mechanism.html" id="nav-mechanism">How Skills Work</a>
+          <a href="mcp-protocol.html" id="nav-mcp">MCP Guide</a>
+          <a href="sources.html" id="nav-sources">Sources</a>
+          <button class="ghost top-nav-lang" id="nav-lang">EN / ZH</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="doc-wrap">
+      <div class="doc-card lang-en">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">MCP Protocol Guide</span>
+          </div>
+        </div>
+        <h1 class="doc-title">Model Context Protocol (MCP), Explained</h1>
+        <p class="doc-sub">
+          Based on industry explainers and official documentation, MCP is a standard protocol
+          that lets AI assistants connect to external tools and data in a consistent way.
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">Back to Home</a>
+          <a class="ghost link-btn" href="skills-mechanism.html?lang=en">Skills Mechanism</a>
+        </div>
+
+        <section class="doc-section">
+          <h2>Why MCP Exists</h2>
+          <ul>
+            <li>Without MCP, each AI app and each tool connector usually needs custom integration code.</li>
+            <li>MCP defines a shared interface so clients can talk to many tools/servers the same way.</li>
+            <li>This reduces integration cost, improves portability, and speeds up ecosystem growth.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>MCP Architecture (Conceptual)</h2>
+          <ol>
+            <li><strong>Host / Client</strong>: the AI app or assistant runtime.</li>
+            <li><strong>MCP Server</strong>: exposes tools/resources/prompts in MCP format.</li>
+            <li><strong>External Systems</strong>: SaaS APIs, internal services, files, databases.</li>
+          </ol>
+          <p class="note">
+            Think of MCP as “USB-C for AI tools”: one protocol, many compatible integrations.
+          </p>
+        </section>
+
+        <section class="doc-section">
+          <h2>Core Capabilities</h2>
+          <ul>
+            <li><strong>Tools</strong>: callable operations (for example create ticket, run query).</li>
+            <li><strong>Resources</strong>: structured context/data that the model can consume.</li>
+            <li><strong>Prompts</strong>: reusable prompt templates exposed by the server.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Security Model (Practical)</h2>
+          <ul>
+            <li>Explicit permission boundaries between model runtime and external systems.</li>
+            <li>Server-side policy controls (auth, scope, logging, rate limits).</li>
+            <li>Safer than ad-hoc direct tool wiring because contracts are explicit and auditable.</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>Adoption Path</h2>
+          <ol>
+            <li>Start with one narrow use case (for example issue tracking or docs retrieval).</li>
+            <li>Wrap the backend capability in an MCP server with a clear tool contract.</li>
+            <li>Add authentication and audit logs before broader rollout.</li>
+            <li>Iterate tool definitions based on real production prompts.</li>
+          </ol>
+        </section>
+
+        <section class="doc-section">
+          <h2>References</h2>
+          <ul>
+            <li><a href="https://stytch.com/blog/model-context-protocol-introduction/" target="_blank" rel="noreferrer">Stytch: Model Context Protocol Introduction</a></li>
+            <li><a href="https://modelcontextprotocol.io/introduction" target="_blank" rel="noreferrer">Official MCP docs: Introduction</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="doc-card lang-zh">
+        <div class="brand">
+          <img src="assets/logo.svg" alt="AI Skills logo" class="logo" />
+          <div class="brand-text">
+            <p class="eyebrow">AI Skills Hub</p>
+            <span class="brand-name">MCP 协议说明</span>
+          </div>
+        </div>
+        <h1 class="doc-title">什么是 MCP（Model Context Protocol）</h1>
+        <p class="doc-sub">
+          基于行业介绍文章与官方文档，MCP 是一个标准协议，
+          让 AI 助手可以用统一方式连接外部工具与数据。
+        </p>
+        <div class="doc-actions">
+          <a class="ghost link-btn" href="index.html">返回首页</a>
+          <a class="ghost link-btn" href="skills-mechanism.html?lang=zh">Skills 原理页</a>
+        </div>
+
+        <section class="doc-section">
+          <h2>为什么需要 MCP</h2>
+          <ul>
+            <li>没有 MCP 时，AI 应用与每个工具通常都要单独开发对接逻辑。</li>
+            <li>MCP 提供统一接口，让客户端用同一种方式对接多种工具服务器。</li>
+            <li>可降低集成成本、提升可移植性，并加速生态扩展。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>MCP 架构（概念版）</h2>
+          <ol>
+            <li><strong>Host / Client</strong>：AI 应用或智能体运行环境。</li>
+            <li><strong>MCP Server</strong>：按 MCP 标准暴露工具/资源/提示模板。</li>
+            <li><strong>外部系统</strong>：SaaS API、内部服务、文件、数据库等。</li>
+          </ol>
+          <p class="note">可以把 MCP 理解为 AI 工具体系里的“统一接口标准”。</p>
+        </section>
+
+        <section class="doc-section">
+          <h2>核心能力</h2>
+          <ul>
+            <li><strong>Tools</strong>：可调用操作（如创建工单、执行查询）。</li>
+            <li><strong>Resources</strong>：模型可读取的结构化上下文数据。</li>
+            <li><strong>Prompts</strong>：由服务器提供的可复用提示模板。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>安全模型（实务）</h2>
+          <ul>
+            <li>模型运行时与外部系统之间有明确权限边界。</li>
+            <li>服务器端可统一做鉴权、范围控制、审计日志和限流。</li>
+            <li>相比临时拼接式对接，协议化契约更可追踪、可治理。</li>
+          </ul>
+        </section>
+
+        <section class="doc-section">
+          <h2>落地路径</h2>
+          <ol>
+            <li>先选一个小场景试点（如 issue 系统或文档检索）。</li>
+            <li>把后端能力封装成 MCP server，并定义清晰工具契约。</li>
+            <li>上线前补齐鉴权与审计日志。</li>
+            <li>根据真实提示词迭代工具定义与返回格式。</li>
+          </ol>
+        </section>
+
+        <section class="doc-section">
+          <h2>参考资料</h2>
+          <ul>
+            <li><a href="https://stytch.com/blog/model-context-protocol-introduction/" target="_blank" rel="noreferrer">Stytch: Model Context Protocol Introduction</a></li>
+            <li><a href="https://modelcontextprotocol.io/introduction" target="_blank" rel="noreferrer">MCP 官方文档：Introduction</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const LANGUAGE_STORAGE_KEY = "ai_skills_lang_v1";
+      const NAV_I18N = {
+        en: { home: "Home", how: "How Skills Work", mcp: "MCP Guide", sources: "Sources", lang: "EN / ZH" },
+        zh: { home: "首页", how: "Skills 原理与作用", mcp: "MCP 说明", sources: "数据来源", lang: "EN / 中文" }
+      };
+      const SEO_I18N = {
+        en: {
+          title: "MCP Protocol Guide | AI Skills Hub",
+          description: "Understand Model Context Protocol (MCP): architecture, benefits, security model, and practical integration patterns for AI applications.",
+          keywords: "MCP, Model Context Protocol, AI tooling protocol, LLM integration"
+        },
+        zh: {
+          title: "MCP 协议说明 | AI Skills Hub",
+          description: "了解 MCP（Model Context Protocol）的架构、价值、安全模型与落地路径。",
+          keywords: "MCP, 模型上下文协议, AI工具协议, LLM集成"
+        }
+      };
+      function setLang(lang) {
+        document.documentElement.lang = lang === "zh" ? "zh-Hans" : "en";
+        try {
+          window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+        } catch (_error) {}
+        const dict = lang === "zh" ? NAV_I18N.zh : NAV_I18N.en;
+        const seo = lang === "zh" ? SEO_I18N.zh : SEO_I18N.en;
+        const navHome = document.getElementById("nav-home");
+        const navMechanism = document.getElementById("nav-mechanism");
+        const navMcp = document.getElementById("nav-mcp");
+        const navSources = document.getElementById("nav-sources");
+        const navBtn = document.getElementById("nav-lang");
+        if (navHome) {
+          navHome.textContent = dict.home;
+          navHome.href = `index.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navMechanism) {
+          navMechanism.textContent = dict.how;
+          navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navMcp) {
+          navMcp.textContent = dict.mcp;
+          navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navSources) {
+          navSources.textContent = dict.sources;
+          navSources.href = `sources.html?lang=${encodeURIComponent(lang)}`;
+        }
+        if (navBtn) {
+          navBtn.textContent = dict.lang;
+        }
+        document.title = seo.title;
+        const desc = document.getElementById("seo-description");
+        const keywords = document.getElementById("seo-keywords");
+        const canonical = document.getElementById("seo-canonical");
+        if (desc) desc.setAttribute("content", seo.description);
+        if (keywords) keywords.setAttribute("content", seo.keywords);
+        if (canonical) canonical.setAttribute("href", `https://www.ai-skills.xyz/mcp-protocol.html?lang=${lang}`);
+        const url = new URL(window.location.href);
+        url.searchParams.set("lang", lang);
+        history.replaceState({}, "", `${url.pathname}${url.search}`);
+      }
+      const initial = (() => {
+        const queryLang = new URLSearchParams(window.location.search).get("lang");
+        if (queryLang === "en" || queryLang === "zh") return queryLang;
+        try {
+          const saved = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+          if (saved === "en" || saved === "zh") return saved;
+        } catch (_error) {}
+        return "en";
+      })();
+      setLang(initial);
+      document.getElementById("nav-lang").addEventListener("click", () => {
+        const next = document.documentElement.lang === "zh-Hans" ? "en" : "zh";
+        setLang(next);
+      });
+    </script>
+  </body>
+</html>

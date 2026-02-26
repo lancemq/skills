@@ -39,6 +39,7 @@ const t = {
     back: "Back",
     home: "Home",
     how: "How Skills Work",
+    mcp: "MCP Guide",
     sources: "Sources",
     source: "Source",
     category: "Category",
@@ -60,6 +61,7 @@ const t = {
     back: "返回",
     home: "首页",
     how: "Skills 原理与作用",
+    mcp: "MCP 说明",
     sources: "数据来源",
     source: "来源",
     category: "分类",
@@ -95,6 +97,7 @@ const elements = {
   lang: document.getElementById("detail-lang"),
   navHome: document.getElementById("nav-home"),
   navMechanism: document.getElementById("nav-mechanism"),
+  navMcp: document.getElementById("nav-mcp"),
   navSources: document.getElementById("nav-sources"),
   labelCategory: document.getElementById("label-category"),
   labelPlatforms: document.getElementById("label-platforms"),
@@ -303,9 +306,11 @@ function applyLabels() {
   elements.lang.textContent = currentLang === "zh" ? "EN / 中文" : "EN / ZH";
   elements.navHome.textContent = getText("home");
   elements.navMechanism.textContent = getText("how");
+  if (elements.navMcp) elements.navMcp.textContent = getText("mcp");
   if (elements.navSources) elements.navSources.textContent = getText("sources");
   elements.navHome.href = `index.html?lang=${encodeURIComponent(currentLang)}`;
   elements.navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(currentLang)}`;
+  if (elements.navMcp) elements.navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(currentLang)}`;
   if (elements.navSources) elements.navSources.href = `sources.html?lang=${encodeURIComponent(currentLang)}`;
   elements.labelCategory.textContent = getText("category");
   elements.labelPlatforms.textContent = getText("platforms");

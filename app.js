@@ -39,9 +39,11 @@ const elements = {
   btnBrowse: document.getElementById("btn-browse"),
   btnAbout: document.getElementById("btn-about"),
   btnMechanism: document.getElementById("btn-mechanism"),
+  btnMcp: document.getElementById("btn-mcp"),
   btnLang: document.getElementById("btn-lang"),
   navHome: document.getElementById("nav-home"),
   navMechanism: document.getElementById("nav-mechanism"),
+  navMcp: document.getElementById("nav-mcp"),
   navSources: document.getElementById("nav-sources"),
   weeklySectionTitle: document.getElementById("weekly-section-title"),
   weeklyNewTitle: document.getElementById("weekly-new-title"),
@@ -93,10 +95,12 @@ const i18n = {
     browse: "Browse Now",
     about: "About Sources",
     mechanism: "How Skills Work",
+    mcp: "What is MCP",
     sources: "Sources",
     viewAllSources: "View All Sources",
     navHome: "Home",
     navMechanism: "How Skills Work",
+    navMcp: "MCP Guide",
     navSources: "Sources",
     lang: "EN / ZH",
     statSkills: "Total Skills",
@@ -147,10 +151,12 @@ const i18n = {
     browse: "立即浏览",
     about: "数据来源说明",
     mechanism: "Skills 原理与作用",
+    mcp: "什么是 MCP",
     sources: "数据来源",
     viewAllSources: "查看全部来源",
     navHome: "首页",
     navMechanism: "Skills 原理与作用",
+    navMcp: "MCP 说明",
     navSources: "数据来源",
     lang: "EN / 中文",
     statSkills: "技能总数",
@@ -941,12 +947,18 @@ const applyLanguage = () => {
   elements.btnBrowse.textContent = t("browse");
   elements.btnAbout.textContent = t("about");
   elements.btnMechanism.textContent = t("mechanism");
+  if (elements.btnMcp) {
+    elements.btnMcp.textContent = t("mcp");
+    elements.btnMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(currentLang)}`;
+  }
   elements.btnMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(currentLang)}`;
   elements.btnLang.textContent = t("lang");
   elements.navHome.textContent = t("navHome");
   elements.navMechanism.textContent = t("navMechanism");
+  if (elements.navMcp) elements.navMcp.textContent = t("navMcp");
   elements.navHome.href = `index.html?lang=${encodeURIComponent(currentLang)}`;
   elements.navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(currentLang)}`;
+  if (elements.navMcp) elements.navMcp.href = `mcp-protocol.html?lang=${encodeURIComponent(currentLang)}`;
   if (elements.navSources) elements.navSources.textContent = t("navSources");
   if (elements.navSources) elements.navSources.href = `sources.html?lang=${encodeURIComponent(currentLang)}`;
   if (elements.weeklySectionTitle) elements.weeklySectionTitle.textContent = t("weeklySectionTitle");

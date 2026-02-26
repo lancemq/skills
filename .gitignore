@@ -1,2 +1,5 @@
 .vercel
 .env*.local
+data/skills.json
+data/skills.db
+data/sources.json
