@@ -1108,7 +1108,8 @@ const init = async () => {
   state.sources = sourcesData.sources || [];
 
   state.skills.sort((a, b) => (Number(b.popularity) || 0) - (Number(a.popularity) || 0));
-  state.filtered = [...state.skills];
+  // Keep initial rendered set aligned with default status filter ("active").
+  state.filtered = state.skills.filter((skill) => skill.is_active !== false);
 
   initStats(sourcesData.last_updated || "--");
   applyLanguage();
