@@ -78,6 +78,31 @@
         padding: 10px;
         overflow: auto;
       }
+      .related-list {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 10px;
+      }
+      .related-item {
+        border: 1px solid var(--line);
+        border-radius: var(--radius-md);
+        background: var(--surface-soft);
+        padding: 10px;
+      }
+      .related-item a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .related-item a:hover {
+        text-decoration: underline;
+      }
+      .related-item p {
+        margin-top: 6px;
+        color: var(--muted);
+        font-size: 13px;
+      }
       .pill-ok {
         color: #0f9d58;
       }
@@ -152,6 +177,11 @@
         <section class="detail-section">
           <h2 id="label-usage">Usage Example</h2>
           <pre><code id="detail-usage-code"></code></pre>
+        </section>
+
+        <section class="detail-section">
+          <h2 id="label-related">Similar Skills</h2>
+          <div class="related-list" id="related-list"></div>
         </section>
       </article>
     </main>
