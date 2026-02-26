@@ -147,7 +147,8 @@
       <section class="controls" id="controls">
         <div class="control">
           <label for="search" id="label-search">Search</label>
-          <input id="search" type="search" placeholder="Search by name, tag, or description" />
+          <input id="search" list="search-suggestions" type="search" placeholder="Search by name, tag, or description" />
+          <datalist id="search-suggestions"></datalist>
         </div>
         <div class="control">
           <label for="category" id="label-category">Category</label>
@@ -165,12 +166,19 @@
           <label for="favorite" id="label-favorite">Favorites</label>
           <select id="favorite"></select>
         </div>
+        <div class="control">
+          <label for="status" id="label-status">Status</label>
+          <select id="status"></select>
+        </div>
       </section>
 
       <section class="favorites-panel" id="favorites-panel">
         <div class="favorites-header">
           <h2 id="favorites-title">Favorite Skills</h2>
-          <span id="favorites-count">0</span>
+          <div class="favorites-tools">
+            <span id="favorites-count">0</span>
+            <select id="favorites-group-filter"></select>
+          </div>
         </div>
         <p class="favorites-empty" id="favorites-empty">No favorites yet.</p>
         <div class="favorites-grid" id="favorites-grid"></div>
@@ -191,7 +199,6 @@
       <p id="footer-text">Made for your AI skill workflow · 2026</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.10.2/sql-wasm.js"></script>
     <script src="app.js"></script>
   </body>
 </html>
