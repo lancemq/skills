@@ -43,4 +43,18 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.ai-skills.xyz/sources.html?lang=en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/sources.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/sources.html?lang=zh" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ai-skills.xyz/sources.html?lang=zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai-skills.xyz/sources.html?lang=en" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://www.ai-skills.xyz/sources.html?lang=zh" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

@@ -42,6 +42,7 @@ const elements = {
   btnLang: document.getElementById("btn-lang"),
   navHome: document.getElementById("nav-home"),
   navMechanism: document.getElementById("nav-mechanism"),
+  navSources: document.getElementById("nav-sources"),
   weeklySectionTitle: document.getElementById("weekly-section-title"),
   weeklyNewTitle: document.getElementById("weekly-new-title"),
   weeklyUpdatedTitle: document.getElementById("weekly-updated-title"),
@@ -64,6 +65,7 @@ const elements = {
   labelStatus: document.getElementById("label-status"),
   aboutTitle: document.getElementById("about-title"),
   aboutText: document.getElementById("about-text"),
+  btnAllSources: document.getElementById("btn-all-sources"),
   footerText: document.getElementById("footer-text"),
 };
 
@@ -91,8 +93,11 @@ const i18n = {
     browse: "Browse Now",
     about: "About Sources",
     mechanism: "How Skills Work",
+    sources: "Sources",
+    viewAllSources: "View All Sources",
     navHome: "Home",
     navMechanism: "How Skills Work",
+    navSources: "Sources",
     lang: "EN / ZH",
     statSkills: "Total Skills",
     statSources: "Sources",
@@ -142,8 +147,11 @@ const i18n = {
     browse: "立即浏览",
     about: "数据来源说明",
     mechanism: "Skills 原理与作用",
+    sources: "数据来源",
+    viewAllSources: "查看全部来源",
     navHome: "首页",
     navMechanism: "Skills 原理与作用",
+    navSources: "数据来源",
     lang: "EN / 中文",
     statSkills: "技能总数",
     statSources: "来源",
@@ -779,16 +787,24 @@ const renderSources = () => {
     desc.textContent = (sourceDescMap[currentLang] && sourceDescMap[currentLang][source.name]) || source.description;
 
     const link = document.createElement("a");
-    link.href = source.url;
-    link.target = "_blank";
-    link.rel = "noreferrer";
-    link.textContent = source.url;
-    link.title = source.url;
+    link.href = `sources.html?source=${encodeURIComponent(source.name)}&lang=${encodeURIComponent(currentLang)}`;
+    link.className = "source-detail-link";
+    link.textContent = currentLang === "zh" ? "查看来源详情" : "View source details";
+    link.title = source.name;
+
+    const external = document.createElement("a");
+    external.href = source.url;
+    external.target = "_blank";
+    external.rel = "noreferrer";
+    external.textContent = source.url;
+    external.title = source.url;
+    external.className = "source-external-link";
 
     item.appendChild(title);
     item.appendChild(score);
     item.appendChild(desc);
     item.appendChild(link);
+    item.appendChild(external);
     elements.sourceList.appendChild(item);
   });
 };
@@ -925,9 +941,14 @@ const applyLanguage = () => {
   elements.btnBrowse.textContent = t("browse");
   elements.btnAbout.textContent = t("about");
   elements.btnMechanism.textContent = t("mechanism");
+  elements.btnMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(currentLang)}`;
   elements.btnLang.textContent = t("lang");
   elements.navHome.textContent = t("navHome");
   elements.navMechanism.textContent = t("navMechanism");
+  elements.navHome.href = `index.html?lang=${encodeURIComponent(currentLang)}`;
+  elements.navMechanism.href = `skills-mechanism.html?lang=${encodeURIComponent(currentLang)}`;
+  if (elements.navSources) elements.navSources.textContent = t("navSources");
+  if (elements.navSources) elements.navSources.href = `sources.html?lang=${encodeURIComponent(currentLang)}`;
   if (elements.weeklySectionTitle) elements.weeklySectionTitle.textContent = t("weeklySectionTitle");
   if (elements.weeklyNewTitle) elements.weeklyNewTitle.textContent = t("weeklyNewTitle");
   if (elements.weeklyUpdatedTitle) elements.weeklyUpdatedTitle.textContent = t("weeklyUpdatedTitle");
@@ -946,6 +967,10 @@ const applyLanguage = () => {
   elements.search.placeholder = t("placeholderSearch");
   elements.aboutTitle.textContent = t("aboutTitle");
   elements.aboutText.textContent = t("aboutText");
+  if (elements.btnAllSources) {
+    elements.btnAllSources.textContent = t("viewAllSources");
+    elements.btnAllSources.href = `sources.html?lang=${encodeURIComponent(currentLang)}`;
+  }
   elements.footerText.textContent = t("footer");
 
   buildFilters();
