@@ -5,6 +5,7 @@ import {
   loadExistingSourcesMeta,
   checkLinkStatus,
   enrichSkillFromPage,
+  updateSourcesMeta,
   persistJson,
 } from "./_shared.js";
 
@@ -86,11 +87,7 @@ export default async function handler(req, res) {
     for (let i = 0; i < Math.max(1, concurrency); i += 1) jobs.push(worker());
     await Promise.all(jobs);
 
-    const today = new Date().toISOString().slice(0, 10);
-    const nextSourcesMeta = {
-      ...sourcesMeta,
-      last_updated: today,
-    };
+    const nextSourcesMeta = await updateSourcesMeta(sourcesMeta, sourcesMeta.sources || [], skills);
 
     const persistSkills = await persistJson("skills-data/skills", "skills-data/latest.json", skills);
     const persistSources = await persistJson(

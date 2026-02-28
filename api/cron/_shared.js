@@ -518,7 +518,7 @@ export async function collectSkillsFromSources(sources) {
   return { collected, sourceStats };
 }
 
-export async function updateSourcesMeta(existingSourcesMeta, allSources) {
+export async function updateSourcesMeta(existingSourcesMeta, allSources, skills = []) {
   const today = new Date().toISOString().slice(0, 10);
   const sourceMap = new Map((existingSourcesMeta.sources || []).map((s) => [s.name, { ...s }]));
   for (const s of allSources) {
@@ -531,8 +531,23 @@ export async function updateSourcesMeta(existingSourcesMeta, allSources) {
       });
     }
   }
+
+  const sourceSkillCounts = new Map();
+  for (const skill of skills || []) {
+    const sourceName = skill?.source_name;
+    if (!sourceName) continue;
+    sourceSkillCounts.set(sourceName, (sourceSkillCounts.get(sourceName) || 0) + 1);
+  }
+
+  const sources = Array.from(sourceMap.values())
+    .map((source) => ({
+      ...source,
+      skills_count: sourceSkillCounts.get(source.name) || 0,
+    }))
+    .filter((source) => source.skills_count > 0);
+
   return {
     last_updated: today,
-    sources: Array.from(sourceMap.values()),
+    sources,
   };
 }

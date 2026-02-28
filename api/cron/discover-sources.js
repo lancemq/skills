@@ -29,7 +29,7 @@ export default async function handler(req, res) {
     const linkChecks = await verifyCollectedLinks(collected, process.env.CRON_DISCOVERY_LINK_CHECK_LIMIT || 500);
 
     const { merged, created, updated } = mergeSkills(existingSkills, collected, linkChecks.results);
-    const nextSourcesMeta = await updateSourcesMeta(existingSourcesMeta, discoveredSources);
+    const nextSourcesMeta = await updateSourcesMeta(existingSourcesMeta, discoveredSources, merged);
 
     const persistSkills = await persistJson("skills-data/skills", "skills-data/latest.json", merged);
     const persistSources = await persistJson(

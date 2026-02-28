@@ -292,7 +292,7 @@ const createOption = (value, label) => {
 };
 
 const uniqueSorted = (items) => Array.from(new Set(items.filter(Boolean))).sort();
-const API_TIMEOUT_MS = 2500;
+const API_TIMEOUT_MS = 8000;
 
 const fetchWithTimeout = async (url, options = {}, timeoutMs = API_TIMEOUT_MS) => {
   const controller = new AbortController();
@@ -1048,7 +1048,7 @@ const loadSkillsFromDb = async () => {
 
   for (const url of dbCandidates) {
     try {
-      const response = await fetchWithTimeout(url, { cache: "no-store" });
+      const response = await fetchWithTimeout(url, { cache: "default" });
       if (!response.ok) continue;
       buffer = await response.arrayBuffer();
       if (buffer && buffer.byteLength > 0) break;
@@ -1078,7 +1078,7 @@ const loadSkillsFromDb = async () => {
 
 const loadSkills = async () => {
   try {
-    const remote = await fetchWithTimeout("/api/skills", { cache: "no-store" });
+    const remote = await fetchWithTimeout("/api/skills", { cache: "default" });
     if (remote.ok) {
       const data = await remote.json();
       if (Array.isArray(data) && data.length > 0) return data;
@@ -1086,23 +1086,28 @@ const loadSkills = async () => {
   } catch (_error) {}
 
   try {
-    return await loadSkillsFromDb();
+    const local = await fetch("data/skills.json", { cache: "default" });
+    if (local.ok) {
+      const data = await local.json();
+      if (Array.isArray(data) && data.length > 0) return data;
+    }
   } catch (_error) {
-    const res = await fetch("data/skills.json");
-    return await res.json();
+    // Continue to DB fallback below.
   }
+
+  return await loadSkillsFromDb();
 };
 
 const loadSourcesData = async () => {
   try {
-    const remote = await fetchWithTimeout("/api/sources", { cache: "no-store" });
+    const remote = await fetchWithTimeout("/api/sources", { cache: "default" });
     if (remote.ok) {
       const data = await remote.json();
       if (data && Array.isArray(data.sources)) return data;
     }
   } catch (_error) {}
 
-  const local = await fetch("data/sources.json");
+  const local = await fetch("data/sources.json", { cache: "default" });
   return await local.json();
 };
 
