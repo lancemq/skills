@@ -6,6 +6,7 @@
     "blob:upload-db": "node scripts/upload_db_to_blob.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "@vercel/blob": "^1.1.1"
   }
 }
