@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: *
+Allow: /
+
+Host: https://www.ai-skills.xyz
+Sitemap: https://www.ai-skills.xyz/sitemap.xml

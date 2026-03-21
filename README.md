@@ -1,4 +1,25 @@
-# skills
+# AI Skills Hub
+
+Next.js app for browsing, filtering, and comparing AI skills from multiple curated sources.
+
+## App Structure
+
+- `app/`: Next.js App Router pages and shared UI/components
+- `pages/api/`: API compatibility layer for Vercel/serverless routes
+- `api/`: existing API and cron handler implementations
+- `public/`: static assets such as `styles.css`, `sitemap.xml`, and images
+- `scripts/`: local maintenance helpers
+
+## Local Development
+
+1. Install dependencies:
+   - `npm install`
+2. Start the app:
+   - `npm run dev`
+3. Build production output:
+   - `npm run build`
+4. Run the production server locally:
+   - `npm run start`
 
 ## Vercel Cron
 
@@ -11,7 +32,7 @@ This project includes two Vercel Cron triggers:
   - Path: `/api/cron/discover-sources`
   - Schedule: `0 3 */3 * *` (every 3 days at 03:00)
 
-Config file: `/Users/maqi/code/skills/vercel.json`
+Config file: `vercel.json`
 
 ### Required Environment Variable
 
@@ -58,12 +79,20 @@ This means daily updates are persisted outside ephemeral runtime.
 
 Skills with `is_active: false` are hidden by default in homepage lists and favorites.
 
-## UI Additions
+## Frontend Notes
 
-- `skill-detail.html`: dedicated skill detail page (capability, install, usage example, source link).
-- Homepage weekly modules:
+- The frontend now runs on Next.js App Router routes.
+- User-facing pages remain on:
+  - `/`
+  - `/sources.html`
+  - `/skill-detail.html`
+  - `/skills-mechanism.html`
+  - `/mcp-protocol.html`
+- Homepage includes:
   - `This Week -> New Skills`
   - `This Week -> Updated Skills`
+  - favorites with local groupings
+  - client-side fallback loading from `skills.db` when JSON is unavailable
 
 ## Vercel Blob Storage For `skills.db`
 
