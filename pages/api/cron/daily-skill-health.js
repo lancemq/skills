@@ -1,1 +1,1 @@
-export { default } from "../../../api/cron/daily-skill-health.js";
+export { default } from "../../../server/api/cron/daily-skill-health.js";

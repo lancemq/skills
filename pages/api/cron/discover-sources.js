@@ -1,1 +1,1 @@
-export { default } from "../../../api/cron/discover-sources.js";
+export { default } from "../../../server/api/cron/discover-sources.js";

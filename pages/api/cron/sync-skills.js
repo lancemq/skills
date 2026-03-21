@@ -1,1 +1,1 @@
-export { default } from "../../../api/cron/sync-skills.js";
+export { default } from "../../../server/api/cron/sync-skills.js";

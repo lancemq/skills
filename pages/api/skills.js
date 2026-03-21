@@ -1,1 +1,1 @@
-export { default } from "../../api/skills.js";
+export { default } from "../../server/api/skills.js";
