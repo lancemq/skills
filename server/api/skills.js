@@ -40,8 +40,19 @@ export default async function handler(req, res) {
     if (!skillsUrl) {
       return res.status(404).json({ ok: false, error: "skills_json_not_configured" });
     }
+
+    const upstream = await fetch(skillsUrl, { cache: "no-store" });
+    if (!upstream.ok) {
+      return res.status(502).json({
+        ok: false,
+        error: "skills_json_fetch_failed",
+        detail: `upstream_status:${upstream.status}`,
+      });
+    }
+
+    const payload = await upstream.json();
     res.setHeader("Cache-Control", CACHE_CONTROL);
-    return res.redirect(307, skillsUrl);
+    return res.status(200).json(payload);
   } catch (error) {
     return res.status(500).json({
       ok: false,

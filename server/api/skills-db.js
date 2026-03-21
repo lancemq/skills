@@ -43,8 +43,19 @@ export default async function handler(req, res) {
       return res.status(404).json({ ok: false, error: "skills_db_not_configured" });
     }
 
+    const upstream = await fetch(dbUrl, { cache: "no-store" });
+    if (!upstream.ok) {
+      return res.status(502).json({
+        ok: false,
+        error: "skills_db_fetch_failed",
+        detail: `upstream_status:${upstream.status}`,
+      });
+    }
+
+    const arrayBuffer = await upstream.arrayBuffer();
     res.setHeader("Cache-Control", CACHE_CONTROL);
-    return res.redirect(307, dbUrl);
+    res.setHeader("Content-Type", "application/octet-stream");
+    return res.status(200).send(Buffer.from(arrayBuffer));
   } catch (error) {
     return res.status(500).json({
       ok: false,
